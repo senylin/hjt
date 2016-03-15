@@ -1,0 +1,580 @@
+body{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding:0;
+    margin: 0;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.fontred{
+    color: firebrick;
+}
+.lsytop{
+    width:100%;
+    height:40px;
+    position:absolute;
+    top:0px;
+    background: lightgray;
+    border:0px;
+    box-shadow: 1px 1px 1px white;
+}
+.lsylogin{
+    width: 120px;
+    height: 100%;
+    position: relative;
+    top:0px;
+    left: 5%;
+    color: firebrick;
+    font-family: 'Microsoft YaHei';
+    font-size: 15px;
+    letter-spacing:1px;
+    line-height:40px;
+    transition: all linear 0.8s;
+}
+.lsylogin:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color:#f9a1b7;
+}
+.lsytop ul{
+    width:300px;
+    height: 100%;
+    position: relative;
+    top:-40px;
+    left:100%;
+    margin-left:-300px;
+}
+.lsytop ul li{
+    list-style: none;
+    float: left;
+    width: 60px;
+    height: 100%;
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: 'Microsoft YaHei';
+    line-height:40px;
+}
+.lsytop ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lsywx{
+    transition: all linear 0.5s;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top:50px;
+    right: 2%;
+    z-index: 100;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 25px;
+    opacity: 1;
+}
+ .wx2{
+   opacity: 0;
+     z-index: 0;
+}
+ .lsylogo{
+     position: absolute;
+     width: 100%;
+     height:110px;
+     top:40px;
+     border: 0px solid white;
+ }
+ .lsylogo img{
+   display: none;
+ }
+.lsynav{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top:150px;
+    background: #f3929b;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 5px;
+}
+.lsynav ul{
+    width:60%;
+    height: 100%;
+    position: relative;
+    top:0px;
+    left:15%;
+}
+.lsynav ul li{
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 100%;
+    font-size:20px;
+    color:white;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
+    line-height:50px;
+    cursor: default;
+    border-radius: 5px;
+}
+.lsyhover{
+    background: white;
+    color: black!important;
+    box-shadow: 0px 0px 20px #f3929b inset;
+}
+.lsyuser{
+    width: 300px;
+    height: 100%;
+    position: relative;
+    top:-50px;
+    left: 90%;
+    margin-left: -300px;
+    background: #f3929b;
+}
+.lsyuser img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+    margin-top: 5px;
+    float: left;
+}
+.lsyuser img:hover{
+    cursor: pointer;
+    opacity:0.8;
+}
+.lsyname{
+    width: 100px;
+    height: 100%;;
+    float: left;
+    padding-left: 18px;
+    color:black;
+    font-size: 18px;
+    font-family: 'KaiTi';
+    line-height: 50px;
+}
+.lsyname:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+}
+.lsytrib{
+    width: 100px;
+    height: 100%;;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    font-family: 'KaiTi';
+    line-height: 50px;
+    font-weight: 600;
+}
+.lsytrib:hover{
+    cursor: pointer;
+    color: red;
+}
+.lsynav-s{
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    top:50px;
+}
+.lsynav-s ul{
+    position: relative;
+    top:0px;
+    width: 68%;
+    height: 25px;
+    margin-left: 5%;
+    border-bottom: 1px solid #f3929b;
+}
+.lsynav-s ul li{
+    list-style: none;
+    float: left;
+    width: 80px;
+    height: 100%;
+    font-size:14px;
+    color:#f3929b;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
+    line-height:30px;
+    border-radius:3px;
+}
+.lsynav-s ul li:hover{
+    background: #f3929b;
+    color: white;
+    cursor: pointer;
+}
+.lsymsg{
+    position: relative;
+    width: 80px;
+    height: 100%;
+    top:-25px;
+    left: 90%;
+    margin-left: -120px;
+    font-size:18px;
+    color:red;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
+    line-height:20px;
+    font-weight: 600;
+}
+.lsymsg:hover{
+    cursor: pointer;
+    font-weight: 900;
+}
+.lsymsglist{
+   position: absolute;
+    width: 300px;
+    height: 200px;
+    top:40px;
+    right: 30px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 1px;
+    z-index:101;
+    transition: all linear 0.5s;
+    background: white;
+}
+ .msghide{
+    height: 0px;
+     z-index:100;
+}
+ .lsypics{
+     position: absolute;
+     top:250px;
+     left:50%;
+     margin-left: -450px;
+     width:900px;
+     height: 350px;
+     background: #f3929b;
+     transition: all linear 1s;
+ }
+.lsypics .lsyp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all linear 1s;
+}
+.lsypics .lsyphd{
+    opacity: 0;
+}
+.lsypics img{
+    width: 100%;
+    height: 100%;
+}
+.lsyp-s{
+    position: absolute;
+    top:280px;
+    left:50%;
+    margin-left: -200px;
+    width: 450px;
+    height: 60px;
+}
+.lsyp-sp{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px gray;
+    opacity: 0.8;
+    transition: all linear 0.5s;
+}
+.lsypsphd{
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    margin-top: -20px;
+}
+.lsyp-s img{
+    width: 100%;
+    height: 100%;
+}
+.lsymodel{
+    position: absolute;
+    top:600px;
+    left:50%;
+    margin-left: -450px;
+    width: 900px;
+    height:auto;
+}
+.lsydel{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+
+}
+.lmhead{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 3px solid #e43747;
+}
+.lmfont{
+    position: relative;
+    width: 280px;
+    height:100%;
+    top:0px;
+    font-family: 'Microsoft YaHei';
+    font-size: 30px;
+    color:#e43747;
+    line-height: 60px;
+    letter-spacing: 15px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.lmfont:hover{
+    cursor: default;
+}
+.lmhead ul{
+    position: relative;
+    width: 620px;
+    height: 100%;
+    top:-50px;
+    left: 280px;
+}
+.lmhead ul li{
+    list-style: none;
+    float: right;
+    width: 100px;
+    height: 80%;
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
+    font-size: 20px;
+    color:#e43747;
+    line-height: 50px;
+    font-weight: 600;
+    border-radius: 5px;
+
+
+}
+.lmhead ul li:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px red;
+}
+.lsyhov{
+    color:white!important;
+    background-color:#e43747 ;
+}
+.lmurl{
+    position: relative;
+    width: 300px;
+    height:30px;
+    margin-left: -150px;
+    left: 50%;
+    white-space:nowrap;
+    text-align: center;
+    font-family: 'SimHei';
+    font-size: 16px;
+    color:purple;
+    line-height: 30px;
+
+}
+.lmurl:hover{
+    cursor: default;
+}
+.lmurl a:hover{
+    color: red;
+}
+
+
+.lmbody{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top:-20px;
+    overflow: hidden;
+}
+.lmbody ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.lmbody ul li{
+    list-style: none;
+    float: left;
+    width: 200px;
+    height:98%;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    border:2px solid #f9a1b7;
+    border-radius: 5px;
+
+}
+.lmbody ul li:hover{
+    box-shadow: 0px 0px 20px #e43747 inset;
+}
+.lmbody img{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    height:150px;
+    top:5px;
+
+}
+.lmbody img:hover{
+    cursor: pointer;
+}
+.lmbody h1{
+    position: relative;
+    width: 90%;
+    height: 20px;
+    margin-left: 5%;
+    top:10px;
+    font-family: 'simhei';
+    font-size: 20px;
+    color:lightslategray;
+    font-weight: 600;
+    overflow: hidden;
+    line-height: 18px;
+}
+.lmbody h1:hover{
+    color: red;
+    cursor: pointer;
+}
+.lmbody p{
+    position: relative;
+    width: 90%;
+    height: 30px;
+    margin-left: 5%;
+    top:15px;
+    font-family: 'simhei';
+    font-size: 10px;
+    color:gray;
+    overflow: hidden;
+}
+.lmbody p:hover{
+    color:lightblue;
+    cursor: default;
+    text-decoration: underline;
+    width: 90%;
+    height:40px;
+}
+.lspan{
+    width:180px;
+    height: 30px;
+    position: absolute;
+    margin-left: 10px;
+    top:220px;
+
+}
+.lspan:hover{
+    height:50px;
+}
+.lspan span{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-family: 'simhei';
+    background-color: #e43747;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+.lprice{
+    position: absolute;
+    width: 90%;
+    height:50px;
+    margin-left: 10px;
+    top:250px;
+    font-family: 'KaiTi_GB2312';
+    font-size:20px;
+    color:#e43747;
+    font-weight: 600;
+}
+.lprice small{
+    font-size: 12px;
+    color:gray;
+    margin-left: 10px;
+}
+.lnum{
+    font-size: 10px;
+    color:gray;
+    font-family: 'KaiTi_GB2312';
+    position: absolute;
+    top:280px;
+    margin-left:140px;
+
+}
+
+
+
+.lmbody2{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top:-20px;
+    overflow: hidden;
+}
+.lmbody2 ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.lmbody2 ul li{
+    list-style: none;
+    float: left;
+    width: 200px;
+    height:98%;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    border:2px solid #f9a1b7;
+
+}
+.lmbody2 ul li:hover{
+    box-shadow: 0px 0px 20px #e43747;
+}
+.lmbody2 img{
+    position: relative;
+    width: 100%;
+    height:220px;
+    top:0px;
+
+}
+.lmbody2 img:hover{
+    cursor: pointer;
+}
+.lmbody2 h1{
+    position: relative;
+    width: 90%;
+    height: 20px;
+    margin-left: 5%;
+    top:15px;
+    font-family: 'kaiti_gb2312';
+    font-size: 25px;
+    color:darkblue;
+    font-weight: 600;
+    overflow: hidden;
+    line-height: 20px;
+    text-align: center;
+}
+.lmbody2 h1:hover{
+    color: red;
+    cursor: pointer;
+}
+.lmbody2 p{
+    position: relative;
+    width: 90%;
+    height: 35px;
+    margin-left: 70%;
+    top:15px;
+    font-family: 'comic sans ms';
+    font-size: 25px;
+    color:#f9a1b7;
+    overflow: hidden;
+}

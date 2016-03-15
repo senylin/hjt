@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <link rel="stylesheet" href="css/css.css" type="text/css"/>
+    <title>INDEX</title>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div ng-app="lsyApp">
+    <div class="lsytop" ng-controller="ltop">
+        <div class="lsylogin">请登录or 注册</div>
+        <ul>
+            <li>更多建议</li>
+            <li>关注我们</li>
+            <li class="fontred" ng-mouseover="wx=!wx" ng-mouseleave="">微信</li>
+        </ul>
+        <div class="lsywx" ng-class="{wx2:wx}"><img src="image/erweima.png" width="100%" height="100%"/></div>
+    </div>
+    <div class="lsylogo">
+        <img src="" width="100%" height="100%"/>
+    </div>
+    <div class="lsynav" ng-controller="lnav" ng-mouseleave="count=2">
+        <ul>
+            <li ng-class="{lsyhover:choose(count,1)}" ng-mouseover="count=1">惠购物</li>
+            <li ng-class="{lsyhover:choose(count,2)}" ng-mouseover="count=2">汇周边</li>
+            <li ng-class="{lsyhover:choose(count,3)}" ng-mouseover="count=3">慧小说</li>
+        </ul>
+        <div class="lsyuser">
+            <img src="image/face.jpg" width="100%" height="100%"/>
+            <div class="lsyname">这是只狗</div>
+            <div class="lsytrib">话题讨论</div>
+        </div>
+         <div class="lsynav-s">
+          <ul>
+              <li ng-repeat="x in types">{{x}}</li>
+          </ul>
+          <div class="lsymsg" ng-click="msgtoggle()">消息栏</div>
+          <div class="lsymsglist" ng-class="{msghide:msglist}"></div>
+        </div>
+    </div>
+
+    <div class="lsypics" ng-controller="lpic">
+        <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/1.jpg"/></div>
+        <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/2.jpg"/></div>
+        <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/3.jpg"/></div>
+        <div class="lsyp"  ng-class="{lsyphd:change(number,4)}"><img src="image/4.jpg"/></div>
+        <div class="lsyp"  ng-class="{lsyphd:change(number,5)}"><img src="image/5.jpg"/></div>
+        <div class="lsyp-s">
+            <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/1.jpg"/></div>
+            <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/2.jpg"/></div>
+            <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/3.jpg"/></div>
+            <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,4)}" ng-mouseover="number=4"><img src="image/4.jpg"/></div>
+            <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,5)}" ng-mouseover="number=5"><img src="image/5.jpg"/></div>
+        </div>
+    </div>
+    <div class="lsymodel" ng-controller="lmodel">
+        <div class="lsydel">
+            <div class="lmhead">
+                <div class="lmfont">今日美食</div>
+                <ul>
+                    <li>更多</li>
+                    <li ng-class="{lsyhov:!change(delcount,3)}" ng-click="delcount = 3">百度糯米</li>
+                    <li ng-class="{lsyhov:!change(delcount,2)}" ng-click="delcount = 2">大众点评</li>
+                    <li ng-class="{lsyhov:!change(delcount,1)}" ng-click="delcount = 1">美团</li>
+                </ul>
+            </div>
+            <div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>
+            <div class="lmbody">
+
+                <ul ng-hide="change(delcount,1)">
+                    <li>
+                        <img src="image/1.jpg"/>
+                        <h1>名称名称名称名称sadasd </h1>
+                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
+                        <div class="lspan"><span>验券满返</span></div>
+                        <div class="lprice">￥149<small>门店价</small></div>
+                        <div class="lnum">已售xxxx</div>
+                    </li>
+                    <li>
+                        <img src="image/1.jpg"/>
+                        <h1>名称名称名称名称sadasd </h1>
+                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
+                        <div class="lspan"><span>验券满返</span><span>手机立减</span></div>
+                        <div class="lprice">￥149<small>门店价</small></div>
+                        <div class="lnum">已售xxxx</div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <ul ng-hide="change(delcount,2)">
+                    <li>
+                        <img src="image/2.jpg"/>
+                        <h1>名称名称名称名称sadasd </h1>
+                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
+                        <div class="lspan"><span>验券满返</span></div>
+                        <div class="lprice">￥149<small>门店价</small></div>
+                        <div class="lnum">已售xxxx</div>
+                    </li>
+                    <li>
+                        <img src="image/2.jpg"/>
+                        <h1>名称名称名称名称sadasd </h1>
+                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
+                        <div class="lspan"><span>验券满返</span><span>手机立减</span></div>
+                        <div class="lprice">￥149<small>门店价</small></div>
+                        <div class="lnum">已售xxxx</div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <ul ng-hide="change(delcount,3)">
+                    <li>
+                        <img src="image/3.jpg"/>
+                        <h1>名称名称名称名称sadasd </h1>
+                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
+                        <div class="lspan"><span>验券满返</span></div>
+                        <div class="lprice">￥149<small>门店价</small></div>
+                        <div class="lnum">已售xxxx</div>
+                    </li>
+                    <li>
+                        <img src="image/3.jpg"/>
+                        <h1>名称名称名称名称sadasd </h1>
+                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
+                        <div class="lspan"><span>验券满返</span><span>手机立减</span></div>
+                        <div class="lprice">￥149<small>门店价</small></div>
+                        <div class="lnum">已售xxxx</div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!--<div class="lmfoot">加载更多</div>-->
+        </div>
+        <div class="lsydel">
+            <div class="lmhead">
+                <div class="lmfont">热门电影</div>
+                <ul>
+                    <li>更多</li>
+                    <li ng-class="{lsyhov:!change(filmcount,3)}" ng-click="filmcount = 3">百度糯米</li>
+                    <li ng-class="{lsyhov:!change(filmcount,2)}" ng-click="filmcount = 2">大众点评</li>
+                    <li ng-class="{lsyhov:!change(filmcount,1)}" ng-click="filmcount = 1">美团</li>
+                </ul>
+            </div>
+            <div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>
+            <div class="lmbody2">
+
+                <ul ng-hide="change(filmcount,1)">
+                    <li>
+                        <img src="image/1.jpg"/>
+                        <h1>叶问</h1>
+                        <p>8.5</p>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <ul ng-hide="change(filmcount,2)">
+                    <li>
+                        <img src="image/2.jpg"/>
+                        <h1>叶问2</h1>
+                        <p>8.4</p>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <ul ng-hide="change(filmcount,3)">
+                    <li>
+                        <img src="image/3.jpg"/>
+                        <h1>叶问3</h1>
+                        <p>8.9</p>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lsydel">
+
+        </div>
+        <div class="lsydel">
+
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    var app = angular.module('lsyApp',['ngAnimate']);
+    app.controller('lmodel',function($scope){
+        $scope.delcount = 1;
+        $scope.filmcount = 1;
+        $scope.delurl = 'www.meituan.com';
+        $scope.change = function(value,judge){
+            if(value==1){ $scope.delurl = 'www.meituan.com';}
+            if(value==2){ $scope.delurl = 'https://www.dianping.com/';}
+            if(value==3){ $scope.delurl = '百度糯米';}
+            if(value==judge)return false;
+            else{return true;}
+        };
+    });
+    app.controller('ltop',function($scope){
+        $scope.wx=true;
+    })
+    app.controller('lpic',function($scope, $interval){
+        $scope.number = 1;
+        $scope.change = function(value,judge){
+            if(value==0){value=5;
+                $scope.number = 5;}
+            if(value==6){value=1;
+                $scope.number = 1;}
+            if(value==judge)return false;
+            else{return true;}
+        };
+        $interval(function () {
+            $scope.number ++;
+        }, 5000);
+    });
+    app.controller('lnav',function($scope){
+        $scope.count =2;
+        $scope.types=['美食','K歌','电影','住宿','外卖'];
+        $scope.msglist=true;
+        $scope.msgtoggle=function(){
+            $scope.msglist=!$scope.msglist;
+        }
+        $scope.choose=function(count,value){
+            if(count==value)
+            {
+                if(count==1) $scope.types=['淘宝','京东','聚美优品','一号店','蘑菇街'];
+                if(count==2) $scope.types=['美食','K歌','电影','住宿','外卖'];
+                if(count==3) $scope.types=['1','2','3','4','5'];
+               return true;
+            }else return false;
+        }
+    });
+</script>
+</body>
+</html>
