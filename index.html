@@ -24,7 +24,7 @@
         <img src="" width="100%" height="100%"/>
     </div>
 <!--nav-->
-    <div class="lsynav" ng-controller="lnav" ng-mouseleave="count=2" ng-class="{lsynav2:g}">
+    <div class="lsynav" ng-controller="lnav" ng-mouseleave="count=2" ng-class="{lsynav2:false}">
         <ul>
             <li ng-class="{lsyhover:choose(count,1)}" ng-mouseover="count=1">惠购物</li>
             <li ng-class="{lsyhover:choose(count,2)}" ng-mouseover="count=2">汇周边</li>
@@ -313,63 +313,37 @@
                 </ul>
             </div>
             <div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>
-            <div class="lmbody">
+            <div class="lmbody5">
                 <ul ng-hide="change(salecount,1)">
                     <li>
                         <img src="image/1.jpg"/>
-                        <h1>小猪头自助火锅烧烤</h1>
-                        <p>江干区新塘路108号天虹购物中心A座5楼（第七街1973口子电梯直达5楼...支持WIFI</p>
-                        <div class="lspan"><span>团</span></div>
-                        <div class="lprice">￥59<small>起</small></div>
-                        <div class="lnum">消费 103668</div>
+                        <h1>黄焖即米饭</h1>
+                        <p class="lscore">4.8分</p><p class="lsale">月售351单</p>
+                        <div class="lprice">
+                        <div>起送费15</div> <div>配送费</div> <div class="ltime">24分钟</div>
+                        </div>
+                        <div class="lspan"><span>付</span><span>增</span><span>首</span><span>减</span></div>
                     </li>
-                    <li>
-                        <img src="image/1.jpg"/>
-                        <h1>品宫纸上烧烤（三墩香港城店）</h1>
-                        <p>西湖区三墩镇厚仁路新天地商业中心3幢一楼</p>
-                        <div class="lspan"><span>团</span></div>
-                        <div class="lprice">￥53<small>起</small></div>
-                        <div class="lnum">消费 89427</div>
-                    </li>
+                    <li></li>
                     <li></li>
                     <li></li>
                 </ul>
                 <ul ng-hide="change(salecount,2)">
                     <li>
-                        <img src="image/2.jpg"/>
-                        <h1>[11店通用] 锅内锅外</h1>
-                        <p>仅售79元！价值89元的自助晚餐，提供免费WiFi。吃货的美食，牛人的自助，带领港式海鲜自助新时代，让你吃在锅内，看在锅外！。</p>
-                        <div class="lspan"><span>免预约</span></div>
-                        <div class="lprice">￥79<small style="text-decoration: line-through">价值 ¥89</small></div>
-                        <div class="lnum">已售123x</div>
+
                     </li>
                     <li>
-                        <img src="image/2.jpg"/>
-                        <h1>名称名称名称名称sadasd </h1>
-                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
-                        <div class="lspan"></div>
-                        <div class="lprice">￥149<small>门店价</small></div>
-                        <div class="lnum">已售xxxx</div>
+
                     </li>
                     <li></li>
                     <li></li>
                 </ul>
                 <ul ng-hide="change(salecount,3)">
                     <li>
-                        <img src="image/3.jpg"/>
-                        <h1>多伦多海鲜自助餐厅</h1>
-                        <p>仅售99元，价值129元杭州金沙天街店单人自助晚餐！节假日通用！</p>
-                        <div class="lspan"><span>立减7元</span></div>
-                        <div class="lprice">￥99<small style="text-decoration: line-through">价值¥129</small></div>
-                        <div class="lnum">已售xxxx</div>
+
                     </li>
                     <li>
-                        <img src="image/3.jpg"/>
-                        <h1>名称名称名称名称sadasd </h1>
-                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
-                        <div class="lspan"><span>验券满返</span><span>手机立减</span></div>
-                        <div class="lprice">￥149<small>门店价</small></div>
-                        <div class="lnum">已售xxxx</div>
+
                     </li>
                     <li></li>
                     <li></li>
@@ -377,7 +351,9 @@
             </div>
         </div>
     </div>
+    <div class="footer">
 
+    </div>
 </div>
 <script type="text/javascript">
     var app = angular.module('lsyApp',['ngAnimate']);

@@ -107,7 +107,6 @@ img{
     background: #f3929b;
     box-shadow: 0px 0px 5px white;
     border-radius: 5px;
-    z-index: 101;
 }
 .lsynav2{
     position: fixed;
@@ -526,10 +525,12 @@ img{
 .lnum{
     font-size: 10px;
     color:gray;
+    width: 100px;
     font-family: 'KaiTi_GB2312';
     position: absolute;
     top:280px;
-    margin-left: 130px;
+    margin-left: 95px;
+    text-align: right;
 
 }
 /*movie*/
@@ -669,7 +670,7 @@ img{
 .lmbody3 p:hover{
     color:lightblue;
     cursor: default;
-    width: 150%;
+    height: 26px;
 }
 .lmbody3 .lprice{
     position: absolute;
@@ -700,7 +701,7 @@ img{
 .lmbody4{
     position: relative;
     width: 100%;
-    height: 280px;
+    height: 250px;
     top:-20px;
     overflow: hidden;
 }
@@ -755,8 +756,7 @@ img{
 .lmbody4 p{
     position: relative;
     width: 100%;
-    height: 45px;
-    margin-top: 2px;
+    height:28px;
     top:15px;
     font-family: 'simhei';
     font-size: 10px;
@@ -764,24 +764,143 @@ img{
     overflow: hidden;
 }
 .lmbody4 p:hover{
-    color:lightblue;
-    cursor: default;
+    height: 45px;
 }
 .lmbody4 .lprice{
     position: absolute;
     width: 200px;
-    height:26px;
-    top:230px;
+    height:18px;
+    top:200px;
     font-family: 'KaiTi_GB2312';
-    font-size:26px;
-    color:#e43747;
-    font-weight: 600;
+    font-size:12px;
+    line-height: 20px;
+    color:gray;
     border-bottom: 1px solid darkgray;
 }
-.lmbody4 .lnum{
-    top:260px;
+.lmbody4 .lprice div{
+    float: left;
+    width: 66px;
+    height: 100%;
 }
-.lmbody4 .lscore{
-    margin-top: 245px;
+.lmbody4 .lprice .ltime{
+    text-align: right;
+}
+.lmbody4 .lspan{
+    margin-top: -10px;
     margin-left: 0px;
+}
+
+.lmbody4 .lscore{
+    margin-top: 210px;
+    margin-left: 0px;
+    font-size: 16px;
+}
+.lmbody4 .lsale{
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 120px;
+    width: 80px;
+    text-align: right;
+}
+/*waimai*/
+.lmbody5{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    top:-20px;
+    overflow: hidden;
+}
+.lmbody5 ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.lmbody5 ul li{
+    list-style: none;
+    float: left;
+    width: 200px;
+    height:98%;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    border:2px solid white;
+    border-radius: 5px;
+
+}
+.lmbody5 ul li:hover{
+    border:2px solid #e43747;
+}
+.lmbody5 img{
+    position: relative;
+    width: 98%;
+    margin-left: 1%;
+    height:120px;
+    top:5px;
+
+}
+.lmbody5 img:hover{
+    cursor: pointer;
+}
+.lmbody5 h1{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    top:10px;
+    font-family: 'simhei';
+    font-size: 20px;
+    color:lightslategray;
+    font-weight: 600;
+    overflow: hidden;
+    line-height: 18px;
+    white-space:nowrap;
+}
+.lmbody4 h1:hover{
+    color: red;
+    cursor: pointer;
+    width: 150%;
+}
+.lmbody5 p{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    top:15px;
+    font-family: 'simhei';
+    font-size: 10px;
+    color:gray;
+    overflow: hidden;
+}
+.lmbody5 .lprice{
+    position: absolute;
+    width: 200px;
+    height:18px;
+    top:190px;
+    font-family: 'KaiTi_GB2312';
+    font-size:12px;
+    line-height: 20px;
+    color:gray;
+    border-bottom: 1px solid darkgray;
+}
+.lmbody5 .lprice div{
+    float: left;
+    width: 66px;
+    height: 100%;
+}
+.lmbody5 .lprice .ltime{
+    text-align: right;
+}
+.lmbody5 .lspan{
+    margin-top: -10px;
+    margin-left: 0px;
+}
+
+.lmbody5 .lscore{
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 16px;
+}
+.lmbody5 .lsale{
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 120px;
+    width: 80px;
+    text-align: right;
 }
