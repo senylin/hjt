@@ -98,6 +98,7 @@ img{
  .lsylogo img{
    display: none;
  }
+/*navig*/
 .lsynav{
     position: absolute;
     width: 100%;
@@ -106,6 +107,17 @@ img{
     background: #f3929b;
     box-shadow: 0px 0px 5px white;
     border-radius: 5px;
+    z-index: 101;
+}
+.lsynav2{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top:0px;
+    background: #f3929b;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 5px;
+    z-index: 101;
 }
 .lsynav ul{
     width:60%;
@@ -189,6 +201,8 @@ img{
     width: 100%;
     height: 25px;
     top:50px;
+    background-color: white;
+    opacity: 0.9;
 }
 .lsynav-s ul{
     position: relative;
@@ -215,6 +229,7 @@ img{
     color: white;
     cursor: pointer;
 }
+/*message*/
 .lsymsg{
     position: relative;
     width: 80px;
@@ -249,6 +264,7 @@ img{
     height: 0px;
      z-index:100;
 }
+ /*picture*/
  .lsypics{
      position: absolute;
      top:250px;
@@ -305,6 +321,8 @@ img{
 .lsyp-s img:hover{
     cursor: pointer;
 }
+
+/*model*/
 .lsymodel{
     position: absolute;
     top:600px;
@@ -396,7 +414,7 @@ img{
     color: red;
 }
 
-
+/*delicious*/
 .lmbody{
     position: relative;
     width: 100%;
@@ -514,9 +532,7 @@ img{
     margin-left: 130px;
 
 }
-
-
-
+/*movie*/
 .lmbody2{
     position: relative;
     width: 100%;
@@ -581,7 +597,7 @@ img{
     color:#f9a1b7;
     overflow: hidden;
 }
-
+/*ktv*/
 .lmbody3{
     position: relative;
     width: 100%;
@@ -666,6 +682,7 @@ img{
     color:#e43747;
     font-weight: 600;
 }
+/*pingfen*/
 .lscore{
     position: absolute;
     width:100px;
@@ -679,7 +696,7 @@ img{
     margin-top: 260px;
     line-height:16px;
 }
-
+/*hotel*/
 .lmbody4{
     position: relative;
     width: 100%;
