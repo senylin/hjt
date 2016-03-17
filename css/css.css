@@ -158,13 +158,14 @@ img{
     left: 90%;
     margin-left: -300px;
     background: #f3929b;
+    overflow: hidden;
 }
 .lsyuser img{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px white;
-    margin-top: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius:50%;
+    border: 0px solid yellow;
+    margin-top: 3px;
     float: left;
 }
 .lsyuser img:hover{
@@ -175,16 +176,16 @@ img{
     width: 100px;
     height: 100%;;
     float: left;
-    padding-left: 18px;
+    padding-left: 10px;
     color:black;
-    font-size: 18px;
-    font-family: 'KaiTi';
-    line-height: 50px;
+    font-size: 14px;
+    font-family: 'microsoft yahei';
+    line-height: 55px;
+    overflow: hidden;
 }
 .lsyname:hover{
     cursor: pointer;
-    text-decoration: underline;
-    color: red;
+
 }
 .lsytrib{
     width: 100px;
@@ -194,13 +195,17 @@ img{
     text-align: center;
     color:red;
     font-size: 20px;
-    font-family: 'KaiTi';
-    line-height: 50px;
+    font-family: 'microsoft yahei';
+    line-height: 55px;
     font-weight: 600;
+    border-radius: 2px;
 }
 .lsytrib:hover{
     cursor: pointer;
     color: red;
+}
+.lsytrib:active{
+    background-color: crimson;
 }
 .lsynav-s{
     position: absolute;
@@ -494,7 +499,7 @@ img{
 
 }
 .lmbody ul li:hover{
-    box-shadow: 0px 0px 20px #e43747 inset;
+    border:2px solid red;
 }
 .lmbody img{
     position: relative;
@@ -523,6 +528,7 @@ img{
 .lmbody h1:hover{
     color: red;
     cursor: pointer;
+    font-size: 16px;
 }
 .lmbody p{
     position: relative;
@@ -610,10 +616,11 @@ img{
     margin-right: 20px;
     margin-bottom: 25px;
     border:2px solid #f9a1b7;
-
+    border-radius: 5px;
 }
 .lmbody2 ul li:hover{
-    box-shadow: 0px 0px 20px #e43747;
+    border:2px solid red;
+    cursor: pointer;
 }
 .lmbody2 img{
     position: relative;
@@ -628,31 +635,42 @@ img{
 .lmbody2 h1{
     position: relative;
     width: 90%;
-    height: 20px;
+    height: 30px;
     margin-left: 5%;
-    top:15px;
+    top:10px;
     font-family: 'kaiti_gb2312';
     font-size: 25px;
     color:darkblue;
     font-weight: 600;
     overflow: hidden;
-    line-height: 20px;
+    line-height: 30px;
     text-align: center;
 }
 .lmbody2 h1:hover{
-    color: red;
+
     cursor: pointer;
 }
 .lmbody2 p{
-    position: relative;
+    position: absolute;
     width: 90%;
     height: 35px;
-    margin-left: 70%;
-    top:15px;
+    margin-left: 140px;
+    top:260px;
     font-family: 'comic sans ms';
     font-size: 25px;
     color:#f9a1b7;
     overflow: hidden;
+}
+.lmbody2 span{
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-family: 'simhei';
+    background-color: #f3929b;
+    border-radius: 2px;
+    margin-left: 0px;
+    top:280px
 }
 /*ktv*/
 .lmbody3{
@@ -685,9 +703,9 @@ img{
     position: relative;
     width: 90%;
     margin-left: 5%;
-    height:150px;
-    top:5px;
-
+    height:130px;
+    top:10px;
+    border-radius: 2px;
 }
 .lmbody3 img:hover{
     cursor: pointer;
@@ -697,7 +715,7 @@ img{
     width: 90%;
     height: 20px;
     margin-left: 5%;
-    top:10px;
+    top:15px;
     font-family: 'simhei';
     font-size: 20px;
     color:lightslategray;
@@ -709,7 +727,7 @@ img{
 .lmbody3 h1:hover{
     color: red;
     cursor: pointer;
-    width: 150%;
+    font-size: 16px;
 }
 .lmbody3 p{
     position: relative;
@@ -717,7 +735,7 @@ img{
     height: 15px;
     margin-left: 5%;
     margin-top: 2px;
-    top:15px;
+    top:20px;
     font-family: 'simhei';
     font-size: 10px;
     color:gray;
@@ -779,6 +797,7 @@ img{
 }
 .lmbody4 ul li:hover{
     border:2px solid #e43747;
+    cursor: pointer;
 }
 .lmbody4 img{
     position: relative;
@@ -807,7 +826,7 @@ img{
 .lmbody4 h1:hover{
     color: red;
     cursor: pointer;
-    width: 150%;
+    font-size: 16px;
 }
 .lmbody4 p{
     position: relative;
@@ -828,9 +847,10 @@ img{
     height:18px;
     top:200px;
     font-family: 'KaiTi_GB2312';
-    font-size:12px;
+    font-size:20px;
     line-height: 20px;
-    color:gray;
+    color:#e43747;
+    font-weight: 600;
     border-bottom: 1px solid darkgray;
 }
 .lmbody4 .lprice div{
@@ -862,7 +882,7 @@ img{
 .lmbody5{
     position: relative;
     width: 100%;
-    height: 280px;
+    height: 260px;
     top:-20px;
     overflow: hidden;
 }
@@ -878,7 +898,7 @@ img{
     height:98%;
     margin-right: 20px;
     margin-bottom: 25px;
-    border:2px solid white;
+    border:2px solid #f9a1b7;
     border-radius: 5px;
 
 }
@@ -887,11 +907,10 @@ img{
 }
 .lmbody5 img{
     position: relative;
-    width: 98%;
-    margin-left: 1%;
+    width: 100%;
     height:120px;
-    top:5px;
-
+    top:0px;
+    border-radius: 2px;
 }
 .lmbody5 img:hover{
     cursor: pointer;
@@ -900,6 +919,7 @@ img{
     position: relative;
     width: 100%;
     height: 20px;
+    margin-left: 1%;
     top:10px;
     font-family: 'simhei';
     font-size: 20px;
@@ -909,15 +929,15 @@ img{
     line-height: 18px;
     white-space:nowrap;
 }
-.lmbody4 h1:hover{
-    color: red;
+.lmbody5 h1:hover{
     cursor: pointer;
-    width: 150%;
+    font-size: 16px;
 }
 .lmbody5 p{
     position: relative;
     width: 100%;
     height: 20px;
+    margin-left: 1%;
     top:20px;
     font-family: 'simhei';
     font-size: 10px;
@@ -928,6 +948,7 @@ img{
     position: absolute;
     width: 200px;
     height:18px;
+
     top:210px;
     font-family: 'KaiTi_GB2312';
     font-size:12px;
@@ -937,20 +958,21 @@ img{
 }
 .lmbody5 .lprice div{
     float: left;
-    width: 66px;
+    width: 60px;
     height: 100%;
+    margin-left: 5px;
 }
 .lmbody5 .lprice .ltime{
     text-align: right;
 }
 .lmbody5 .lspan{
     margin-top: 0px;
-    margin-left: 0px;
+    margin-left: 5px;
 }
 
 .lmbody5 .lscore{
     margin-top: 10px;
-    margin-left: 0px;
+    margin-left: 5px;
     font-size: 16px;
 }
 .lmbody5 .lsale{
