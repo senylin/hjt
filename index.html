@@ -9,19 +9,19 @@
     <title>INDEX</title>
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<div ng-app="lsyApp">
+<div ng-app="lsyApp" class="lsyapp">
 <!--top-->
     <div class="lsytop" ng-controller="ltop">
         <div class="lsylogin">请登录or 注册</div>
         <ul>
             <li>更多建议</li>
             <li>关注我们</li>
-            <li class="fontred" ng-mouseover="wx=!wx" ng-mouseleave="">微信</li>
+            <li class="fontred" ng-mouseover="wx=!wx" ng-mouseleave="wx=!wx">微信</li>
         </ul>
         <div class="lsywx" ng-class="{wx2:wx}"><img src="image/erweima.png" width="100%" height="100%"/></div>
     </div>
     <div class="lsylogo">
-        <img src="" width="100%" height="100%"/>
+        <img src=""/>
     </div>
 <!--nav-->
     <div id="nav" class="lsynav" ng-controller="lnav" ng-mouseleave="count=2">
@@ -66,63 +66,78 @@
             <div class="lsyptype" ng-class="{lsyptype2:judgement(ptype,2)}" ng-click="ptype=2">热门电影</div>
             <div class="lsyptype" ng-class="{lsyptype2:judgement(ptype,3)}" ng-click="ptype=3">娱乐 K歌</div>
             <div class="lsyptype" ng-class="{lsyptype2:judgement(ptype,4)}" ng-click="ptype=4">住宿旅店</div>
-            <div class="lsyptype" ng-class="{lsyptype2:judgement(ptype,5)}" ng-click="ptype=5">便利外卖</div>
+            <!--<div class="lsyptype" ng-class="{lsyptype2:judgement(ptype,5)}" ng-click="ptype=5">便利外卖</div>-->
         </div>
         <!--meishipic-->
-        <div class="lsypi" ng-hide="!judgement(ptype,1)">
-            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/1.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/2.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/3.jpg"/></div>
+        <div class="lsypi lsypms" ng-hide="!judgement(ptype,1)">
+            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/mtmsbg603171.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/mtmsbg603172.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/mtmsbg603173.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,4)}"><img src="image/mtmsbg603174.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,5)}"><img src="image/mtmsbg603175.jpg"/></div>
             <div class="lsyp-s">
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/1.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/2.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/3.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/mtmsbg603171.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/mtmsbg603172.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/mtmsbg603173.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,4)}" ng-mouseover="number=4"><img src="image/mtmsbg603174.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,5)}" ng-mouseover="number=5"><img src="image/mtmsbg603175.jpg"/></div>
+                <div class="lsyp-st">【城西银泰城】金不换泰国餐厅</div>
             </div>
         </div>
         <!--dianyingpic-->
-        <div class="lsypi" ng-hide="!judgement(ptype,2)">
-            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/2.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/4.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/5.jpg"/></div>
+        <div class="lsypi lsypdy" ng-hide="!judgement(ptype,2)">
+            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}" ng-mouseover="number=1"><img src="image/mtdy603171.jpg" /></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}" ng-mouseover="number=2"><img src="image/mtdy603172.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}" ng-mouseover="number=3"><img src="image/mtdy603173.jpg"/></div>
             <div class="lsyp-s">
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/2.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/4.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/5.jpg"/></div>
+                <!--<div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-click="number=1"><img src="image/mtdy603171.jpg" /></div>-->
+                <!--<div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-click="number=2"><img src="image/mtdy603172.jpg" /></div>-->
+                <!--<div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-click="number=3"><img src="image/mtdy603173.jpg" /></div>-->
+                <div class="lsyp-sp"></div>
+                <div class="lsyp-sp"></div>
+                <div class="lsyp-sp"></div>
+                <div class="lsyp-st" ng-class="{lsypsthd:change(number,1)}">荒野猎人</div>
+                <div class="lsyp-st" ng-class="{lsypsthd:change(number,2)}">疯狂动物城</div>
+                <div class="lsyp-st" ng-class="{lsypsthd:change(number,3)}">蝙蝠侠大战超人</div>
             </div>
         </div>
         <!--ktvpic-->
-        <div class="lsypi" ng-hide="!judgement(ptype,3)">
-            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/3.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/1.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/4.jpg"/></div>
+        <div class="lsypi lsypktv" ng-hide="!judgement(ptype,3)">
+            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/mtbg60317k1.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/mtbg60317k2.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/mtbg60317k3.jpg"/></div>
             <div class="lsyp-s">
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/3.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/1.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/4.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/mtbg60317k1.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/mtbg60317k2.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/mtbg60317k3.jpg"/></div>
+                <div class="lsyp-st">【下沙】格莱美Music Party</div>
             </div>
         </div>
         <!--hotelpic-->
-        <div class="lsypi" ng-hide="!judgement(ptype,4)">
-            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/4.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/5.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/3.jpg"/></div>
+        <div class="lsypi lsypld" ng-hide="!judgement(ptype,4)">
+            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/mtldbg603171.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/mtldbg603172.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/mtldbg603173.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,4)}"><img src="image/mtldbg603174.jpg"/></div>
             <div class="lsyp-s">
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/4.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/5.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/3.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/mtldbg603171.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/mtldbg603172.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/mtldbg603173.jpg"/></div>
+                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,4)}" ng-mouseover="number=4"><img src="image/mtldbg603174.jpg"/></div>
+                <div class="lsyp-st">东天目琉璃阁 经济型</div>
             </div>
         </div>
         <!--waimaipic-->
-        <div class="lsypi" ng-hide="!judgement(ptype,5)">
-            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/2.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/1.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/3.jpg"/></div>
-            <div class="lsyp-s">
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/2.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/1.jpg"/></div>
-                <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/3.jpg"/></div>
-            </div>
-        </div>
+        <!--<div class="lsypi" ng-hide="!judgement(ptype,5)">-->
+            <!--<div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/2.jpg"/></div>-->
+            <!--<div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/1.jpg"/></div>-->
+            <!--<div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/3.jpg"/></div>-->
+            <!--<div class="lsyp-s">-->
+                <!--<div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/2.jpg"/></div>-->
+                <!--<div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/1.jpg"/></div>-->
+                <!--<div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/3.jpg"/></div>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
 <!--model-->
     <div class="lsymodel" ng-controller="lmodel">
@@ -175,43 +190,71 @@
                 </ul>
                 <ul ng-hide="change(delcount,2)">
                     <li>
-                        <img src="image/2.jpg"/>
+                        <img src="image/dianping/ms603191.jpg"/>
                         <h1>[11店通用] 锅内锅外</h1>
                         <p>仅售79元！价值89元的自助晚餐，提供免费WiFi。吃货的美食，牛人的自助，带领港式海鲜自助新时代，让你吃在锅内，看在锅外！。</p>
                         <div class="lspan"><span>免预约</span></div>
-                        <div class="lprice">￥79<small style="text-decoration: line-through">价值 ¥89</small></div>
-                        <div class="lnum">已售123x</div>
+                        <div class="lprice">¥79<small style="text-decoration:line-through;">¥89</small></div>
+                        <div class="lnum">已售166259</div>
                     </li>
                     <li>
-                        <img src="image/2.jpg"/>
-                        <h1>名称名称名称名称sadasd </h1>
-                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
-                        <div class="lspan"></div>
-                        <div class="lprice">￥149<small>门店价</small></div>
-                        <div class="lnum">已售xxxx</div>
+                        <img src="image/dianping/ms603192.jpg"/>
+                        <h1>[10店通用] 山葵家精致料理寿司吧</h1>
+                        <p>仅售85元！价值100元的代金券1张，全场通用，可叠加使用3张，提供免费WiFi。</p>
+                        <div class="lspan"><span>免预约</span></div>
+                        <div class="lprice">¥85<small style="text-decoration:line-through;">¥100</small></div>
+                        <div class="lnum">已售169860</div>
                     </li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <img src="image/dianping/ms603193.jpg"/>
+                        <h1>[24店通用] 小猪猪</h1>
+                        <p>仅售88元，价值100元代金券，不限时段通用，除饮料、酒水外全场通用，独家合作！限量抢购！</p>
+                        <div class="lspan"><span>免预约</span></div>
+                        <div class="lprice">¥69<small style="text-decoration:line-through;">¥79</small></div>
+                        <div class="lnum">已售85918</div>
+                    </li>
+                    <li>
+                        <img src="image/dianping/ms603194.jpg"/>
+                        <h1>[8店通用] 潮牛海记</h1>
+                        <p>仅售76元！价值100元的午市代金券1份，除酒水、饮料外全场通用，可叠加使用，可免费使用包间，提供免费WiFi。</p>
+                        <div class="lspan"><span>免预约</span></div>
+                        <div class="lprice">¥76<small style="text-decoration:line-through;">¥100</small></div>
+                        <div class="lnum">已售57504</div>
+                    </li>
                 </ul>
                 <ul ng-hide="change(delcount,3)">
                     <li>
-                        <img src="image/3.jpg"/>
-                        <h1>多伦多海鲜自助餐厅</h1>
-                        <p>仅售99元，价值129元杭州金沙天街店单人自助晚餐！节假日通用！</p>
-                        <div class="lspan"><span>立减7元</span></div>
-                        <div class="lprice">￥99<small style="text-decoration: line-through">价值¥129</small></div>
-                        <div class="lnum">已售xxxx</div>
+                        <img src="image/nuomi/ms603191.jpg"/>
+                        <h1>芭菲盛宴 </h1>
+                        <p>仅售173元，价值198元杭州店单人自助晚餐！提前2小时预约，提供免费无线WiFi！</p>
+                        <div class="lspan"><span>立减8元</span></div>
+                        <div class="lprice">¥173<small style="text-decoration:line-through;">价值¥198</small></div>
+                        <div class="lnum">已售13779</div>
                     </li>
                     <li>
-                        <img src="image/3.jpg"/>
-                        <h1>名称名称名称名称sadasd </h1>
-                        <p>1介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方介绍货品的地方</p>
-                        <div class="lspan"><span>验券满返</span><span>手机立减</span></div>
-                        <div class="lprice">￥149<small>门店价</small></div>
-                        <div class="lnum">已售xxxx</div>
+                        <img src="image/nuomi/ms603192.jpg"/>
+                        <h1>咬不得高祖生煎</h1>
+                        <p>仅售28元，价值30元代金券！可叠加使用，节假日通用！</p>
+                        <div class="lspan"><span></span></div>
+                        <div class="lprice">¥28<small style="text-decoration:line-through;">价值¥30</small></div>
+                        <div class="lnum">已售13779</div>
                     </li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <img src="image/nuomi/ms603193.jpg"/>
+                        <h1>【6店通用】锅内锅外</h1>
+                        <p>仅售69元，价值79元单人自助午餐！节假日通用，提供免费WiFi！</p>
+                        <div class="lspan"><span></span></div>
+                        <div class="lprice">¥69<small>价值¥79</small></div>
+                        <div class="lnum">已售16921</div>
+                    </li>
+                    <li>
+                        <img src="image/nuomi/ms603194.jpg"/>
+                        <h1>【2店通用】嗨漾自助美食</h1>
+                        <p>仅售69元，价值79元单人晚餐自助全新升级！周六周日全场通用！店内提供免费无线WiFi！</p>
+                        <div class="lspan"><span></span></div>
+                        <div class="lprice">¥69<small>价值¥79</small></div>
+                        <div class="lnum">已售22806</div>
+                    </li>
                 </ul>
             </div>
             <!--<div class="lmfoot">加载更多</div>-->
@@ -257,13 +300,29 @@
                 </ul>
                 <ul ng-hide="change(filmcount,2)">
                     <li>
-                        <img src="image/2.jpg"/>
-                        <h1>叶问2</h1>
-                        <p>8.4</p>
+                        <img src="image/dianping/dy603191.jpg"/>
+                        <h1>荒野猎人</h1>
+                        <span>正在热映</span>
+                        <p>8.5</p>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <img src="image/dianping/dy603192.jpg"/>
+                        <h1>疯狂动物城</h1>
+                        <span>正在热映</span>
+                        <p>9.2</p>
+                    </li>
+                    <li>
+                        <img src="image/dianping/dy603193.jpg"/>
+                        <h1>飞鹰艾迪</h1>
+                        <span>正在热映</span>
+                        <p>7.8</p>
+                    </li>
+                    <li>
+                        <img src="image/dianping/dy603194.jpg"/>
+                        <h1>神战：权力之眼</h1>
+                        <span>正在热映</span>
+                        <p>8.7</p>
+                    </li>
                 </ul>
                 <ul ng-hide="change(filmcount,3)">
                     <li>
@@ -330,18 +389,42 @@
                 </ul>
                 <ul ng-hide="change(ktvcount,2)">
                     <li>
-                        <img src="image/5.jpg"/>
-                        <h1>[西湖北线/黄龙] V-SHOW主题KTV(杭州黄龙旗舰店)</h1>
-                        <p style="color:black;">玉古路168号1F-2F（玉古路与西溪路交叉口）(黄龙体育馆旁)</p>
+                        <img src="image/dianping/ktv603191.jpg"/>
+                        <h1>V-SHOW主题KTV(杭州黄龙旗舰店)（新美店）</h1>
+                        <p style="color:black;">[西湖北线/黄龙] [玉古路168号1F-2F（玉古路与西溪路交叉口）(黄龙体育馆旁)]</p>
                         <p>仅售50元，价值445元下午/黄金档欢唱套餐，免费WiFi！</p>
-                        <div class="lprice">¥50<small style="text-decoration:line-through;">¥445</small></div>
-                        <div class="lscore">4.4分</div>
-                        <div class="lnum">已售7164</div>
+                        <div class="lprice">¥50<small style="text-decoration: line-through"> ¥445</small></div>
+                        <div class="lscore">4.6分</div>
+                        <div class="lnum">已售7226</div>
                     </li>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <img src="image/dianping/ktv603192.jpg"/>
+                        <h1>银乐迪INLOVE KTV</h1>
+                        <p style="color:black;">[凤起路沿线] [建国北路281号双牛大厦5楼(近凤起路)]</p>
+                        <p>仅售49元，价值720元白天档/黄金档/凌晨档欢唱套餐，免开机费，免费WiFi！</p>
+                        <div class="lprice">¥49<small style="text-decoration: line-through"> ¥720</small></div>
+                        <div class="lscore">4.7分</div>
+                        <div class="lnum">已售390</div>
+                    </li>
+                    <li>
+                        <img src="image/dianping/ktv603193.jpg"/>
+                        <h1>银乐迪INLOVE KTV</h1>
+                        <p style="color:black;">[湖滨] [延安路135号涌金广场3楼(近西湖大道)]</p>
+                        <p>仅售49元，价值606元全天三个时段欢唱套餐，免开机费，免费WiFi！</p>
+                        <div class="lprice">¥49<small style="text-decoration: line-through"> ¥606</small></div>
+                        <div class="lscore">4.3分</div>
+                        <div class="lnum">已售726</div>
+                    </li>
+                    <li>
+                        <img src="image/dianping/ktv603194.jpg"/>
+                        <h1>银乐迪INLOVE KTV（水晶城店）</h1>
+                        <p style="color:black;">[水晶城] [上塘路458号水晶城6楼(上塘路)]</p>
+                        <p>仅售68元，价值300元周日至周四19：00-24：00欢唱3小时，免费WiFi！</p>
+                        <div class="lprice">¥68<small style="text-decoration: line-through"> ¥300</small></div>
+                        <div class="lscore">4.6分</div>
+                        <div class="lnum">已售3128</div>
+                    </li>
                 </ul>
                 <ul ng-hide="change(ktvcount,3)">
                     <li>
@@ -408,7 +491,7 @@
                 </ul>
                 <ul ng-hide="change(hotelcount,2)">
                     <li>
-                        <img src="image/2.jpg"/>
+                        <img src="image/dianping/ld603191.jpg"/>
                         <h1>杭州西溪宾馆1晚+双人豪华自助晚餐/西溪湿地门船票</h1>
                         <p style="color:black;">[4店通用] 【周日至周五】景观房1晚+双人自助晚餐/西溪湿地门船票！含双早，免费WiFi！</p>
                         <div class="lprice">¥998<small style="text-decoration:line-through;">3618</small></div>
@@ -416,9 +499,30 @@
                         <div class="lnum">已售2350</div>
                     </li>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <img src="image/dianping/ld603192.jpg"/>
+                        <h1>[西湖北线/黄龙] 威廉的太妃糖酒店</h1>
+                        <p style="color:black;">甜心精致房住宿1晚，可连续入住，免费WiFi！！</p>
+                        <div class="lprice">¥288<small style="text-decoration:line-through;">¥368</small></div>
+                        <div class="lscore">31条评价</div>
+                        <div class="lnum">已售241</div>
+                    </li>
+                    <li>
+                        <img src="image/dianping/ld603193.jpg"/>
+                        <h1>杭州素舍精品酒店</h1>
+                        <p style="color:black;">[拱宸桥/上塘]星辰大床房1晚，免费WiFi！</p>
+                        <div class="lprice">¥318<small style="text-decoration:line-through;">¥788</small></div>
+                        <div class="lscore">91条评价</div>
+                        <div class="lnum">已售684</div>
+                    </li>
+                    <li>
+                        <img src="image/dianping/ld603194.jpg"/>
+                        <h1>杭州汇和君亭酒店</h1>
+                        <p style="color:black;">[城东]豪华大床房1晚，免费WiFi！不含早！（另有其他套餐可选）</p>
+                        <div class="lprice">¥369<small style="text-decoration:line-through;">¥1388</small></div>
+                        <div class="lscore">56条评价</div>
+                        <div class="lnum">已售422</div>
+                    </li>
                 </ul>
                 <ul ng-hide="change(hotelcount,3)">
                     <li>
@@ -546,10 +650,10 @@
         $scope.number = 1;
         $scope.ptype = 1;
         $scope.change = function(value,judge){
-            if(value==0){value=3;
-                $scope.number = 3;}
-            if(value==4){value=1;
-                $scope.number = 1;}
+//            if(value==0){value=3;
+//                $scope.number = 3;}
+//            if(value==4){value=1;
+//                $scope.number = 1;}
             if(value==judge)return false;
             else{return true;}
         };
