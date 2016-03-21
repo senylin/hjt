@@ -1471,7 +1471,7 @@ img{
     margin-left: 5px;
     height:200px;
     top:5px;
-
+    border-radius: 1px;
 }
 #taobao .lmbody h1{
     position: relative;
@@ -1485,6 +1485,14 @@ img{
     font-weight: 300;
     overflow: hidden;
     line-height: 18px;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.qx{
+    height: 30px!important;
+    font-size: 12px!important;
+    line-height: 15px!important;
+    white-space:normal!important;
 }
 #taobao .lmbody h1:hover{
 
@@ -1515,21 +1523,39 @@ img{
     font-size:20px!important;
 }
 #taobao .lprice small{
-    font-size: 16px;
+    font-size: 14px;
     color:gray;
     margin-left: 10px;
-    text-decoration: line-through
+    text-decoration: line-through;
 }
 #taobao .lnum{
     font-size: 10px;
     color:gray;
-    width: 100px;
+    width: 180px;
     font-family: 'KaiTi_GB2312';
     position: absolute;
     top:270px;
-    margin-left: 80px;
+    margin-left: 0px;
     text-align: right;
 
+}
+#taobao .lnotice{
+    background: dodgerblue;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    font-family: 'kaiti';
+    margin-left: 0px;
+    top:275px;
+    color: white;
+    border-radius: 1px;
+}
+.bred{
+    background: red!important;
+}
+.lnum span{
+    background: red!important;
 }
 /*footer*/
 #footer{
