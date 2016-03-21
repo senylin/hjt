@@ -326,6 +326,10 @@ img{
      transition: all linear 0.4s;
      z-index: 10;
  }
+ .lsypgw{
+     margin-left: -500px!important;
+     width:1000px!important;
+ }
 .lsypfj  .lsypt{
      position: absolute;
      top:0px;
@@ -339,7 +343,7 @@ img{
 .lsypgw .lsypt{
     position: absolute;
     top:0px;
-    left:680px;
+    left:760px;
     width: 220px;
     height:350px;
     transition: all linear 0.4s;
@@ -424,6 +428,9 @@ img{
 
     opacity: 1;
     transition: all linear 0.4s;
+}
+.lsypgw .lsypi{
+    width:720px!important;
 }
 .lsypics .ng-hide{
     opacity: 0;
@@ -764,19 +771,19 @@ img{
 }
 
 /*delicious*/
-.lmbody{
+.lmbody1{
     position: relative;
     width: 100%;
     height: 300px;
     top:-20px;
     overflow: hidden;
 }
-.lmbody ul{
+.lmbody1 ul{
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.lmbody ul li{
+.lmbody1 ul li{
     list-style: none;
     float: left;
     width: 200px;
@@ -787,10 +794,10 @@ img{
     border-radius: 5px;
 
 }
-.lmbody ul li:hover{
+.lmbody1 ul li:hover{
     border:2px solid red;
 }
-.lmbody img{
+.lmbody1 img{
     position: relative;
     width: 90%;
     margin-left: 5%;
@@ -798,10 +805,10 @@ img{
     top:5px;
 
 }
-.lmbody img:hover{
+.lmbody1 img:hover{
     cursor: pointer;
 }
-.lmbody h1{
+.lmbody1 h1{
     position: relative;
     width: 90%;
     height: 18px;
@@ -814,12 +821,12 @@ img{
     overflow: hidden;
     line-height: 18px;
 }
-.lmbody h1:hover{
+.lmbody1 h1:hover{
     color: red;
     cursor: pointer;
     font-size: 16px;
 }
-.lmbody p{
+.lmbody1 p{
     position: relative;
     width: 90%;
     height: 28px;
@@ -830,7 +837,7 @@ img{
     color:gray;
     overflow: hidden;
 }
-.lmbody p:hover{
+.lmbody1 p:hover{
     color:lightblue;
     cursor: default;
     text-decoration: underline;
@@ -857,7 +864,7 @@ img{
     border-radius: 2px;
     margin-right: 5px;
 }
-.lmbody .lprice{
+.lmbody1 .lprice{
     position: absolute;
     width: 90%;
     height:30px;
@@ -1353,6 +1360,10 @@ img{
     /*color: red;*/
 /*}*/
 /*汇购物*/
+/*#hgw{*/
+    /*width: 840px!important;*/
+    /*margin-left: -420px!important;*/
+/*}*/
 #taobao .lmhead{
     position: relative;
     width:100%;
@@ -1366,39 +1377,40 @@ img{
     top:0px;
     font-family: 'kaiti_gb2312';
     font-size: 30px;
-    color:#e43747;
-    line-height: 60px;
-    letter-spacing: 15px;
+    color:red;
+    line-height: 65px;
+    letter-spacing: 3px;
     padding-left: 10px;
     font-weight: 600;
     z-index: 2;
 }
 #taobao .lmhead ul{
     position: relative;
-    width: 300px;
+    width: 400px;
     height: 100%;
     top:-50px;
-    left: 80px;
+    left: 10px;
     z-index: 3;
-    background: white;
+    background: url('../image/hgw/hgwtbnav.png');
+    background-size: 100% 100%;
 }
 #taobao .lmhead ul li{
     position: relative;
-    left: 50px;
+    left: 120px;
     list-style: none;
     float: left;
-    width: 50px;
+    width: 80px;
     height: 60%;
     margin-top: 20px;
     margin-left: 3px;
     margin-right: 3px;
     text-align: center;
     font-family: 'kaiti';
-    font-size: 16px;
+    font-size: 18px;
     color:black;
     line-height: 40px;
     font-weight: 300;
-    border-radius: 5px;
+    border-radius: 0px!important;
 }
 #taobao .lmhead ul li:hover{
     cursor: pointer;
@@ -1406,10 +1418,120 @@ img{
 }
 #taobao .lsyhov{
     color:red!important;
-    background-color: white!important;
+    background-color:white!important;
 }
+#taobao .lmhead .lmmore{
+    position: absolute;
+    top:0px;
+    left: 780px;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+}
+.lmmore:hover{
+    cursor: pointer;
+    color: red!important;
+}
+#taobao .lmbody{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top:-20px;
+    overflow: hidden;
+}
+#taobao .lmbody ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#taobao .lmbody ul li{
+    list-style: none;
+    float: left;
+    width: 200px;
+    height:98%;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    border:1px solid orange;
+    border-radius: 1px;
 
+}
+#taobao .lmbody ul li:hover{
+    border:1px solid red;
+    cursor: pointer;
+}
+#taobao .lmbody img{
+    position: relative;
+    width: 190px;
+    margin-left: 5px;
+    height:200px;
+    top:5px;
 
+}
+#taobao .lmbody h1{
+    position: relative;
+    width: 90%;
+    height: 18px;
+    margin-left: 8px;
+    top:8px;
+    font-family: 'simhei';
+    font-size: 14px;
+    color:gray;
+    font-weight: 300;
+    overflow: hidden;
+    line-height: 18px;
+}
+#taobao .lmbody h1:hover{
+
+}
+#taobao .lmbody p{
+    position: relative;
+    width: 90%;
+    height: 28px;
+    margin-left: 5%;
+    top:15px;
+    font-family: 'simhei';
+    font-size: 10px;
+    color:gray;
+    overflow: hidden;
+}
+#taobao .lmbody .lprice{
+    position: absolute;
+    width: 90%;
+    height:30px;
+    margin-left: 10px;
+    top:235px;
+    font-family: 'KaiTi_GB2312';
+    font-size:30px;
+    color:orangered;
+    font-weight: 600;
+}
+.lprice span{
+    font-size:20px!important;
+}
+#taobao .lprice small{
+    font-size: 16px;
+    color:gray;
+    margin-left: 10px;
+    text-decoration: line-through
+}
+#taobao .lnum{
+    font-size: 10px;
+    color:gray;
+    width: 100px;
+    font-family: 'KaiTi_GB2312';
+    position: absolute;
+    top:270px;
+    margin-left: 80px;
+    text-align: right;
+
+}
+/*footer*/
 #footer{
     position: absolute;
     top:2800px;
