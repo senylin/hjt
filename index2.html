@@ -71,11 +71,11 @@
             <li><span>3</span><a href="/">曼言</a></li>
             <li><span>4</span><a href="/">曼言</a></li>
             <li><span>5</span><a href="/">曼言</a></li>
-            <li><span>6</span><a href="/">曼言</a></li>
-            <li><span>7</span><a href="/">曼言</a></li>
-            <li><span>8</span><a href="/">曼言</a></li>
-            <li><span>9</span><a href="/">曼言</a></li>
-            <li><span style="margin-left: -100px;">10</span><a href="/">曼言</a></li>
+            <li><span style="color:gray;">6</span><a href="/">曼言</a></li>
+            <li><span style="color:gray;">7</span><a href="/">曼言</a></li>
+            <li><span style="color:gray;">8</span><a href="/">曼言</a></li>
+            <li><span style="color:gray;">9</span><a href="/">曼言</a></li>
+            <li><span style="margin-left: -100px;color:gray;">10</span><a href="/">曼言</a></li>
         </ul>
     </div>
     <div class="lsypi" ng-hide="!judgement(ptype,1)">
@@ -96,17 +96,17 @@
 <!--model-->
 <div class="lsymodel" ng-controller="lmodel">
 <!--delicious-->
-<div class="lsydel" id="meishi">
+<div class="lsydel" id="taobao">
     <div class="lmhead">
-        <div class="lmfont">今日美食</div>
+        <div class="lmfont">淘宝</div>
         <ul>
-            <li>更多</li>
-            <li ng-class="{lsyhov:!change(delcount,3)}" ng-click="delcount = 3">百度糯米</li>
-            <li ng-class="{lsyhov:!change(delcount,2)}" ng-click="delcount = 2">大众点评</li>
-            <li ng-class="{lsyhov:!change(delcount,1)}" ng-click="delcount = 1">美团</li>
+            <li ng-class="{lsyhov:!change(delcount,1)}" ng-click="delcount = 1">包邮</li>
+            <li ng-class="{lsyhov:!change(delcount,2)}" ng-click="delcount = 2">打折</li>
+            <li ng-class="{lsyhov:!change(delcount,3)}" ng-click="delcount = 3">赠品</li>
         </ul>
+        <div class="lmmore">更多。。。</div>
     </div>
-    <div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>
+    <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
     <div class="lmbody">
         <ul ng-hide="change(delcount,1)">
             <li>

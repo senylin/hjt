@@ -353,7 +353,7 @@ img{
     list-style: none;
     float: left;
     width: 100%;
-    height: 30px;
+    height: 31px;
     border-bottom:1px dashed darkgrey;
     font-size: 18px;
     font-family: 'Microsoft YaHei';
@@ -687,13 +687,13 @@ img{
     margin-top: 30px;
 
 }
-.lmhead{
+.lsydel .lmhead{
     position: relative;
     width:100%;
     height:50px;
     border-bottom: 3px solid #e43747;
 }
-.lmfont{
+.lsydel .lmfont{
     position: relative;
     width: 280px;
     height:100%;
@@ -706,17 +706,17 @@ img{
     padding-left: 10px;
     font-weight: 600;
 }
-.lmfont:hover{
+.lsydel .lmfont:hover{
     cursor: default;
 }
-.lmhead ul{
+.lsydel .lmhead ul{
     position: relative;
     width: 620px;
     height: 100%;
     top:-50px;
     left: 280px;
 }
-.lmhead ul li{
+.lsydel .lmhead ul li{
     list-style: none;
     float: right;
     width: 100px;
@@ -734,15 +734,15 @@ img{
 
 
 }
-.lmhead ul li:hover{
+.lsydel .lmhead ul li:hover{
     cursor: pointer;
     box-shadow: 0px 0px 5px red;
 }
-.lsyhov{
+.lsydel .lsyhov{
     color:white!important;
     background-color:#e43747 ;
 }
-.lmurl{
+.lsydel .lmurl{
     position: relative;
     width: 300px;
     height:30px;
@@ -756,10 +756,10 @@ img{
     line-height: 30px;
 
 }
-.lmurl:hover{
+.lsydel .lmurl:hover{
     cursor: default;
 }
-.lmurl a:hover{
+.lsydel .lmurl a:hover{
     color: red;
 }
 
@@ -1270,6 +1270,146 @@ img{
     width: 80px;
     text-align: right;
 }
+/*.lsydel{*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*height: 400px;*/
+    /*margin-top: 30px;*/
+
+/*}*/
+/*.lmhead{*/
+    /*position: relative;*/
+    /*width:100%;*/
+    /*height:50px;*/
+    /*border-bottom: 3px solid #e43747;*/
+/*}*/
+/*.lmfont{*/
+    /*position: relative;*/
+    /*width: 280px;*/
+    /*height:100%;*/
+    /*top:0px;*/
+    /*font-family: 'Microsoft YaHei';*/
+    /*font-size: 30px;*/
+    /*color:#e43747;*/
+    /*line-height: 60px;*/
+    /*letter-spacing: 15px;*/
+    /*padding-left: 10px;*/
+    /*font-weight: 600;*/
+/*}*/
+/*.lmfont:hover{*/
+    /*cursor: default;*/
+/*}*/
+/*.lmhead ul{*/
+    /*position: relative;*/
+    /*width: 620px;*/
+    /*height: 100%;*/
+    /*top:-50px;*/
+    /*left: 280px;*/
+/*}*/
+/*.lmhead ul li{*/
+    /*list-style: none;*/
+    /*float: right;*/
+    /*width: 100px;*/
+    /*height: 80%;*/
+    /*margin-top: 12px;*/
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+    /*text-align: center;*/
+    /*font-family: 'Microsoft YaHei';*/
+    /*font-size: 20px;*/
+    /*color:#e43747;*/
+    /*line-height: 50px;*/
+    /*font-weight: 600;*/
+    /*border-radius: 5px;*/
+
+
+/*}*/
+/*.lmhead ul li:hover{*/
+    /*cursor: pointer;*/
+    /*box-shadow: 0px 0px 5px red;*/
+/*}*/
+/*.lsyhov{*/
+    /*color:white!important;*/
+    /*background-color:#e43747 ;*/
+/*}*/
+/*.lmurl{*/
+    /*position: relative;*/
+    /*width: 300px;*/
+    /*height:30px;*/
+    /*margin-left: -150px;*/
+    /*left: 50%;*/
+    /*white-space:nowrap;*/
+    /*text-align: center;*/
+    /*font-family: 'SimHei';*/
+    /*font-size: 16px;*/
+    /*color:purple;*/
+    /*line-height: 30px;*/
+
+/*}*/
+/*.lmurl:hover{*/
+    /*cursor: default;*/
+/*}*/
+/*.lmurl a:hover{*/
+    /*color: red;*/
+/*}*/
+/*汇购物*/
+#taobao .lmhead{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 0px solid #e43747!important;
+}
+#taobao .lmhead .lmfont{
+    position: relative;
+    width: 100px;
+    height:100%;
+    top:0px;
+    font-family: 'kaiti_gb2312';
+    font-size: 30px;
+    color:#e43747;
+    line-height: 60px;
+    letter-spacing: 15px;
+    padding-left: 10px;
+    font-weight: 600;
+    z-index: 2;
+}
+#taobao .lmhead ul{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    top:-50px;
+    left: 80px;
+    z-index: 3;
+    background: white;
+}
+#taobao .lmhead ul li{
+    position: relative;
+    left: 50px;
+    list-style: none;
+    float: left;
+    width: 50px;
+    height: 60%;
+    margin-top: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 16px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+    border-radius: 5px;
+}
+#taobao .lmhead ul li:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px white!important;
+}
+#taobao .lsyhov{
+    color:red!important;
+    background-color: white!important;
+}
+
+
 #footer{
     position: absolute;
     top:2800px;
