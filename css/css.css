@@ -11,6 +11,14 @@ body{
     height: auto;
 
 }
+.lsybody{
+    width: 900px;
+    margin: 0 auto;
+    height: 2500px;
+    background-color: white;
+
+    margin-top: 250px;
+}
 a{
     text-decoration: none;
     width:100%;
@@ -229,9 +237,10 @@ img{
 .lsynav-s ul{
     position: relative;
     top:0px;
+    left: 50%;
     width: 68%;
     height: 25px;
-    margin-left: 5%;
+    margin-left: -34%;
     border-bottom: 1px solid #f3929b;
 }
 .lsynav-s ul li{
@@ -258,7 +267,7 @@ img{
     height: 100%;
     top:-25px;
     left: 90%;
-    margin-left: -120px;
+    margin-left: -150px;
     font-size:18px;
     color:red;
     text-align: center;
@@ -286,6 +295,26 @@ img{
     height: 0px;
      z-index:102;
 }
+ /*标签*/
+.lsybq{
+    position: absolute;
+    top:9px;
+    left: -20px;
+    width: 100px;
+    height: 25px;
+    background: orange;
+    transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    text-align: center;
+    color: white;
+    font-family: 'DFKai-SB';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    box-shadow: 0px 1px 2px gray;
+}
  /*picture*/
  .lsypics{
      position: absolute;
@@ -296,9 +325,8 @@ img{
      height: 350px;
      transition: all linear 0.4s;
      z-index: 10;
-     border-bottom: 1px solid #f3929b;
  }
- .lsypt{
+.lsypfj  .lsypt{
      position: absolute;
      top:0px;
      left: 50%;
@@ -308,7 +336,59 @@ img{
      transition: all linear 0.4s;
      z-index: 80;
  }
- .lsyptype{
+.lsypgw .lsypt{
+    position: absolute;
+    top:0px;
+    left:680px;
+    width: 220px;
+    height:350px;
+    transition: all linear 0.4s;
+    z-index: 80;
+}
+.lsypgw .lsypt ul{
+     width: 100%;
+    height: 350px;
+ }
+.lsypgw .lsypt ul li{
+    list-style: none;
+    float: left;
+    width: 100%;
+    height: 30px;
+    border-bottom:1px dashed darkgrey;
+    font-size: 18px;
+    font-family: 'Microsoft YaHei';
+    line-height: 25px;
+    color: blueviolet;
+    text-align: left;
+    letter-spacing: 1px;
+}
+.lsypgw .lsypt ul li a{
+    position: relative;
+    left: 50%;
+    margin-left: 70px;
+    color: blueviolet;
+}
+.lsypgw .lsypt ul li a:hover{
+    color: dodgerblue;
+}
+.lsypgw .lsypt ul li span{
+    color:palevioletred;
+    position: relative;
+    left: 50%;
+    margin-left: -90px;
+    font-size: 22px;
+    font-family: 'comic sans ms';
+    font-weight: 600;
+    font-style: oblique;
+    letter-spacing: 0px;
+}
+.listtitle{
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+.lsypfj .lsyptype{
      position: relative;
      margin-left: 10%;
      margin-bottom: 10px;
@@ -348,6 +428,19 @@ img{
 .lsypics .ng-hide{
     opacity: 0;
 }
+.lsypgw .lsyp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    border-radius: 2px;
+    opacity: 1;
+    transition: all linear 0.4s;
+    overflow: hidden;
+}
+.lsypgw .lsyp:hover{
+    cursor: pointer;
+}
 .lsypms .lsyp{
     position: absolute;
     width: 80%;
@@ -385,6 +478,10 @@ img{
 .lsypdy .lsyp:hover{
     cursor: pointer;
 }
+.lsypgw .lsyphd{
+    position: absolute;
+    opacity: 0;
+}
 .lsypdy .lsyphd{
     opacity: 0.8;
 }
@@ -401,13 +498,35 @@ img{
     width: 100%;
     height: 100%;
 }
-.lsyp-s{
+
+.lsypfj .lsyp-s{
     position: absolute;
     top:270px;
     left:5%;
-
-    width: 750px;
+    border-bottom: 1px solid #f3929b;
+    width: 850px;
     height: 60px;
+}
+.lsypgw .lsyp-s{
+    position: absolute;
+    top:285px;
+    left:5%;
+    width: 650px;
+    height: 60px;
+    border-bottom: 0px solid #f3929b;
+}
+.lsypgw .lsyp-sp{
+    float: left;
+    width: 70px;
+    height: 40px;
+    margin-left: 12px;
+    border-radius: 3px;
+    border:1px solid #f9a1b7 ;
+    opacity: 0.8;
+    transition: all linear 0.4s;
+}
+.lsypgw .lsyp-sp:hover{
+    cursor: default;
 }
 .lsypms .lsyp-sp{
     float: left;
@@ -452,6 +571,18 @@ img{
 .lsypdy .lsypsphd{
     width: 80px;
 
+}
+.lsypgw .lsyp-st{
+    float: left;
+    width: 350px;
+    height: 100%;
+    font-size: 30px;
+    font-family: 'microsoft yahei';
+    line-height: 50px;
+    text-align: left;
+    margin-left: 30px;
+    white-space:nowrap;
+    color: darkslateblue;
 }
 .lsypms .lsyp-st{
     float: left;
@@ -504,6 +635,12 @@ img{
 .lsyp-st:hover{
     color: red;
     cursor: pointer;
+}
+.lsypgw .lsypsphd{
+    opacity: 1;
+    width: 70px;
+    height: 40px;
+    margin-top: -10px;
 }
 .lsypdy .lsypsthd{
     display: none;

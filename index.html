@@ -20,6 +20,7 @@
         </ul>
         <div class="lsywx" ng-class="{wx2:wx}"><img src="image/erweima.png" width="100%" height="100%"/></div>
     </div>
+<!--logo-->
     <div class="lsylogo">
         <img src=""/>
     </div>
@@ -59,8 +60,9 @@
           <div class="lsymsglist" ng-class="{msghide:msglist}"></div>
         </div>
     </div>
+   <div class="lsybody">
 <!--pic-->
-    <div class="lsypics" ng-controller="lpic">
+    <div class="lsypics lsypfj" ng-controller="lpic">
         <div class="lsypt">
             <div class="lsyptype" ng-class="{lsyptype2:judgement(ptype,1)}" ng-click="ptype=1">今日美食</div>
             <div class="lsyptype" ng-class="{lsyptype2:judgement(ptype,2)}" ng-click="ptype=2">热门电影</div>
@@ -613,6 +615,7 @@
             </div>
         </div>
     </div>
+   </div>
     <div id="footer">
 
     </div>

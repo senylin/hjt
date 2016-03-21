@@ -9,13 +9,40 @@
     <title>test</title>
 </head>
 <body>
+<style>
+    .pic{
+        position: relative;
+        top:15px;
+        left: 15px;
+        width: 600px;
+        height: 400px;
+        background: url('image/3.jpg');
+        overflow: hidden;
+    }
+    .lsybq{
+        position: absolute;
+        top:9px;
+        left: -15px;
+        width: 80px;
+        height: 20px;
+        background: orange;
+        transform: rotate(-40deg);
+        -o-transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+        -moz-transform: rotate(-40deg);
+        text-align: center;
+        color: white;
+        font-family: 'FangSong';
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0px 1px 5px black;
+    }
+</style>
 <div ng-app="myApp" ng-controller="namesCtrl">
 
-    <ul ng-click="chance()">
-        <li ng-repeat="x in names">
-            {{ x.text + ', ' }}
-        </li>
-    </ul>
+   <div class="pic">
+        <div class="lsybq">淘宝</div>
+   </div>
 
 </div>
 <script>
