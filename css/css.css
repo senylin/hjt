@@ -1277,93 +1277,7 @@ img{
     width: 80px;
     text-align: right;
 }
-/*.lsydel{*/
-    /*position: relative;*/
-    /*width: 100%;*/
-    /*height: 400px;*/
-    /*margin-top: 30px;*/
-
-/*}*/
-/*.lmhead{*/
-    /*position: relative;*/
-    /*width:100%;*/
-    /*height:50px;*/
-    /*border-bottom: 3px solid #e43747;*/
-/*}*/
-/*.lmfont{*/
-    /*position: relative;*/
-    /*width: 280px;*/
-    /*height:100%;*/
-    /*top:0px;*/
-    /*font-family: 'Microsoft YaHei';*/
-    /*font-size: 30px;*/
-    /*color:#e43747;*/
-    /*line-height: 60px;*/
-    /*letter-spacing: 15px;*/
-    /*padding-left: 10px;*/
-    /*font-weight: 600;*/
-/*}*/
-/*.lmfont:hover{*/
-    /*cursor: default;*/
-/*}*/
-/*.lmhead ul{*/
-    /*position: relative;*/
-    /*width: 620px;*/
-    /*height: 100%;*/
-    /*top:-50px;*/
-    /*left: 280px;*/
-/*}*/
-/*.lmhead ul li{*/
-    /*list-style: none;*/
-    /*float: right;*/
-    /*width: 100px;*/
-    /*height: 80%;*/
-    /*margin-top: 12px;*/
-    /*margin-left: 20px;*/
-    /*margin-right: 20px;*/
-    /*text-align: center;*/
-    /*font-family: 'Microsoft YaHei';*/
-    /*font-size: 20px;*/
-    /*color:#e43747;*/
-    /*line-height: 50px;*/
-    /*font-weight: 600;*/
-    /*border-radius: 5px;*/
-
-
-/*}*/
-/*.lmhead ul li:hover{*/
-    /*cursor: pointer;*/
-    /*box-shadow: 0px 0px 5px red;*/
-/*}*/
-/*.lsyhov{*/
-    /*color:white!important;*/
-    /*background-color:#e43747 ;*/
-/*}*/
-/*.lmurl{*/
-    /*position: relative;*/
-    /*width: 300px;*/
-    /*height:30px;*/
-    /*margin-left: -150px;*/
-    /*left: 50%;*/
-    /*white-space:nowrap;*/
-    /*text-align: center;*/
-    /*font-family: 'SimHei';*/
-    /*font-size: 16px;*/
-    /*color:purple;*/
-    /*line-height: 30px;*/
-
-/*}*/
-/*.lmurl:hover{*/
-    /*cursor: default;*/
-/*}*/
-/*.lmurl a:hover{*/
-    /*color: red;*/
-/*}*/
-/*汇购物*/
-/*#hgw{*/
-    /*width: 840px!important;*/
-    /*margin-left: -420px!important;*/
-/*}*/
+/*taobao*/
 #taobao .lmhead{
     position: relative;
     width:100%;
@@ -1665,7 +1579,606 @@ img{
     height:100%;
     border-radius: 1px;
 }
+/*yihaodian*/
+#yihaodian .lmhead{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 0px solid #e43747!important;
+}
+#yihaodian .lmhead .lmfont{
+    position: relative;
+    width: 120px;
+    height:80px;
+    top:20px;
+    font-family: 'kaiti_gb2312';
+    font-size: 30px;
+    color:red;
+    line-height: 65px;
+    letter-spacing: 3px;
+    padding-left: 10px;
+    font-weight: 600;
+    z-index: 2;
+    background: url('../image/hgw/hgwyhdlg.jpg');
+    background-size: 100% 100%;
+}
+#yihaodian .lmhead ul{
+    position: relative;
+    width: 700px;
+    height: 100%;
+    top:-50px;
+    left: 120px;
+    z-index: 3;
+    border-bottom: 1px solid #e43747;
+}
+#yihaodian .lmhead ul li{
+    position: relative;
+    left: 20px;
+    list-style: none;
+    float: left;
+    width: 80px;
+    height: 90%;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:black;
+    line-height: 50px;
+    font-weight: 300;
+    border-radius: 0px!important;
+}
+#yihaodian .lmhead ul li:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px white!important;
+}
+#yihaodian .lsyhov{
+    color:red!important;
+    background-color:white!important;
+}
+#yihaodian .lmhead .lmmore{
+    position: absolute;
+    top:0px;
+    left: 780px;
+    width: 100px;
+    height: 60%;
+    margin-top: 45px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+}
+#yihaodian .lmbody{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top:-30px;
+    overflow: hidden;
+}
+#yihaodian .change{
+    position: absolute;
+    top:83px;
+    left: 700px;
+    width: 100px;
+    height: 20px;
+    font-family: 'kaiti';
+    font-size: 16px;
+    color:#f3929b;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing:5px;
+}
+#yihaodian .change:hover{
+    cursor: pointer;
+    color: red;
+}
+#yihaodian .lmbody ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#yihaodian .lmbody ul li{
+    list-style: none;
+    float: left;
+    width: 400px;
+    height:98%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    border:1px solid lightgray;
+    border-radius: 1px;
+}
+#yihaodian .list2{
+   display: none;
+}
+#yihaodian .lmbody ul li:hover{
+    border:1px solid red;
+    cursor: pointer;
+}
+#yihaodian .lmbody img{
+    position: relative;
+    width: 400px;
+    margin-left: 0px;
+    height:200px;
+    top:0px;
+    border-radius: 1px;
+}
+#yihaodian .lmbody .img2{
+    width: 200px;
+    margin-left: 100px;
+}
+#yihaodian .lmbody h1{
+    position: relative;
+    width: 380px;
+    height: 18px;
+    margin-left: 15px;
+    top:5px;
+    font-family: 'Microsoft YaHei';
+    font-size: 16px;
+    color:black;
+    font-weight: 300;
+    overflow: hidden;
+    line-height: 18px;
+    overflow: hidden;
+    white-space:nowrap;
+}
+#yihaodian .lmbody .h2{
+    text-align: center;
+}
+#yihaodian .lmbody h1:hover{
 
+}
+#yihaodian .lmbody p{
+    position: relative;
+    width: 360px;
+    height: 28px;
+    margin-left:25px;
+    top:8px;
+    font-family: 'simhei';
+    font-size: 10px;
+    color:gray;
+    overflow: hidden;
+}
+#yihaodian .lmbody .lprice{
+    position: absolute;
+    width: 90%;
+    height:30px;
+    margin-left: 15px;
+    top:255px;
+    font-family: 'Microsoft YaHei';
+    font-size:30px;
+    color:red;
+    font-weight: 300;
+}
+.lprice span{
+    font-size:20px!important;
+}
+#yihaodian .lprice small{
+    font-size: 14px;
+    color:gray;
+    font-weight: 300;
+    margin-left: 10px;
+}
+#yihaodian .lnum{
+    font-size: 16px;
+    color:gray;
+    width: 180px;
+    font-family: 'Microsoft YaHei';
+    position: absolute;
+    top:270px;
+    margin-left: 200px;
+    text-align: right;
+
+}
+#yihaodian .lnotice{
+    background: dodgerblue;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    font-family: 'kaiti';
+    margin-left: 0px;
+    top:275px;
+    color: white;
+    border-radius: 1px;
+}
+/*mogujie*/
+#mogujie .lmhead{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 0px solid #e43747!important;
+}
+#mogujie .lmhead .lmfont{
+    position: relative;
+    width: 120px;
+    height:80px;
+    top:30px;
+    font-family: 'kaiti';
+    font-size: 36px;
+    color:#ff6b87;
+    line-height: 65px;
+    letter-spacing: 0px;
+    padding-left: 10px;
+    font-weight: 600;
+
+    z-index: 2;
+}
+#mogujie .lmhead ul{
+    position: relative;
+    width: 500px;
+    height: 100%;
+    top:-50px;
+    left: 10px;
+    z-index: 3;
+    border-radius: 2px;
+    border-bottom: 2px solid #ff6b87;
+}
+#mogujie .lmhead ul li{
+    position: relative;
+    left: 160px;
+    list-style: none;
+    float: left;
+    width: 80px;
+    height: 90%;
+    margin-top: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 24px;
+    color:black;
+    line-height: 50px;
+    font-weight: 300;
+    border-radius: 0px!important;
+}
+#mogujie .lmhead ul li:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px white!important;
+}
+#mogujie .logo{
+    position: absolute;
+    left: 490px;
+    top:30px;
+    width: 130px;
+    height: 60px;
+    background: url("../image/hgw/hgwmgjlogo.png");
+    background-size: 100% 100%;
+}
+#mogujie .lsyhov{
+    color:#ff6b87!important;
+    background-color:white!important;
+}
+#mogujie .lmhead .lmmore{
+    position: absolute;
+    top:0px;
+    left: 780px;
+    width: 100px;
+    height: 60%;
+    margin-top: 45px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+}
+#mogujie .lmbody{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top:-10px;
+    overflow: hidden;
+}
+#mogujie .change{
+    position: absolute;
+    top:100px;
+    left: 700px;
+    width: 100px;
+    height: 20px;
+    font-family: 'kaiti';
+    font-size: 18px;
+    color:#ff6b87;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing:5px;
+}
+#mogujie .change:hover{
+    cursor: pointer;
+    color: red;
+}
+#mogujie .lmbody ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#mogujie .lmbody ul li{
+    list-style: none;
+    float: left;
+    width: 400px;
+    height:200px;
+    margin-right: 0px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    border:1px solid lightgray;
+    border-radius: 1px;
+}
+#mogujie .list2{
+    display: none;
+}
+#mogujie .lmbody ul li:hover{
+    border:1px solid #ff6b87;
+    cursor: pointer;
+}
+#mogujie .lmbody img{
+    position: relative;
+    width: 180px;
+    margin-left: 0px;
+    height:200px;
+    top:0px;
+    border-radius: 1px;
+}
+#mogujie .lmbody .img2{
+    width: 120px;
+    margin-left: 0px;
+}
+#mogujie .lmbody h1{
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    margin-left: 185px;
+    top:20px;
+    font-family: 'Microsoft YaHei';
+    font-size: 18px;
+    color:black;
+    font-weight: 300;
+    overflow: hidden;
+    line-height: 18px;
+    overflow: hidden;
+    white-space:nowrap;
+    border-bottom: 1px dashed lightgray;
+}
+#mogujie .lmbody .h2{
+    width: 260px;
+    margin-left: 135px;
+    font-size: 16px;
+}
+#mogujie .lmbody h1:hover{
+
+}
+#mogujie .lmbody p{
+    position: relative;
+    width: 360px;
+    height: 28px;
+    margin-left:25px;
+    top:8px;
+    font-family: 'Microsoft YaHei';
+    font-size: 10px;
+    color:gray;
+    overflow: hidden;
+}
+#mogujie .lmbody .lprice{
+    position: absolute;
+    width: 90%;
+    height:30px;
+    margin-left: 185px;
+    top:80px;
+    font-family: 'Microsoft YaHei';
+    font-size:24px;
+    color:#ff6b87;
+    font-weight: 600;
+}
+.lprice span{
+    font-size:15px!important;
+    color:grey!important;
+    margin-right: 5px;
+}
+#mogujie .lprice small{
+    font-size: 14px;
+    color:gray;
+    font-weight: 300;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+#mogujie .lnum{
+    font-size: 16px;
+    color:gray;
+    width: 180px;
+    font-family: 'KaiTi_GB2312';
+    position: absolute;
+    top:150px;
+    margin-left: 200px;
+    text-align: right;
+
+}
+#mogujie .lbuy{
+    position: absolute;
+    margin-left: 200px;
+    top:140px;
+    width: 90px;
+    height: 35px;
+    background: #ff6b87;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'microsoft yahei';
+}
+/*yamaxun*/
+#yamaxun .lmhead{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 0px solid #e43747!important;
+}
+#yamaxun .lmhead .lmfont{
+    position: relative;
+    width: 120px;
+    height:100%;
+    top:0px;
+    font-family: 'kaiti';
+    font-size: 36px;
+    color:black;
+    line-height: 65px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    font-weight: 600;
+    z-index: 2;
+}
+#yamaxun .lmhead ul{
+    position: relative;
+    width: 400px;
+    height: 100%;
+    top:-50px;
+    left: 150px;
+    z-index: 3;
+}
+#yamaxun .lmhead ul li{
+    position: relative;
+    left: 0px;
+    list-style: none;
+    float: left;
+    width: 80px;
+    height: 60%;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 24px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+    border-radius: 0px!important;
+}
+#yamaxun .lmhead ul li:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px white!important;
+}
+#yamaxun .lsyhov{
+    color:gray!important;
+    background-color:white!important;
+}
+#yamaxun .lmhead .lmmore{
+    position: absolute;
+    top:0px;
+    left: 780px;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+#yamaxun .lmbody{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top:-30px;
+    overflow: hidden;
+}
+#yamaxun .lmbody ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#yamaxun .lmbody ul li{
+    list-style: none;
+    float: left;
+    width: 200px;
+    height:98%;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    border:1px solid darkgray;
+    border-radius: 1px;
+
+}
+#yamaxun .lmbody ul li:hover{
+    border:1px solid black;
+    cursor: pointer;
+}
+#yamaxun .lmbody img{
+    position: relative;
+    width: 190px;
+    margin-left: 5px;
+    height:150px;
+    top:5px;
+    border-radius: 1px;
+}
+#yamaxun .lmbody h1{
+    position: relative;
+    width: 90%;
+    height: 60px;
+    margin-left: 8px;
+    top:8px;
+    font-family: 'simhei';
+    font-size: 14px;
+    color:gray;
+    font-weight: 300;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+.qx{
+    height: 30px!important;
+    font-size: 12px!important;
+    line-height: 15px!important;
+    white-space:normal!important;
+}
+#yamaxun .lmbody h1:hover{
+
+}
+#yamaxun .lmbody p{
+    position: relative;
+    width: 90%;
+    height: 28px;
+    margin-left: 5%;
+    top:15px;
+    font-family: 'simhei';
+    font-size: 10px;
+    color:gray;
+    overflow: hidden;
+}
+#yamaxun .lmbody .lprice{
+    position: absolute;
+    width: 90%;
+    height:30px;
+    margin-left: 10px;
+    top:225px;
+    font-family: 'KaiTi_GB2312';
+    font-size:30px;
+    color:darkred;
+    font-weight: 600;
+}
+#yamaxun .lprice span{
+    font-size:20px!important;
+    color:darkred!important;
+}
+#yamaxun .lprice small{
+    font-size: 14px;
+    color:gray;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+#yamaxun .lnum{
+    font-size: 16px;
+    color:black;
+    width: 180px;
+    font-family: 'microsoft yahei';
+    position: absolute;
+    top:260px;
+    margin-left: 15px;
+    text-align: right;
+    font-weight: 600;
+}
 /*footer*/
 #footer{
     position: absolute;

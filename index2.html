@@ -230,279 +230,216 @@
         </ul>
     </div>
 </div>
-<!--ktv-->
-<div class="lsydel" id="kge">
+<!--1号店-->
+<div class="lsydel" id="yihaodian">
     <div class="lmhead">
-        <div class="lmfont">娱乐K歌</div>
+        <div class="lmfont"></div>
         <ul>
-            <li>更多</li>
-            <li ng-class="{lsyhov:!change(ktvcount,3)}" ng-click="ktvcount = 3">百度糯米</li>
-            <li ng-class="{lsyhov:!change(ktvcount,2)}" ng-click="ktvcount = 2">大众点评</li>
-            <li ng-class="{lsyhov:!change(ktvcount,1)}" ng-click="ktvcount = 1">美团</li>
+            <li ng-class="{lsyhov:!change(ydhcount,1)}" ng-click="ydhcount = 1">团购</li>
+            <li ng-class="{lsyhov:!change(ydhcount,2)}" ng-click="ydhcount = 2">海购新品</li>
         </ul>
+        <div class="lmmore">更多。。。</div>
+        <div class="change" ng-click="ydhdisplay=!ydhdisplay">换一些</div>
     </div>
-    <div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>
-    <div class="lmbody3">
-        <ul ng-hide="change(ktvcount,1)">
-            <li>
-                <img src="image/mtkg603171.jpg"/>
-                <h1>格莱美MusicParty（新美店）</h1>
-                <p style="color:black;">[江干区下沙经济开发区4号大街物美商城4楼]</p>
-                <p>支持WIFI 免费提供50个停车位</p>
-                <div class="lprice">¥9<small>起</small></div>
-                <div class="lscore">3.8分</div>
-                <div class="lnum">人均 ¥34</div>
+    <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+    <div class="lmbody">
+        <ul ng-hide="change(ydhcount,1)">
+            <li ng-class="{list2:!ydhdisplay}">
+                <img src="image/hgw/yihaodian/tg/603221.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <p>【买4免1】一般家庭需要4双！！！！超柔软巨防水 防滑不伤地板 漏水不积水 重点 值！！！！</p>
+                <div class="lprice">¥9.9<small>参考价¥33</small></div>
+                <div class="lnum">1271件已售</div>
             </li>
-            <li>
-                <img src="image/mtkg603172.jpg"/>
-                <h1>豪歌迪量贩KTV（近江店）</h1>
-                <p style="color:black;">[上城区秋涛路491号杭州礼品城3楼（近近江路]</p>
-                <p>支持WIFI 停车位收费标准：每间包厢凭停车卡报销5元</p>
-                <div class="lprice">¥19.9<small>起</small></div>
-                <div class="lscore">3.8分</div>
-                <div class="lnum">人均 ¥21</div>
+            <li ng-class="{list2:!ydhdisplay}">
+                <img src="image/hgw/yihaodian/tg/603222.webp"/>
+                <h1 title="【满200减50】美肌解密 韩式洁面神器礼盒装">【满200减50】美肌解密 韩式洁面神器礼盒装</h1>
+                <p>【全场满200减50】源韩国洁面神器，风靡亚洲，柔细刷毛，温和洁面，不伤皮肤。</p>
+                <div class="lprice">¥49<small>参考价¥99</small></div>
+                <div class="lnum">1445件已售</div>
             </li>
-            <li>
-                <img src="image/mtkg603173.jpg"/>
-                <h1>歌米量贩KTV</h1>
-                <p style="color:black;">[西湖区莲花路333号莲花商务中心北楼4楼(文三西路口)]</p>
-                <p>支持WIFI 商家服务：停车位收费标准：提供大型地下停车场凭团购券另付6元兑换1张24小时停车券</p>
-                <div class="lprice">¥9<small>起</small></div>
-                <div class="lscore">4.4分</div>
-                <div class="lnum">人均 ¥30</div>
+            <li ng-class="{list2:ydhdisplay}">
+                <img src="image/hgw/yihaodian/tg/603223.webp"/>
+                <h1 title="【买2送1】佳莱福综合果蔬酵素益生菌粉 30袋">【买2送1】佳莱福综合果蔬酵素益生菌粉 30袋</h1>
+                <p>【买2送1同款】台湾进口酵素粉 特别添加多种益生菌 水果味香滑口感 塑造魔鬼诱人身材 日常售价98元</p>
+                <div class="lprice">¥78<small>参考价¥138</small></div>
+                <div class="lnum">468件已售</div>
             </li>
-            <li>
-                <img src="image/mtkg603174.jpg"/>
-                <h1>哆唻咪量贩KTV（高教园旗舰店）</h1>
-                <p style="color:black;">[滨江区高教园商业街4号楼(近华润超市)]</p>
-                <p>支持WIFI </p>
-                <div class="lprice">¥29<small>起</small></div>
-                <div class="lscore">4.4分</div>
-                <div class="lnum">人均 ¥31</div>
+            <li ng-class="{list2:ydhdisplay}">
+                <img src="image/hgw/yihaodian/tg/603224.webp"/>
+                <h1 title="AAYTO新款韩版女式棉麻两件套套装连衣裙多色多码">AAYTO新款韩版女式棉麻两件套套装连衣裙多色多码</h1>
+                <p>2016春夏季韩版女式棉麻套装连衣裙女长袖小清新印花长裙</p>
+                <div class="lprice">¥69.9<small>参考价¥79.9</small></div>
+                <div class="lnum">346件已售</div>
             </li>
         </ul>
-        <ul ng-hide="change(ktvcount,2)">
-            <li>
-                <img src="image/dianping/ktv603191.jpg"/>
-                <h1>V-SHOW主题KTV(杭州黄龙旗舰店)（新美店）</h1>
-                <p style="color:black;">[西湖北线/黄龙] [玉古路168号1F-2F（玉古路与西溪路交叉口）(黄龙体育馆旁)]</p>
-                <p>仅售50元，价值445元下午/黄金档欢唱套餐，免费WiFi！</p>
-                <div class="lprice">¥50<small style="text-decoration: line-through"> ¥445</small></div>
-                <div class="lscore">4.6分</div>
-                <div class="lnum">已售7226</div>
+        <ul ng-hide="change(ydhcount,2)">
+            <li ng-class="{list2:!ydhdisplay}">
+                <img class="img2" src="image/hgw/yihaodian/hg/603221.jpg"/>
+                <h1 class="h2" title="成人高钙全脂奶粉 a2 1kg 新西兰进口">成人高钙全脂奶粉 a2 1kg 新西兰进口</h1>
+                <div class="lprice">¥106<small>参考价¥138</small></div>
+                <div class="lnum">保税仓发货</div>
             </li>
+            <li ng-class="{list2:!ydhdisplay}">
+                <img class="img2" src="image/hgw/yihaodian/hg/603222.jpg"/>
+                <h1 title="J estina 太阳的后裔 宋慧乔韩剧 项链 JNSWD142-M544TR">J estina 太阳的后裔 宋慧乔韩剧 项链 JNSWD142-M544TR</h1>
+                <div class="lprice">¥1200<small>参考价¥1800</small></div>
+                <div class="lnum">境外直邮</div>
             </li>
-            <li>
-                <img src="image/dianping/ktv603192.jpg"/>
-                <h1>银乐迪INLOVE KTV</h1>
-                <p style="color:black;">[凤起路沿线] [建国北路281号双牛大厦5楼(近凤起路)]</p>
-                <p>仅售49元，价值720元白天档/黄金档/凌晨档欢唱套餐，免开机费，免费WiFi！</p>
-                <div class="lprice">¥49<small style="text-decoration: line-through"> ¥720</small></div>
-                <div class="lscore">4.7分</div>
-                <div class="lnum">已售390</div>
+            <li ng-class="{list2:ydhdisplay}">
+                <img class="img2" src="image/hgw/yihaodian/hg/603223.jpg"/>
+                <h1 title="花王KAO 香氛洗衣液820g + 补充装 730g 日本进口">花王KAO 香氛洗衣液820g + 补充装 730g 日本进口</h1>
+                <div class="lprice">¥44.5<small>参考价¥156</small></div>
+                <div class="lnum">保税仓发货</div>
             </li>
-            <li>
-                <img src="image/dianping/ktv603193.jpg"/>
-                <h1>银乐迪INLOVE KTV</h1>
-                <p style="color:black;">[湖滨] [延安路135号涌金广场3楼(近西湖大道)]</p>
-                <p>仅售49元，价值606元全天三个时段欢唱套餐，免开机费，免费WiFi！</p>
-                <div class="lprice">¥49<small style="text-decoration: line-through"> ¥606</small></div>
-                <div class="lscore">4.3分</div>
-                <div class="lnum">已售726</div>
+            <li ng-class="{list2:ydhdisplay}">
+                <img class="img2" src="image/hgw/yihaodian/hg/603224.jpg"/>
+                <h1 title="eaoron 澳洲直邮Eaoron水光针涂抹式精华液收缩毛孔保湿补水白皙紧致10ML">eaoron 澳洲直邮Eaoron水光针涂抹式精华液收缩毛孔保湿补水白皙紧致10ML</h1>
+                <div class="lprice">¥148<small>参考价¥399</small></div>
+                <div class="lnum">境外直邮</div>
             </li>
-            <li>
-                <img src="image/dianping/ktv603194.jpg"/>
-                <h1>银乐迪INLOVE KTV（水晶城店）</h1>
-                <p style="color:black;">[水晶城] [上塘路458号水晶城6楼(上塘路)]</p>
-                <p>仅售68元，价值300元周日至周四19：00-24：00欢唱3小时，免费WiFi！</p>
-                <div class="lprice">¥68<small style="text-decoration: line-through"> ¥300</small></div>
-                <div class="lscore">4.6分</div>
-                <div class="lnum">已售3128</div>
-            </li>
-        </ul>
-        <ul ng-hide="change(ktvcount,3)">
-            <li>
-                <img src="image/3.jpg"/>
-                <h1>温莎KTV</h1>
-                <p style="color:black;">[杭州市拱墅区湖墅南路90号湖墅南路和文晖路交叉口，武林壹号旁]</p>
-                <p>仅售49元，价值198元湖墅南路店欢唱券！节假日通用！</p>
-                <div class="lprice">¥49<small style="text-decoration:line-through;">¥198</small></div>
-                <div class="lscore">5.0分</div>
-                <div class="lnum">已售390</div>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
         </ul>
     </div>
 </div>
-<!--hotel-->
-<div class="lsydel" id="zhusu">
+<!--mogujie-->
+<div class="lsydel" id="mogujie">
     <div class="lmhead">
-        <div class="lmfont">旅店住宿</div>
+        <div class="lmfont">蘑菇街</div>
         <ul>
-            <li>更多</li>
-            <li ng-class="{lsyhov:!change(hotelcount,3)}" ng-click="hotelcount = 3">百度糯米</li>
-            <li ng-class="{lsyhov:!change(hotelcount,2)}" ng-click="hotelcount = 2">大众点评</li>
-            <li ng-class="{lsyhov:!change(hotelcount,1)}" ng-click="hotelcount = 1">美团</li>
+            <li ng-class="{lsyhov:!change(mgjcount,1)}" ng-click="mgjcount = 1">快抢</li>
+            <li ng-class="{lsyhov:!change(mgjcount,2)}" ng-click="mgjcount = 2">团购</li>
         </ul>
+        <div class="logo"></div>
+        <div class="lmmore">更多。。。</div>
+        <div class="change" ng-click="mgjdisplay=!mgjdisplay">换一些</div>
     </div>
-    <div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>
-    <div class="lmbody4">
-        <ul ng-hide="change(hotelcount,1)">
-            <li>
-                <img src="image/mtld603171.jpg"/>
-                <h1>太湖源东坑村世方家园</h1>
-                <p style="color:black;">[临安市太湖源镇东坑村11号]</p>
-                <div class="lprice">¥49<small>起</small></div>
-                <div class="lscore">5/5分</div>
-                <div class="lnum"></div>
+    <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+    <div class="lmbody">
+        <ul ng-hide="change(mgjcount,1)">
+            <li ng-class="{list2:!mgjdisplay}">
+                <img src="image/hgw/mogujie/kq/603221.jpg_999x999.v1c0.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                <div class="lbuy">立即抢购</div>
+                <div class="lnum">仅剩90件</div>
             </li>
-            <li>
-                <img src="image/mtld603172.jpg"/>
-                <h1>康都宾馆  </h1>
-                <p style="color:black;">[余杭区联兴路30号]</p>
-                <div class="lprice">¥88<small>起</small></div>
-                <div class="lscore">5/5分</div>
-                <div class="lnum"></div>
+            <li ng-class="{list2:!mgjdisplay}">
+                <img src="image/hgw/mogujie/kq/603222.jpg_999x999.v1c0.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                <div class="lbuy">立即抢购</div>
+                <div class="lnum">仅剩90件</div>
             </li>
-            <li>
-                <img src="image/mtld603173.jpg"/>
-                <h1>祥发假日酒店 经济型 </h1>
-                <p style="color:black;">[萧山区临浦东藩中路15号]</p>
-                <div class="lprice">¥139<small>起</small></div>
-                <div class="lscore">4.1/5分</div>
-                <div class="lnum"></div>
+            <li ng-class="{list2:mgjdisplay}">
+                <img src="image/hgw/mogujie/kq/603223.jpg_999x999.v1c0.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                <div class="lbuy">立即抢购</div>
+                <div class="lnum">仅剩90件</div>
             </li>
-            <li>
-                <img src="image/mtld603174.jpg"/>
-                <h1>仙聚旅馆 经济型 </h1>
-                <p style="color:black;">[拱墅区香积寺西路329号]</p>
-                <div class="lprice">¥49<small>起</small></div>
-                <div class="lscore">4/5分</div>
-                <div class="lnum"></div>
+            <li ng-class="{list2:mgjdisplay}">
+                <img src="image/hgw/mogujie/kq/603224.jpg_999x999.v1c0.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                <div class="lbuy">立即抢购</div>
+                <div class="lnum">仅剩90件</div>
             </li>
         </ul>
-        <ul ng-hide="change(hotelcount,2)">
-            <li>
-                <img src="image/dianping/ld603191.jpg"/>
-                <h1>杭州西溪宾馆1晚+双人豪华自助晚餐/西溪湿地门船票</h1>
-                <p style="color:black;">[4店通用] 【周日至周五】景观房1晚+双人自助晚餐/西溪湿地门船票！含双早，免费WiFi！</p>
-                <div class="lprice">¥998<small style="text-decoration:line-through;">3618</small></div>
-                <div class="lscore">555条评价</div>
-                <div class="lnum">已售2350</div>
+        <ul ng-hide="change(mgjcount,2)">
+            <li ng-class="{list2:!mgjdisplay}">
+                <img class="img2" src="image/hgw/mogujie/tg/603221.jpg_999x999.v1c0.webp"/>
+                <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
+                <div class="lprice"><span>团购价</span>¥45.00</div>
+                <div class="lbuy">立省¥30</div>
+                <div class="lnum">643人参与</div>
             </li>
+            <li ng-class="{list2:!mgjdisplay}">
+                <img class="img2" src="image/hgw/mogujie/tg/603222.jpg_999x999.v1c0.webp"/>
+                <h1 class="h2" title="【佰络雅】韩版大象纹锁扣斜挎小方包">【佰络雅】韩版大象纹锁扣斜挎小方包</h1>
+                <div class="lprice"><span>团购价</span>¥58.80</div>
+                <div class="lbuy">立省¥39</div>
+                <div class="lnum">490人参与</div>
             </li>
-            <li>
-                <img src="image/dianping/ld603192.jpg"/>
-                <h1>[西湖北线/黄龙] 威廉的太妃糖酒店</h1>
-                <p style="color:black;">甜心精致房住宿1晚，可连续入住，免费WiFi！！</p>
-                <div class="lprice">¥288<small style="text-decoration:line-through;">¥368</small></div>
-                <div class="lscore">31条评价</div>
-                <div class="lnum">已售241</div>
+            <li ng-class="{list2:mgjdisplay}">
+                <img class="img2" src="image/hgw/mogujie/tg/603223.jpg_999x999.v1c0.webp"/>
+                <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
+                <div class="lprice"><span>团购价</span>¥45.00</div>
+                <div class="lbuy">立省¥30</div>
+                <div class="lnum">643人参与</div>
             </li>
-            <li>
-                <img src="image/dianping/ld603193.jpg"/>
-                <h1>杭州素舍精品酒店</h1>
-                <p style="color:black;">[拱宸桥/上塘]星辰大床房1晚，免费WiFi！</p>
-                <div class="lprice">¥318<small style="text-decoration:line-through;">¥788</small></div>
-                <div class="lscore">91条评价</div>
-                <div class="lnum">已售684</div>
+            <li ng-class="{list2:mgjdisplay}">
+                <img class="img2" src="image/hgw/mogujie/tg/603224.jpg_999x999.v1c0.webp"/>
+                <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
+                <div class="lprice"><span>团购价</span>¥45.00</div>
+                <div class="lbuy">立省¥30</div>
+                <div class="lnum">643人参与</div>
             </li>
-            <li>
-                <img src="image/dianping/ld603194.jpg"/>
-                <h1>杭州汇和君亭酒店</h1>
-                <p style="color:black;">[城东]豪华大床房1晚，免费WiFi！不含早！（另有其他套餐可选）</p>
-                <div class="lprice">¥369<small style="text-decoration:line-through;">¥1388</small></div>
-                <div class="lscore">56条评价</div>
-                <div class="lnum">已售422</div>
-            </li>
-        </ul>
-        <ul ng-hide="change(hotelcount,3)">
-            <li>
-                <img src="image/2.jpg"/>
-                <h1>杭州西湖柒号酒店式公寓西湖店 高级房</h1>
-                <p style="color:black;">尊享杭州西湖柒号酒店式公寓西湖店高级房1晚＋洗衣机和自助厨房免费使用＋免费</p>
-                <div class="lprice">¥238<small style="text-decoration:line-through;">价值¥680</small></div>
-                <div class="lscore">暂无评分</div>
-                <div class="lnum">已售996</div>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
         </ul>
     </div>
 </div>
-<!--waimai-->
-<div class="lsydel" id="waimai">
+<!--亚马逊-->
+<div class="lsydel" id="yamaxun">
     <div class="lmhead">
-        <div class="lmfont">便利外卖</div>
+        <div class="lmfont">亚马逊</div>
         <ul>
-            <li>更多</li>
-            <li ng-class="{lsyhov:!change(salecount,3)}" ng-click="salecount = 3">百度糯米</li>
-            <li ng-class="{lsyhov:!change(salecount,2)}" ng-click="salecount = 2">大众点评</li>
-            <li ng-class="{lsyhov:!change(salecount,1)}" ng-click="salecount = 1">美团</li>
+            <li ng-class="{lsyhov:!change(ymxcount,1)}" ng-click="ymxcount = 1">Z秒杀</li>
+            <li ng-class="{lsyhov:!change(ymxcount,2)}" ng-click="ymxcount = 2">海外购</li>
         </ul>
+        <div class="lmmore">更多。。。</div>
     </div>
-    <div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>
-    <div class="lmbody5">
-        <ul ng-hide="change(salecount,1)">
+    <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+    <div class="lmbody">
+        <ul ng-hide="change(ymxcount,1)">
             <li>
-                <img src="image/mtwm603171.jpg"/>
-                <h1>巴西烤肉拌饭</h1>
-                <p class="lscore">4.6分</p><p class="lsale">月售2792单</p>
-                <div class="lprice">
-                    <div>起送费￥0</div> <div>免配送费</div> <div class="ltime">36分钟</div>
-                </div>
-                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+                <img src="image/hgw/taobao/tttj/603211.jpg"/>
+                <h1 title="LUNE DE MIEL蜜月原味蜂蜜便利装450g(法国进口)">LUNE DE MIEL蜜月原味蜂蜜便利装450g(法国进口)</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">3%已订购</div>
             </li>
             <li>
-                <img src="image/mtwm603172.jpg"/>
-                <h1>冤大头（抓饭）</h1>
-                <p class="lscore">4.9分</p><p class="lsale">月售622单</p>
-                <div class="lprice">
-                    <div>起送费￥0</div> <div>免配送费</div> <div class="ltime">29分钟</div>
-                </div>
-                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+                <img src="image/hgw/taobao/tttj/603212.jpg"/>
+                <h1 title="南极人外穿打底裤黑铅笔裤">南极人外穿打底裤黑铅笔裤</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已售10344件</div>
             </li>
             <li>
-                <img src="image/mtwm603173.jpg"/>
-                <h1>爱星堡</h1>
-                <p class="lscore">4.8分</p><p class="lsale">月售2803单</p>
-                <div class="lprice">
-                    <div>起送费￥10</div> <div>免配送费</div> <div class="ltime">33分钟</div>
-                </div>
-                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+                <img src="image/hgw/taobao/tttj/603213.jpg"/>
+                <h1 title="[限500件]高档牛仔小脚裤">[限500件]高档牛仔小脚裤</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已售16470件</div>
             </li>
             <li>
-                <img src="image/mtwm603174.jpg"/>
-                <h1>馋味小镇</h1>
-                <p class="lscore">4.7分</p><p class="lsale">月售926单</p>
-                <div class="lprice">
-                    <div>起送费￥9</div> <div>免配送费</div> <div class="ltime">29分钟</div>
-                </div>
-                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+                <img src="image/hgw/taobao/tttj/603214.jpg"/>
+                <h1 title="4条装男士内裤平角印花">4条装男士内裤平角印花</h1>
+                <div class="lprice">¥1111<span>.11</span></div>
+                <div class="lnum">100%已定购</div>
             </li>
         </ul>
-        <ul ng-hide="change(salecount,2)">
+        <ul ng-hide="change(ymxcount,2)">
             <li>
-
+                <img src="image/hgw/taobao/qc/603211.jpg_.webp"/>
+                <h1 title="【清仓】新款风衣！最后76件！">【清仓】新款风衣！最后76件！</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已抢100件</div>
             </li>
             <li>
-
-            </li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul ng-hide="change(salecount,3)">
-            <li>
-
+                <img src="image/hgw/taobao/qc/603212.jpg_.webp"/>
+                <h1 title="【亏本清仓 一件不剩】春秋男士棉夹克">【亏本清仓 一件不剩】春秋男士棉夹克</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已抢6944件</div>
             </li>
             <li>
-
+                <img src="image/hgw/taobao/qc/603213.jpg_.webp"/>
+                <h1 title="【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克">【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已抢3780件</div>
             </li>
-            <li></li>
-            <li></li>
+            <li>
+                <img src="image/hgw/taobao/qc/603214.jpg_.webp"/>
+                <h1 title="【品牌血亏】【日销20000条】 南极人百搭打底裤~">【品牌血亏】【日销20000条】 南极人百搭打底裤~</h1>
+                <div class="lprice">¥1111<span>.11</span></div>
+                <div class="lnum">已抢11455件</div>
+            </li>
         </ul>
     </div>
 </div>
@@ -526,9 +463,11 @@
     app.controller('lmodel1',function($scope){
         $scope.tbcount = 1;
         $scope.jmcount = 1;
-        $scope.ktvcount = 1;
-        $scope.hotelcount = 1;
-        $scope.salecount = 1;
+        $scope.ydhcount = 1;
+        $scope.ydhdisplay = true;
+        $scope.mgjcount = 1;
+        $scope.mgjdisplay = true;
+        $scope.ymxcount = 1;
         $scope.delurl = 'www.meituan.com';
         $scope.change = function(value,judge){
             if(value==1){ $scope.delurl = 'www.meituan.com';}
