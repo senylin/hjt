@@ -4,11 +4,10 @@ body{
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none;
+
     transition: all linear 0.8s;
 }
 .lsyapp{
-    width: auto;
-    height: auto;
 
 }
 .lsybody{
@@ -703,6 +702,9 @@ img{
     height: 400px;
     margin-top: 30px;
 
+}
+.lmfont:hover{
+    cursor: default;
 }
 #hfj .lsydel .lmhead{
     position: relative;

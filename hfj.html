@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/angular.min.js"></script>
     <script src="js/angular-animate.min.js"></script>
+    <script src="js/ng.js"></script>
     <link rel="stylesheet" href="css/css.css" type="text/css"/>
     <title>汇附近</title>
 </head>
@@ -38,10 +39,11 @@
         </div>
          <div class="lsynav-s">
              <ul ng-hide="!choose(count,1)">
-              <li>淘宝</li>
-              <li>淘宝</li>
-              <li>淘宝</li>
-              <li>淘宝</li>
+                 <li ng-click="goto(0)">淘宝</li>
+                 <li ng-click="goto(0)">聚美优品</li>
+                 <li ng-click="goto(0)">一号店</li>
+                 <li ng-click="goto(0)">蘑菇街</li>
+                 <li ng-click="goto(0)">亚马逊</li>
              </ul>
              <ul ng-hide="!choose(count,2)">
                  <li ng-click="goto(1)">美食</li>
@@ -60,6 +62,7 @@
           <div class="lsymsglist" ng-class="{msghide:msglist}"></div>
         </div>
     </div>
+
    <div class="lsybody">
 <!--pic-->
     <div class="lsypics lsypfj" ng-controller="lpic">
@@ -621,83 +624,83 @@
     </div>
 </div>
 <script type="text/javascript">
-    document.onscroll =function(){
-        var navi=document.getElementById('nav');
-        var navs=document.getElementsByName('lsynav-s');
-        if(document.body.scrollTop>150){
-            navi.className ='lsynav2 lsynav';
-        }else{
-            navi.className ='lsynav';
-        }
-    }
-    var app = angular.module('lsyApp',['ngAnimate']);
-    app.controller('lmodel2',function($scope){
-        $scope.delcount = 1;
-        $scope.filmcount = 1;
-        $scope.ktvcount = 1;
-        $scope.hotelcount = 1;
-        $scope.salecount = 1;
-        $scope.delurl = 'www.meituan.com';
-        $scope.change = function(value,judge){
-            if(value==1){ $scope.delurl = 'www.meituan.com';}
-            if(value==2){ $scope.delurl = 'https://www.dianping.com/';}
-            if(value==3){ $scope.delurl = '百度糯米';}
-            if(value==judge)return false;
-            else{return true;}
-        };
-    });
-    app.controller('ltop',function($scope){
-        $scope.wx=true;
-    })
-    app.controller('lpic',function($scope, $interval){
-        $scope.number = 1;
-        $scope.ptype = 1;
-        $scope.change = function(value,judge){
-//            if(value==0){value=3;
-//                $scope.number = 3;}
-//            if(value==4){value=1;
-//                $scope.number = 1;}
-            if(value==judge)return false;
-            else{return true;}
-        };
-        $scope.judgement=function(count,value){
-            if(count==value)
-            {
-                return true;
-            }else return false;
-        };
-        $interval(function () {
-            $scope.number ;
-        }, 5000);
-    });
-    app.controller('lnav',function($scope){
-        $scope.count =2;
-        $scope.types=[{text:"美食",id:"meishi"},{text:"K歌",id:"kge"},{text:"电影",id:"dianying"},
-            {text:"住宿",id:"zhusu"},{text:"外卖",id:"waimai"}];
-
-        $scope.msglist=true;
-        $scope.msgtoggle=function(){
-            $scope.msglist=!$scope.msglist;
-        }
-        $scope.choose=function(count,value){
-            if(count==value)
-            {
-               return true;
-            }else return false;
-        }
-
-        $scope.goto=function(count,$animate){
-         //  alert( document.body.scrollTop);
-            var body= document.body;
-         //   var top=  angular.element(body).animate({ scrollTop: 550 }, 100);
-//            $animate.enter(document.body).then(function() {
-//                $scope.scrollTop = 550;
-//            });
-           // alert(top);
-            var top = 550+(count-1)*430;
-            body.scrollTop=550+(count-1)*430;
-        }
-    });
+//    document.onscroll =function(){
+//        var navi=document.getElementById('nav');
+//        var navs=document.getElementsByName('lsynav-s');
+//        if(document.body.scrollTop>150){
+//            navi.className ='lsynav2 lsynav';
+//        }else{
+//            navi.className ='lsynav';
+//        }
+//    }
+//    var app = angular.module('lsyApp',['ngAnimate']);
+//    app.controller('lmodel2',function($scope){
+//        $scope.delcount = 1;
+//        $scope.filmcount = 1;
+//        $scope.ktvcount = 1;
+//        $scope.hotelcount = 1;
+//        $scope.salecount = 1;
+//        $scope.delurl = 'www.meituan.com';
+//        $scope.change = function(value,judge){
+//            if(value==1){ $scope.delurl = 'www.meituan.com';}
+//            if(value==2){ $scope.delurl = 'https://www.dianping.com/';}
+//            if(value==3){ $scope.delurl = '百度糯米';}
+//            if(value==judge)return false;
+//            else{return true;}
+//        };
+//    });
+//    app.controller('ltop',function($scope){
+//        $scope.wx=true;
+//    })
+//    app.controller('lpic',function($scope, $interval){
+//        $scope.number = 1;
+//        $scope.ptype = 1;
+//        $scope.change = function(value,judge){
+////            if(value==0){value=3;
+////                $scope.number = 3;}
+////            if(value==4){value=1;
+////                $scope.number = 1;}
+//            if(value==judge)return false;
+//            else{return true;}
+//        };
+//        $scope.judgement=function(count,value){
+//            if(count==value)
+//            {
+//                return true;
+//            }else return false;
+//        };
+//        $interval(function () {
+//            $scope.number ;
+//        }, 5000);
+//    });
+//    app.controller('lnav',function($scope){
+//        $scope.count =2;
+//        $scope.types=[{text:"美食",id:"meishi"},{text:"K歌",id:"kge"},{text:"电影",id:"dianying"},
+//            {text:"住宿",id:"zhusu"},{text:"外卖",id:"waimai"}];
+//
+//        $scope.msglist=true;
+//        $scope.msgtoggle=function(){
+//            $scope.msglist=!$scope.msglist;
+//        }
+//        $scope.choose=function(count,value){
+//            if(count==value)
+//            {
+//               return true;
+//            }else return false;
+//        }
+//
+//        $scope.goto=function(count,$animate){
+//         //  alert( document.body.scrollTop);
+//            var body= document.body;
+//         //   var top=  angular.element(body).animate({ scrollTop: 550 }, 100);
+////            $animate.enter(document.body).then(function() {
+////                $scope.scrollTop = 550;
+////            });
+//           // alert(top);
+//            var top = 550+(count-1)*430;
+//            body.scrollTop=550+(count-1)*430;
+//        }
+//    });
 </script>
 </body>
 </html>
