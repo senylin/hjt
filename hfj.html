@@ -7,7 +7,7 @@
     <script src="js/angular-animate.min.js"></script>
     <script src="js/ng.js"></script>
     <link rel="stylesheet" href="css/css.css" type="text/css"/>
-    <title>汇附近</title>
+    <title>汇聚唐</title>
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <div ng-app="lsyApp" class="lsyapp">
@@ -26,7 +26,7 @@
         <img src=""/>
     </div>
 <!--nav-->
-    <div id="nav" class="lsynav" ng-controller="lnav" ng-mouseleave="count=2">
+    <div id="nav" class="lsynav" ng-controller="lnav2" ng-mouseleave="count=2">
         <ul>
             <li ng-class="{lsyhover:choose(count,1)}" ng-mouseover="count=1">惠购物</li>
             <li ng-class="{lsyhover:choose(count,2)}" ng-mouseover="count=2">汇周边</li>
@@ -34,7 +34,7 @@
         </ul>
         <div class="lsyuser">
             <img src="image/2.jpg" width="100%" height="100%"/>
-            <div class="lsyname">这是只狗</div>
+            <div class="lsyname">开发monkey</div>
             <div class="lsytrib">话题讨论</div>
         </div>
          <div class="lsynav-s">
@@ -75,25 +75,25 @@
         </div>
         <!--meishipic-->
         <div class="lsypi lsypms" ng-hide="!judgement(ptype,1)">
-            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}"><img src="image/mtmsbg603171.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}"><img src="image/mtmsbg603172.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}"><img src="image/mtmsbg603173.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,4)}"><img src="image/mtmsbg603174.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,5)}"><img src="image/mtmsbg603175.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}" onclick="window.open('https://www.taobao.com');"><img src="image/mtmsbg603171.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}" onclick="window.open('https://www.taobao.com');"><img src="image/mtmsbg603172.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}" onclick="window.open('https://www.taobao.com');"><img src="image/mtmsbg603173.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,4)}" onclick="window.open('https://www.taobao.com');"><img src="image/mtmsbg603174.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,5)}" onclick="window.open('https://www.taobao.com');"><img src="image/mtmsbg603175.jpg"/></div>
             <div class="lsyp-s">
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/mtmsbg603171.jpg"/></div>
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/mtmsbg603172.jpg"/></div>
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/mtmsbg603173.jpg"/></div>
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,4)}" ng-mouseover="number=4"><img src="image/mtmsbg603174.jpg"/></div>
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,5)}" ng-mouseover="number=5"><img src="image/mtmsbg603175.jpg"/></div>
-                <div class="lsyp-st">【城西银泰城】金不换泰国餐厅</div>
+                <div class="lsyp-st" onclick="window.open('https://www.taobao.com');">【城西银泰城】金不换泰国餐厅</div>
             </div>
         </div>
         <!--dianyingpic-->
         <div class="lsypi lsypdy" ng-hide="!judgement(ptype,2)">
-            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}" ng-mouseover="number=1"><img src="image/mtdy603171.jpg" /></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}" ng-mouseover="number=2"><img src="image/mtdy603172.jpg"/></div>
-            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}" ng-mouseover="number=3"><img src="image/mtdy603173.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,1)}" ng-mouseover="number=1" onclick="window.open('https://www.taobao.com');"><img src="image/mtdy603171.jpg" /></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,2)}" ng-mouseover="number=2" onclick="window.open('https://www.taobao.com');"><img src="image/mtdy603172.jpg"/></div>
+            <div class="lsyp"  ng-class="{lsyphd:change(number,3)}" ng-mouseover="number=3" onclick="window.open('https://www.taobao.com');"><img src="image/mtdy603173.jpg"/></div>
             <div class="lsyp-s">
                 <!--<div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-click="number=1"><img src="image/mtdy603171.jpg" /></div>-->
                 <!--<div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-click="number=2"><img src="image/mtdy603172.jpg" /></div>-->
@@ -115,7 +115,7 @@
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,1)}" ng-mouseover="number=1"><img src="image/mtbg60317k1.jpg"/></div>
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/mtbg60317k2.jpg"/></div>
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/mtbg60317k3.jpg"/></div>
-                <div class="lsyp-st">【下沙】格莱美Music Party</div>
+                <div class="lsyp-st" onclick="window.open('https://www.taobao.com');">【下沙】格莱美Music Party</div>
             </div>
         </div>
         <!--hotelpic-->
@@ -129,7 +129,7 @@
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,2)}" ng-mouseover="number=2"><img src="image/mtldbg603172.jpg"/></div>
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,3)}" ng-mouseover="number=3"><img src="image/mtldbg603173.jpg"/></div>
                 <div class="lsyp-sp" ng-class="{lsypsphd:!change(number,4)}" ng-mouseover="number=4"><img src="image/mtldbg603174.jpg"/></div>
-                <div class="lsyp-st">东天目琉璃阁 经济型</div>
+                <div class="lsyp-st" onclick="window.open('https://www.taobao.com');">东天目琉璃阁 经济型</div>
             </div>
         </div>
         <!--waimaipic-->
@@ -160,7 +160,7 @@
             <div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>
             <div class="lmbody">
                 <ul ng-hide="change(delcount,1)">
-                    <li>
+                    <li onclick="window.open('https://www.taobao.com');">
                         <img src="image/mtms603171.jpg"/>
                         <h1 title="小猪头自助火锅烧烤">小猪头自助火锅烧烤</h1>
                         <p title="江干区新塘路108号天虹购物中心A座5楼（第七街1973口子电梯直达5楼...支持WIFI">江干区新塘路108号天虹购物中心A座5楼（第七街1973口子电梯直达5楼...支持WIFI</p>
@@ -620,7 +620,7 @@
     </div>
    </div>
     <div id="footer">
-
+        <div class="lfpic"></div>
     </div>
 </div>
 <script type="text/javascript">

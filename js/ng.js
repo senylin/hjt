@@ -48,11 +48,17 @@ app.controller('ltop',function($scope){
 app.controller('lpic',function($scope, $interval){
     $scope.number = 1;
     $scope.ptype = 1;
+    $scope.qdn=1;
+    $scope.zhn=1;
+    $scope.csn=1;
+    $scope.haon=1;
+    $scope.toZero = function(){
+        if($scope.qdn==5)$scope.qdn=1;
+        if($scope.zhn==5)$scope.zhn=1;
+        if($scope.csn==5)$scope.csn=1;
+        if($scope.haon==5)$scope.haon=1;
+    };
     $scope.change = function(value,judge){
-//            if(value==0){value=3;
-//                $scope.number = 3;}
-//            if(value==4){value=1;
-//                $scope.number = 1;}
         if(value==judge)return false;
         else{return true;}
     };
@@ -66,11 +72,8 @@ app.controller('lpic',function($scope, $interval){
         $scope.number ;
     }, 5000);
 });
-app.controller('lnav',function($scope){
+app.controller('lnav1',function($scope){
     $scope.count =1;
-       $scope.types=[{text:"美食",id:"meishi"},{text:"K歌",id:"kge"},{text:"电影",id:"dianying"},
-            {text:"住宿",id:"zhusu"},{text:"外卖",id:"waimai"}];
-
     $scope.msglist=true;
     $scope.msgtoggle=function(){
         $scope.msglist=!$scope.msglist;
@@ -81,7 +84,56 @@ app.controller('lnav',function($scope){
             return true;
         }else return false;
     }
-
+    $scope.goto=function(count){
+        if(count==0)return;
+        //  alert( document.body.scrollTop);
+        var body= document.body;
+        //   var top=  angular.element(body).animate({ scrollTop: 550 }, 100);
+//            $animate.enter(document.body).then(function() {
+//                $scope.scrollTop = 550;
+//            });
+        // alert(top);
+        var top = 550+(count-1)*430;
+        body.scrollTop=550+(count-1)*430;
+    }
+});
+app.controller('lnav2',function($scope){
+    $scope.count =2;
+    $scope.msglist=true;
+    $scope.msgtoggle=function(){
+        $scope.msglist=!$scope.msglist;
+    }
+    $scope.choose=function(count,value){
+        if(count==value)
+        {
+            return true;
+        }else return false;
+    }
+    $scope.goto=function(count){
+        if(count==0)return;
+        //  alert( document.body.scrollTop);
+        var body= document.body;
+        //   var top=  angular.element(body).animate({ scrollTop: 550 }, 100);
+//            $animate.enter(document.body).then(function() {
+//                $scope.scrollTop = 550;
+//            });
+        // alert(top);
+        var top = 550+(count-1)*430;
+        body.scrollTop=550+(count-1)*430;
+    }
+});
+app.controller('lnav3',function($scope){
+    $scope.count =3;
+    $scope.msglist=true;
+    $scope.msgtoggle=function(){
+        $scope.msglist=!$scope.msglist;
+    }
+    $scope.choose=function(count,value){
+        if(count==value)
+        {
+            return true;
+        }else return false;
+    }
     $scope.goto=function(count){
         if(count==0)return;
         //  alert( document.body.scrollTop);

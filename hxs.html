@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/ng.js"></script>
+    <link rel="stylesheet" href="css/css.css" type="text/css"/>
+    <title>汇聚唐</title>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div ng-app="lsyApp" class="lsyapp">
+<!--top-->
+<div class="lsytop" ng-controller="ltop">
+    <div class="lsylogin">请登录or 注册</div>
+    <ul>
+        <li>更多建议</li>
+        <li>关注我们</li>
+        <li class="fontred" ng-mouseover="wx=!wx" ng-mouseleave="wx=!wx">微信</li>
+    </ul>
+    <div class="lsywx" ng-class="{wx2:wx}"><img src="image/erweima.png" width="100%" height="100%"/></div>
+</div>
+<div class="lsylogo">
+    <img src=""/>
+</div>
+<!--nav-->
+<div id="nav" class="lsynav" ng-controller="lnav3" ng-mouseleave="count=3">
+    <ul>
+        <li ng-class="{lsyhover:choose(count,1)}" ng-mouseover="count=1">惠购物</li>
+        <li ng-class="{lsyhover:choose(count,2)}" ng-mouseover="count=2">汇周边</li>
+        <li ng-class="{lsyhover:choose(count,3)}" ng-mouseover="count=3">慧小说</li>
+    </ul>
+    <div class="lsyuser">
+        <img src="image/2.jpg" width="100%" height="100%"/>
+        <div class="lsyname">开发monkey</div>
+        <div class="lsytrib">话题讨论</div>
+    </div>
+    <div class="lsynav-s">
+        <ul ng-hide="!choose(count,1)">
+            <li ng-click="goto(0)">淘宝</li>
+            <li ng-click="goto(0)">聚美优品</li>
+            <li ng-click="goto(0)">一号店</li>
+            <li ng-click="goto(0)">蘑菇街</li>
+            <li ng-click="goto(0)">亚马逊</li>
+        </ul>
+        <ul ng-hide="!choose(count,2)">
+            <li ng-click="goto(0)">美食</li>
+            <li ng-click="goto(0)">电影</li>
+            <li ng-click="goto(0)">ktv</li>
+            <li ng-click="goto(0)">旅店</li>
+            <li ng-click="goto(0)">外卖</li>
+        </ul>
+        <ul ng-hide="!choose(count,3)">
+            <li ng-click="goto(1)">起点</li>
+            <li ng-click="goto(2)">纵横</li>
+            <li ng-click="goto(3)">创世纪</li>
+            <li ng-click="goto(4)">hao123</li>
+        </ul>
+        <div class="lsymsg" ng-click="msgtoggle()">消息栏</div>
+        <div class="lsymsglist" ng-class="{msghide:msglist}"></div>
+    </div>
+</div>
+<div class="lsybody">
+<!--pic-->
+<div class="lsypics lsypxs" ng-controller="lpic">
+    <div class="lsypt xs1">
+        <div class="lsybq" ng-click="qdn=qdn+1;toZero()">起点</div>
+        <ul ng-class="{ul2:change(qdn,1)}">
+            <li class="listtop">原创文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(qdn,2)}">
+            <li class="listtop">热评作品榜</li>
+            <li class="listtip">热评最多的小说排行榜</li>
+            <li><span>1</span><a href="/">吞噬星空</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a>更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(qdn,3)}">
+            <li class="listtop">会员点击榜</li>
+            <li class="listtip">本周会员点击排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a>更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(qdn,4)}">
+            <li class="listtop">书友推荐榜</li>
+            <li class="listtip">本周书友推荐排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a>更多>></a></li>
+        </ul>
+    </div>
+    <div class="lsypt xs2">
+        <div class="lsybq" ng-click="zhn=zhn+1;toZero()">纵横</div>
+        <ul ng-class="{ul2:change(zhn,1)}">
+            <li class="listtop">百度小说月票榜</li>
+            <li class="listtip"></li>
+            <li><span>1</span><a href="/">纯禽记者</a><div class="span2">6697</div></li>
+            <li><span>2</span><a href="/">大荒蛮神</a><div class="span2">6697</div></li>
+            <li><span>3</span><a href="/">仙路争锋</a><div class="span2">3584</div></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span></span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(zhn,2)}">
+            <li class="listtop">原创文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(zhn,3)}">
+            <li class="listtop">文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(zhn,4)}">
+            <li class="listtop">原创文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+    </div>
+    <div class="lsypt xs3">
+        <div class="lsybq" ng-click="csn=csn+1;toZero()">创世纪</div>
+        <ul ng-class="{ul2:change(csn,1)}">
+            <li class="listtop">原创文学风云榜</li>
+            <li class="listtip">VIP作品月票本月月票数排行</li>
+            <li><span>1</span><a href="/">玄界之门</a><div class="span2">17187</div></li>
+            <li><span>2</span><a href="/">我真是大明星</a><div class="span2">11673</div></li>
+            <li><span>3</span><a href="/">巫神纪</a><div class="span2">6304</div></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 23:05:49</span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(csn,2)}">
+            <li class="listtop">原创文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(csn,3)}">
+            <li class="listtop">文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(csn,4)}">
+            <li class="listtop">原创文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+    </div>
+    <div class="lsypt xs4">
+        <div class="lsybq" ng-click="haon=haon+1;toZero()">hao123</div>
+        <ul ng-class="{ul2:change(haon,1)}">
+            <li class="listtop">完本精品榜</li>
+            <li class="listtip"></li>
+            <li><span>1</span><a href="/">天才医生</a><div class="span2">都市</div></li>
+            <li><span>2</span><a href="/">符皇</a><div class="span2">玄幻</div></li>
+            <li><span>3</span><a href="/">终极教师</a><div class="span2">都市</div></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span></span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(haon,2)}">
+            <li class="listtop">原创文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(haon,3)}">
+            <li class="listtop">文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+        <ul ng-class="{ul2:change(haon,4)}">
+            <li class="listtop">原创文学风云榜</li>
+            <li class="listtip">本月VIP月票得票作品总排行</li>
+            <li><span>1</span><a href="/">玄界之门</a></li>
+            <li><span>2</span><a href="/">我真是大明星</a></li>
+            <li><span>3</span><a href="/">巫神纪</a></li>
+            <li><span style="color:gray;">4</span><a href="/">弑天刃</a></li>
+            <li><span style="color:gray;">5</span><a href="/">龙王传说</a></li>
+            <li><span style="color:gray;">6</span><a href="/">超品相师</a></li>
+            <li><span style="color:gray;">7</span><a href="/">颤栗世界</a></li>
+            <li><span style="color:gray;">8</span><a href="/">赘婿</a></li>
+            <li><span style="color:gray;">9</span><a href="/">五行天</a></li>
+            <li><span style="margin-left:10px;color:gray;">10</span><a href="/">星战风暴</a></li>
+            <li class="listbottom"><span>2016-03-27 21:01:06 </span><a href="/">更多>></a></li>
+        </ul>
+    </div>
+</div>
+<!--model-->
+<div class="lsymodel" ng-controller="lmodel1" id="hgw">
+<!--taobao-->
+<div class="lsydel" id="taobao">
+    <div class="lmhead">
+        <div class="lmfont">淘宝</div>
+        <ul>
+            <li ng-class="{lsyhov:!change(tbcount,1)}" ng-click="tbcount = 1">天天特价</li>
+            <li ng-class="{lsyhov:!change(tbcount,2)}" ng-click="tbcount = 2">清仓</li>
+            <li ng-class="{lsyhov:!change(tbcount,3)}" ng-click="tbcount = 3">抢新</li>
+        </ul>
+        <div class="lmmore">更多。。。</div>
+    </div>
+    <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+    <div class="lmbody">
+        <ul ng-hide="change(tbcount,1)">
+            <li onclick="window.open('https://www.taobao.com');">
+                <img src="image/hgw/taobao/tttj/603211.jpg"/>
+                <h1 title="大码显瘦短袖休闲运动套装">大码显瘦短袖休闲运动套装</h1>
+                <div class="lprice">¥11<span>.11</span><small>¥129.80</small></div>
+                <div class="lnum">已售13296件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/tttj/603212.jpg"/>
+                <h1 title="南极人外穿打底裤黑铅笔裤">南极人外穿打底裤黑铅笔裤</h1>
+                <div class="lprice">¥18<span>.50</span><small>¥188.00</small></div>
+                <div class="lnum">已售10344件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/tttj/603213.jpg"/>
+                <h1 title="[限500件]高档牛仔小脚裤">[限500件]高档牛仔小脚裤</h1>
+                <div class="lprice">¥18<span>.50</span><small>¥129.00</small></div>
+                <div class="lnum">已售16470件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/tttj/603214.jpg"/>
+                <h1 title="4条装男士内裤平角印花">4条装男士内裤平角印花</h1>
+                <div class="lprice">¥29<span>.80</span><small>¥238.00</small></div>
+                <div class="lnum">已售3193件</div>
+            </li>
+        </ul>
+        <ul ng-hide="change(tbcount,2)">
+            <li>
+                <img src="image/hgw/taobao/qc/603211.jpg_.webp"/>
+                <h1 title="【清仓】新款风衣！最后76件！">【清仓】新款风衣！最后76件！</h1>
+                <div class="lprice">¥128<span>.00</span><small>¥699.00</small></div>
+                <div class="lnum">已抢100件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/qc/603212.jpg_.webp"/>
+                <h1 title="【亏本清仓 一件不剩】春秋男士棉夹克">【亏本清仓 一件不剩】春秋男士棉夹克</h1>
+                <div class="lprice">¥29<span>.00</span><small>¥198.00</small></div>
+                <div class="lnum">已抢6944件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/qc/603213.jpg_.webp"/>
+                <h1 title="【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克">【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克</h1>
+                <div class="lprice">¥49<span>.00</span><small>¥299.00</small></div>
+                <div class="lnum">已抢3780件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/qc/603214.jpg_.webp"/>
+                <h1 title="【品牌血亏】【日销20000条】 南极人百搭打底裤~">【品牌血亏】【日销20000条】 南极人百搭打底裤~</h1>
+                <div class="lprice">¥18<span>.80</span><small>¥138.00</small></div>
+                <div class="lnum">已抢11455件</div>
+            </li>
+        </ul>
+        <ul ng-hide="change(tbcount,3)">
+            <li>
+                <img src="image/hgw/taobao/qx/603211.jpg"/>
+                <h1 class="qx" title="抢新小蚊子2016春装英伦风腰部抽绳百搭中长款风衣~">抢新小蚊子2016春装英伦风腰部抽绳百搭中长款风衣</h1>
+                <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥98.70</span></div>
+                <div class="lnotice">预售中 3月28前发货</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/qx/603212.jpg"/>
+                <h1 class="qx" title="抢新 逆天性价比！时尚有型九分针织牛仔裤~">抢新 逆天性价比！时尚有型九分针织牛仔裤</h1>
+                <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥188.00</span></div>
+                <div class="lnotice bred">疯抢中 38仅剩</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/qx/603213.jpg"/>
+                <h1 class="qx" title="欧美时尚气质名媛蕾丝套装~">欧美时尚气质名媛蕾丝套装</h1>
+                <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥149.00</span></div>
+                <div class="lnotice">预售中3月28前发货</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/qx/603214.jpg"/>
+                <h1 class="qx" title="衬衫背心裙两件套连衣裙~">衬衫背心裙两件套连衣裙</h1>
+                <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥99.00</span></div>
+                <div class="lnotice">预售中3月27前发货</div>
+            </li>
+        </ul>
+    </div>
+    <!--<div class="lmfoot">加载更多</div>-->
+</div>
+<!--jumei-->
+<div class="lsydel" id="jumei">
+    <div class="lmhead">
+        <div class="lmfont">聚美优品</div>
+        <ul>
+            <li ng-class="{lsyhov:!change(jmcount,1)}" ng-click="jmcount = 1">限时特卖</li>
+            <li ng-class="{lsyhov:!change(jmcount,2)}" ng-click="jmcount = 2">极速免税</li>
+        </ul>
+        <div class="lmmore">更多。。。</div>
+    </div>
+    <div class="lmbody">
+        <ul ng-hide="change(jmcount,1)">
+            <li>
+                <img src="image/hgw/jumei/xstm/603221.jpg"/>
+            </li>
+            <li>
+                <img src="image/hgw/jumei/xstm/603222.jpg"/>
+            </li>
+            <li>
+                <img src="image/hgw/jumei/xstm/603223.jpg"/>
+            </li>
+            <li>
+                <img src="image/hgw/jumei/xstm/603224.jpg"/>
+            </li>
+        </ul>
+        <ul ng-hide="change(jmcount,2)">
+            <li>
+                <img src="image/hgw/jumei/jsms/603221.jpg"/>
+            </li>
+            <li>
+                <img src="image/hgw/jumei/jsms/603222.jpg"/>
+            </li>
+            <li>
+                <img src="image/hgw/jumei/jsms/603223.jpg"/>
+            </li>
+            <li>
+                <img src="image/hgw/jumei/jsms/603224.jpg"/>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--1号店-->
+<div class="lsydel" id="yihaodian">
+    <div class="lmhead">
+        <div class="lmfont"></div>
+        <ul>
+            <li ng-class="{lsyhov:!change(ydhcount,1)}" ng-click="ydhcount = 1">团购</li>
+            <li ng-class="{lsyhov:!change(ydhcount,2)}" ng-click="ydhcount = 2">海购新品</li>
+        </ul>
+        <div class="lmmore">更多。。。</div>
+        <div class="change" ng-click="ydhdisplay=!ydhdisplay">换一些</div>
+    </div>
+    <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+    <div class="lmbody">
+        <ul ng-hide="change(ydhcount,1)">
+            <li ng-class="{list2:!ydhdisplay}">
+                <img src="image/hgw/yihaodian/tg/603221.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <p>【买4免1】一般家庭需要4双！！！！超柔软巨防水 防滑不伤地板 漏水不积水 重点 值！！！！</p>
+                <div class="lprice">¥9.9<small>参考价¥33</small></div>
+                <div class="lnum">1271件已售</div>
+            </li>
+            <li ng-class="{list2:!ydhdisplay}">
+                <img src="image/hgw/yihaodian/tg/603222.webp"/>
+                <h1 title="【满200减50】美肌解密 韩式洁面神器礼盒装">【满200减50】美肌解密 韩式洁面神器礼盒装</h1>
+                <p>【全场满200减50】源韩国洁面神器，风靡亚洲，柔细刷毛，温和洁面，不伤皮肤。</p>
+                <div class="lprice">¥49<small>参考价¥99</small></div>
+                <div class="lnum">1445件已售</div>
+            </li>
+            <li ng-class="{list2:ydhdisplay}">
+                <img src="image/hgw/yihaodian/tg/603223.webp"/>
+                <h1 title="【买2送1】佳莱福综合果蔬酵素益生菌粉 30袋">【买2送1】佳莱福综合果蔬酵素益生菌粉 30袋</h1>
+                <p>【买2送1同款】台湾进口酵素粉 特别添加多种益生菌 水果味香滑口感 塑造魔鬼诱人身材 日常售价98元</p>
+                <div class="lprice">¥78<small>参考价¥138</small></div>
+                <div class="lnum">468件已售</div>
+            </li>
+            <li ng-class="{list2:ydhdisplay}">
+                <img src="image/hgw/yihaodian/tg/603224.webp"/>
+                <h1 title="AAYTO新款韩版女式棉麻两件套套装连衣裙多色多码">AAYTO新款韩版女式棉麻两件套套装连衣裙多色多码</h1>
+                <p>2016春夏季韩版女式棉麻套装连衣裙女长袖小清新印花长裙</p>
+                <div class="lprice">¥69.9<small>参考价¥79.9</small></div>
+                <div class="lnum">346件已售</div>
+            </li>
+        </ul>
+        <ul ng-hide="change(ydhcount,2)">
+            <li ng-class="{list2:!ydhdisplay}">
+                <img class="img2" src="image/hgw/yihaodian/hg/603221.jpg"/>
+                <h1 class="h2" title="成人高钙全脂奶粉 a2 1kg 新西兰进口">成人高钙全脂奶粉 a2 1kg 新西兰进口</h1>
+                <div class="lprice">¥106<small>参考价¥138</small></div>
+                <div class="lnum">保税仓发货</div>
+            </li>
+            <li ng-class="{list2:!ydhdisplay}">
+                <img class="img2" src="image/hgw/yihaodian/hg/603222.jpg"/>
+                <h1 title="J estina 太阳的后裔 宋慧乔韩剧 项链 JNSWD142-M544TR">J estina 太阳的后裔 宋慧乔韩剧 项链 JNSWD142-M544TR</h1>
+                <div class="lprice">¥1200<small>参考价¥1800</small></div>
+                <div class="lnum">境外直邮</div>
+            </li>
+            <li ng-class="{list2:ydhdisplay}">
+                <img class="img2" src="image/hgw/yihaodian/hg/603223.jpg"/>
+                <h1 title="花王KAO 香氛洗衣液820g + 补充装 730g 日本进口">花王KAO 香氛洗衣液820g + 补充装 730g 日本进口</h1>
+                <div class="lprice">¥44.5<small>参考价¥156</small></div>
+                <div class="lnum">保税仓发货</div>
+            </li>
+            <li ng-class="{list2:ydhdisplay}">
+                <img class="img2" src="image/hgw/yihaodian/hg/603224.jpg"/>
+                <h1 title="eaoron 澳洲直邮Eaoron水光针涂抹式精华液收缩毛孔保湿补水白皙紧致10ML">eaoron 澳洲直邮Eaoron水光针涂抹式精华液收缩毛孔保湿补水白皙紧致10ML</h1>
+                <div class="lprice">¥148<small>参考价¥399</small></div>
+                <div class="lnum">境外直邮</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--mogujie-->
+<div class="lsydel" id="mogujie">
+    <div class="lmhead">
+        <div class="lmfont">蘑菇街</div>
+        <ul>
+            <li ng-class="{lsyhov:!change(mgjcount,1)}" ng-click="mgjcount = 1">快抢</li>
+            <li ng-class="{lsyhov:!change(mgjcount,2)}" ng-click="mgjcount = 2">团购</li>
+        </ul>
+        <div class="logo"></div>
+        <div class="lmmore">更多。。。</div>
+        <div class="change" ng-click="mgjdisplay=!mgjdisplay">换一些</div>
+    </div>
+    <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+    <div class="lmbody">
+        <ul ng-hide="change(mgjcount,1)">
+            <li ng-class="{list2:!mgjdisplay}">
+                <img src="image/hgw/mogujie/kq/603221.jpg_999x999.v1c0.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                <div class="lbuy">立即抢购</div>
+                <div class="lnum">仅剩90件</div>
+            </li>
+            <li ng-class="{list2:!mgjdisplay}">
+                <img src="image/hgw/mogujie/kq/603222.jpg_999x999.v1c0.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                <div class="lbuy">立即抢购</div>
+                <div class="lnum">仅剩90件</div>
+            </li>
+            <li ng-class="{list2:mgjdisplay}">
+                <img src="image/hgw/mogujie/kq/603223.jpg_999x999.v1c0.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                <div class="lbuy">立即抢购</div>
+                <div class="lnum">仅剩90件</div>
+            </li>
+            <li ng-class="{list2:mgjdisplay}">
+                <img src="image/hgw/mogujie/kq/603224.jpg_999x999.v1c0.webp"/>
+                <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                <div class="lbuy">立即抢购</div>
+                <div class="lnum">仅剩90件</div>
+            </li>
+        </ul>
+        <ul ng-hide="change(mgjcount,2)">
+            <li ng-class="{list2:!mgjdisplay}">
+                <img class="img2" src="image/hgw/mogujie/tg/603221.jpg_999x999.v1c0.webp"/>
+                <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
+                <div class="lprice"><span>团购价</span>¥45.00</div>
+                <div class="lbuy">立省¥30</div>
+                <div class="lnum">643人参与</div>
+            </li>
+            <li ng-class="{list2:!mgjdisplay}">
+                <img class="img2" src="image/hgw/mogujie/tg/603222.jpg_999x999.v1c0.webp"/>
+                <h1 class="h2" title="【佰络雅】韩版大象纹锁扣斜挎小方包">【佰络雅】韩版大象纹锁扣斜挎小方包</h1>
+                <div class="lprice"><span>团购价</span>¥58.80</div>
+                <div class="lbuy">立省¥39</div>
+                <div class="lnum">490人参与</div>
+            </li>
+            <li ng-class="{list2:mgjdisplay}">
+                <img class="img2" src="image/hgw/mogujie/tg/603223.jpg_999x999.v1c0.webp"/>
+                <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
+                <div class="lprice"><span>团购价</span>¥45.00</div>
+                <div class="lbuy">立省¥30</div>
+                <div class="lnum">643人参与</div>
+            </li>
+            <li ng-class="{list2:mgjdisplay}">
+                <img class="img2" src="image/hgw/mogujie/tg/603224.jpg_999x999.v1c0.webp"/>
+                <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
+                <div class="lprice"><span>团购价</span>¥45.00</div>
+                <div class="lbuy">立省¥30</div>
+                <div class="lnum">643人参与</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--亚马逊-->
+<div class="lsydel" id="yamaxun">
+    <div class="lmhead">
+        <div class="lmfont">亚马逊</div>
+        <ul>
+            <li ng-class="{lsyhov:!change(ymxcount,1)}" ng-click="ymxcount = 1">Z秒杀</li>
+            <li ng-class="{lsyhov:!change(ymxcount,2)}" ng-click="ymxcount = 2">海外购</li>
+        </ul>
+        <div class="lmmore">更多。。。</div>
+    </div>
+    <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+    <div class="lmbody">
+        <ul ng-hide="change(ymxcount,1)">
+            <li>
+                <img src="image/hgw/taobao/tttj/603211.jpg"/>
+                <h1 title="LUNE DE MIEL蜜月原味蜂蜜便利装450g(法国进口)">LUNE DE MIEL蜜月原味蜂蜜便利装450g(法国进口)</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">3%已订购</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/tttj/603212.jpg"/>
+                <h1 title="南极人外穿打底裤黑铅笔裤">南极人外穿打底裤黑铅笔裤</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已售10344件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/tttj/603213.jpg"/>
+                <h1 title="[限500件]高档牛仔小脚裤">[限500件]高档牛仔小脚裤</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已售16470件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/tttj/603214.jpg"/>
+                <h1 title="4条装男士内裤平角印花">4条装男士内裤平角印花</h1>
+                <div class="lprice">¥1111<span>.11</span></div>
+                <div class="lnum">100%已定购</div>
+            </li>
+        </ul>
+        <ul ng-hide="change(ymxcount,2)">
+            <li>
+                <img src="image/hgw/taobao/qc/603211.jpg_.webp"/>
+                <h1 title="【清仓】新款风衣！最后76件！">【清仓】新款风衣！最后76件！</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已抢100件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/qc/603212.jpg_.webp"/>
+                <h1 title="【亏本清仓 一件不剩】春秋男士棉夹克">【亏本清仓 一件不剩】春秋男士棉夹克</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已抢6944件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/qc/603213.jpg_.webp"/>
+                <h1 title="【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克">【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克</h1>
+                <div class="lprice">¥11<span>.11</span></div>
+                <div class="lnum">已抢3780件</div>
+            </li>
+            <li>
+                <img src="image/hgw/taobao/qc/603214.jpg_.webp"/>
+                <h1 title="【品牌血亏】【日销20000条】 南极人百搭打底裤~">【品牌血亏】【日销20000条】 南极人百搭打底裤~</h1>
+                <div class="lprice">¥1111<span>.11</span></div>
+                <div class="lnum">已抢11455件</div>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<div id="footer">
+    <div class="lfpic"></div>
+</div>
+</div>
+<script type="text/javascript">
+    //    document.onscroll =function(){
+    //        var navi=document.getElementById('nav');
+    //        var navs=document.getElementsByName('lsynav-s');
+    //        if(document.body.scrollTop>150){
+    //            navi.className ='lsynav2 lsynav';
+    //        }else{
+    //            navi.className ='lsynav';
+    //        }
+    //    }
+    //    var app = angular.module('lsyApp',['ngAnimate']);
+    //    app.controller('lmodel1',function($scope){
+    //        $scope.tbcount = 1;
+    //        $scope.jmcount = 1;
+    //        $scope.ydhcount = 1;
+    //        $scope.ydhdisplay = true;
+    //        $scope.mgjcount = 1;
+    //        $scope.mgjdisplay = true;
+    //        $scope.ymxcount = 1;
+    //        $scope.delurl = 'www.meituan.com';
+    //        $scope.change = function(value,judge){
+    //            if(value==1){ $scope.delurl = 'www.meituan.com';}
+    //            if(value==2){ $scope.delurl = 'https://www.dianping.com/';}
+    //            if(value==3){ $scope.delurl = '百度糯米';}
+    //            if(value==judge)return false;
+    //            else{return true;}
+    //        };
+    //    });
+    //    app.controller('ltop',function($scope){
+    //        $scope.wx=true;
+    //    })
+    //    app.controller('lpic',function($scope, $interval){
+    //        $scope.number = 1;
+    //        $scope.ptype = 1;
+    //        $scope.change = function(value,judge){
+    ////            if(value==0){value=3;
+    ////                $scope.number = 3;}
+    ////            if(value==4){value=1;
+    ////                $scope.number = 1;}
+    //            if(value==judge)return false;
+    //            else{return true;}
+    //        };
+    //        $scope.judgement=function(count,value){
+    //            if(count==value)
+    //            {
+    //                return true;
+    //            }else return false;
+    //        };
+    //        $interval(function () {
+    //            $scope.number ;
+    //        }, 5000);
+    //    });
+    //    app.controller('lnav',function($scope){
+    //        $scope.count =1;
+    ////        $scope.types=[{text:"美食",id:"meishi"},{text:"K歌",id:"kge"},{text:"电影",id:"dianying"},
+    ////            {text:"住宿",id:"zhusu"},{text:"外卖",id:"waimai"}];
+    //
+    //        $scope.msglist=true;
+    //        $scope.msgtoggle=function(){
+    //            $scope.msglist=!$scope.msglist;
+    //        }
+    //        $scope.choose=function(count,value){
+    //            if(count==value)
+    //            {
+    //                return true;
+    //            }else return false;
+    //        }
+    //
+    //        $scope.goto=function(count,$animate){
+    //            //  alert( document.body.scrollTop);
+    //            var body= document.body;
+    //            //   var top=  angular.element(body).animate({ scrollTop: 550 }, 100);
+    ////            $animate.enter(document.body).then(function() {
+    ////                $scope.scrollTop = 550;
+    ////            });
+    //            // alert(top);
+    //            var top = 550+(count-1)*430;
+    //            body.scrollTop=550+(count-1)*430;
+    //        }
+    //    });
+</script>
+</body>
+</html>

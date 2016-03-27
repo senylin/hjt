@@ -112,7 +112,7 @@ img{
      position: absolute;
      width: 100%;
      height:110px;
-     background: url('../image/hunter.jpg');
+     background: url('../image/3.png');
      background-size: 20% 100%;
      top:40px;
      border: 0px solid white;
@@ -165,7 +165,7 @@ img{
 }
 .lsyhover{
     background: white;
-    color: black!important;
+    color: #ff6b87!important;
     box-shadow: 0px 0px 20px #f3929b inset;
 }
 .lsyuser{
@@ -179,11 +179,11 @@ img{
     overflow: hidden;
 }
 .lsyuser img{
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     border-radius:50%;
     border: 0px solid yellow;
-    margin-top: 3px;
+    margin-top: 10px;
     float: left;
 }
 .lsyuser img:hover{
@@ -192,38 +192,44 @@ img{
 }
 .lsyname{
     width: 100px;
-    height: 100%;;
+    height: 28px;
     float: left;
+    margin-top: 11px;
     padding-left: 10px;
-    color:black;
-    font-size: 14px;
-    font-family: 'microsoft yahei';
-    line-height: 55px;
+    color:white;
+    font-size: 18px;
+    font-family: "kaiti";
+    line-height: 35px;
     overflow: hidden;
 }
 .lsyname:hover{
-    cursor: pointer;
-
+     cursor: pointer;
+     color: gold;
+ }
+.lsyname:active{
+    color: red;
 }
 .lsytrib{
     width: 100px;
-    height: 100%;;
+    height: 28px;
     float: left;
-    margin-left: 5px;
+    margin-top: 11px;
     text-align: center;
-    color:red;
-    font-size: 20px;
-    font-family: 'microsoft yahei';
-    line-height: 55px;
-    font-weight: 600;
+    color:white;
+    font-size: 18px;
+    font-family: 'kaiti';
+    line-height: 35px;
+    font-weight: 300;
     border-radius: 2px;
+    border-left: 1px dashed white;
 }
 .lsytrib:hover{
     cursor: pointer;
-    color: red;
+    color: gold;
 }
 .lsytrib:active{
-    background-color: crimson;
+    /*background-color: #ff6b87;*/
+    color: red;
 }
 .lsynav-s{
     position: absolute;
@@ -295,7 +301,7 @@ img{
      z-index:102;
 }
  /*标签*/
-.lsybq{
+.lsypgw .lsybq{
     position: absolute;
     top:9px;
     left: -20px;
@@ -313,6 +319,33 @@ img{
     font-weight: 600;
     line-height: 25px;
     box-shadow: 0px 1px 2px gray;
+    z-index: 100;
+}
+.lsypxs .lsybq{
+    position: absolute;
+    top:11px;
+    left: 125px;
+    width: 130px;
+    height: 30px;
+    background: white;
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    text-align: center;
+    color: #ff6b87;
+    font-family: 'DFKai-SB';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    border: 1px solid #ff6b87;
+    z-index: 100;
+}
+.lsybq:hover{
+    cursor: pointer;
+}
+.lsybq:active{
+    color:cornflowerblue;
 }
  /*picture*/
  .lsypics{
@@ -339,6 +372,16 @@ img{
     transition: all linear 0.4s;
     z-index: 10;
  }
+.lsypxs{
+    margin-left: -500px;
+    width:1000px;
+    position: absolute;
+    top:250px;
+    left:50%;
+    height: 350px;
+    transition: all linear 0.4s;
+    z-index: 10;
+}
 .lsypfj  .lsypt{
      position: absolute;
      top:0px;
@@ -393,6 +436,121 @@ img{
     font-family: 'comic sans ms';
     font-weight: 600;
     font-style: oblique;
+    letter-spacing: 0px;
+}
+.lsypxs .lsypt{
+    position: absolute;
+    top:0px;
+    width: 220px;
+    height:350px;
+    transition: all linear 0.4s;
+    border-radius: 2px;
+    border: 1px dashed #ff6b87;
+    z-index: 80;
+    overflow: hidden;
+}
+.xs1{
+     left: 30px;
+}
+.xs2{
+    left: 270px;
+}
+.xs3{
+    left: 510px;
+}
+.xs4{
+    left: 750px;
+}
+.lsypxs .lsypt ul{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    opacity: 1;
+    transition: all linear 0.4s;
+}
+.lsypxs .lsypt .ul2{
+    opacity: 0;
+}
+.lsypxs .lsypt ul li{
+    list-style: none;
+    float: left;
+    width: 100%;
+    height: 24px;
+    border-bottom:1px dashed darkgrey;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei';
+    line-height: 28px;
+    color: blueviolet;
+    text-align: left;
+}
+.lsypxs .lsypt ul li:hover{
+    background:gainsboro;
+}
+.lsypxs .listtop{
+    background:white!important;
+    height: 30px!important;
+    border-bottom:1px solid #f9a1b7!important;
+    font-size: 18px!important;
+    font-family: 'Microsoft YaHei'!important;
+    line-height: 28px!important;
+    font-weight: 600!important;
+    color: blueviolet!important;
+    text-align: left!important;
+    letter-spacing: 1px;
+    text-indent:10px!important;
+}
+.lsypxs .listtip{
+    background:white!important;
+    height: 20px!important;
+    color:grey!important;
+    font-size: 12px!important;
+    text-indent:25px!important;
+    line-height: 25px!important;
+}
+.lsypxs .listbottom{
+    background:white!important;
+    height: 30px!important;
+    line-height: 30px!important;
+    text-indent:10px!important;
+    text-align: right!important;
+}
+.lsypxs .listbottom span{
+    position: absolute;
+    font-size: 12px!important;
+    margin-left: 0px!important;
+}
+.lsypxs .listbottom a{
+    font-size: 16px!important;
+    text-align: right!important;
+    margin-right: 10px;
+}
+.lsypxs .lsypt ul li a{
+    position: relative;
+    margin-left: 15px;
+    color: darkslateblue;
+}
+.lsypxs .lsypt ul li a:hover{
+    color: dodgerblue;
+}
+.lsypxs .lsypt ul li span{
+    color:palevioletred;
+    position: relative;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: 'microsoft yahei';
+    letter-spacing: 0px;
+}
+.lsypxs .lsypt ul li .span2{
+    position: absolute;
+    top:-30px;
+    left: 150px;
+    width: 60px;
+    height: 100%;
+    color:palevioletred;
+    position: relative;
+    margin-left: 20px;
+    font-size: 12px;
+    font-family: 'microsoft yahei';
     letter-spacing: 0px;
 }
 .listtitle{
@@ -2204,8 +2362,16 @@ img{
     position: absolute;
     top:2800px;
     width: 100%;
-    height: 100px;
+    height: 180px;
     background-color: darkred;
+
+}
+#footer .lfpic{
+    margin: 0 auto;
+    width: 960px;
+    height: 100%;
+    background: url('../image/footer.jpg');
+    background-size: 100% 100%;
 }
 @media screen and (max-width: 960px){
     .lsytop{width:960px}
