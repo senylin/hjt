@@ -143,7 +143,7 @@ app.controller('lnav3',function($scope){
 //                $scope.scrollTop = 550;
 //            });
         // alert(top);
-        var top = 550+(count-1)*430;
-        body.scrollTop=550+(count-1)*430;
+        var top = 550+(count-1)*530;
+        body.scrollTop=550+(count-1)*530;
     }
 });

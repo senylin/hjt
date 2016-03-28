@@ -2357,6 +2357,722 @@ img{
     text-align: right;
     font-weight: 300;
 }
+/*qiandian*/
+#qidian{
+    height:500px!important;
+}
+#qidian:hover{
+
+}
+#qidian .lmhead{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 0px solid #e43747!important;
+}
+#qidian .lmhead .lmfont{
+    position: relative;
+    width: 120px;
+    height:100%;
+    top:0px;
+    font-family: 'kaiti';
+    font-size: 34px;
+    color:red;
+    line-height: 65px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    font-weight: 600;
+    z-index: 2;
+}
+#qidian .lmhead ul{
+    position: relative;
+    width: 400px;
+    height: 100%;
+    top:-50px;
+    left: 100px;
+    z-index: 3;
+    border-bottom: 1px dashed gray;
+}
+#qidian .lmhead ul li{
+    position: relative;
+    left: 0px;
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:grey;
+    line-height: 40px;
+    font-weight: 300;
+    border-radius: 0px!important;
+}
+#qidian .lmhead ul li:hover{
+    cursor: pointer;
+    color:black;
+}
+#qidian .lsyhov{
+    color:black!important;
+    background-color:white!important;
+    text-shadow: 0px 0px 10px black!important;
+}
+#qidian .lmhead .lmmore{
+    position: absolute;
+    top:0px;
+    left: 780px;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+#qidian .lmbody{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top:-30px;
+    overflow: hidden;
+}
+#qidian .lmbody ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#qidian .lmbody ul li{
+    list-style: none;
+    float: left;
+    width: 400px;
+    height:180px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px dashed darkgray;
+    border-radius: 1px;
+    overflow: hidden;
+}
+#qidian .lmbody ul li:hover{
+}
+#qidian .lmbody img{
+    position: absolute;
+    width: 120px;
+    height:160px;
+    border-radius: 1px;
+    margin-left: 20px;
+}
+#qidian .lmbody h1{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:5px;
+    font-family: 'microsoft yahei';
+    font-size: 20px;
+    color:gray;
+    overflow: hidden;
+    line-height: 18px;
+    font-weight: 600;
+    white-space:nowrap;
+}
+#qidian .lmbody h2{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:30px;
+    font-family: 'kaiti';
+    font-size: 14px;
+    font-weight: 300;
+    color:black;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+#qidian .lmbody h3{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:50px;
+    font-family: 'kaiti';
+    font-size: 14px;
+    font-weight: 300;
+    color:grey;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+#qidian .lmbody .describ{
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    margin-left: 160px;
+    margin-top: 70px;
+    font-family: 'microsoft yahei';
+    font-size: 14px;
+    color:black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#qidian .click{
+    font-size: 18px;
+    color:red;
+    width: 220px;
+    font-family: 'kaiti';
+    position: absolute;
+    margin-top:150px;
+    margin-left: 160px;
+    text-align: right;
+    font-weight: 300;
+}
+#qidian .click:hover{
+    cursor: pointer;
+}
+/*zongheng*/
+#zongheng{
+    height:500px!important;
+}
+#zongheng:hover{
+
+}
+#zongheng .lmhead{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 0px solid #e43747!important;
+}
+#zongheng .lmhead .lmfont{
+    position: relative;
+    width: 120px;
+    height:100%;
+    top:0px;
+    font-family: 'kaiti';
+    font-size: 34px;
+    color:darkred;
+    line-height: 65px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    font-weight: 600;
+    z-index: 2;
+}
+#zongheng .lmhead ul{
+    position: relative;
+    width: 400px;
+    height: 100%;
+    top:-50px;
+    left: 100px;
+    z-index: 3;
+    border-bottom: 1px dashed gray;
+}
+#zongheng .lmhead ul li{
+    position: relative;
+    left: 0px;
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:grey;
+    line-height: 40px;
+    font-weight: 300;
+    border-radius: 0px!important;
+}
+#zongheng .lmhead ul li:hover{
+    cursor: pointer;
+    color:black;
+}
+#zongheng .lsyhov{
+    color:black!important;
+    background-color:white!important;
+    text-shadow: 0px 0px 10px black!important;
+}
+#zongheng .lmhead .lmmore{
+    position: absolute;
+    top:0px;
+    left: 780px;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+#zongheng .lmbody{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top:-30px;
+    overflow: hidden;
+}
+#zongheng .lmbody ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#zongheng .lmbody ul li{
+    list-style: none;
+    float: left;
+    width: 400px;
+    height:180px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px dashed darkgray;
+    border-radius: 1px;
+    overflow: hidden;
+}
+#zongheng .lmbody ul li:hover{
+}
+#zongheng .lmbody img{
+    position: absolute;
+    width: 120px;
+    height:160px;
+    border-radius: 1px;
+    margin-left: 20px;
+}
+#zongheng .lmbody h1{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:5px;
+    font-family: 'microsoft yahei';
+    font-size: 20px;
+    color:gray;
+    overflow: hidden;
+    line-height: 18px;
+    font-weight: 600;
+    white-space:nowrap;
+}
+#zongheng .lmbody h2{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:30px;
+    font-family: 'kaiti';
+    font-size: 14px;
+    font-weight: 300;
+    color:black;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+#zongheng .lmbody h3{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:50px;
+    font-family: 'kaiti';
+    font-size: 14px;
+    font-weight: 300;
+    color:grey;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+#zongheng .lmbody .describ{
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    margin-left: 160px;
+    margin-top: 70px;
+    font-family: 'microsoft yahei';
+    font-size: 14px;
+    color:black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#zongheng .click{
+    font-size: 18px;
+    color:red;
+    width: 220px;
+    font-family: 'kaiti';
+    position: absolute;
+    margin-top:150px;
+    margin-left: 160px;
+    text-align: right;
+    font-weight: 300;
+}
+#zongheng .click:hover{
+    cursor: pointer;
+}
+/*chuangshiji*/
+#chuangshiji{
+    height:500px!important;
+}
+#chuangshiji:hover{
+
+}
+#chuangshiji .lmhead{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 0px solid #e43747!important;
+}
+#chuangshiji .lmhead .lmfont{
+    position: relative;
+    width: 120px;
+    height:100%;
+    top:0px;
+    font-family: 'kaiti';
+    font-size: 34px;
+    color:dodgerblue;
+    line-height: 65px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    font-weight: 600;
+    z-index: 2;
+}
+#chuangshiji .lmhead ul{
+    position: relative;
+    width: 400px;
+    height: 100%;
+    top:-50px;
+    left: 120px;
+    z-index: 3;
+    border-bottom: 1px dashed gray;
+}
+#chuangshiji .lmhead ul li{
+    position: relative;
+    left: 0px;
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:grey;
+    line-height: 40px;
+    font-weight: 300;
+    border-radius: 0px!important;
+}
+#chuangshiji .lmhead ul li:hover{
+    cursor: pointer;
+    color:black;
+}
+#chuangshiji .lsyhov{
+    color:black!important;
+    background-color:white!important;
+    text-shadow: 0px 0px 10px black!important;
+}
+#chuangshiji .lmhead .lmmore{
+    position: absolute;
+    top:0px;
+    left: 780px;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+#chuangshiji .lmbody{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top:-30px;
+    overflow: hidden;
+}
+#chuangshiji .lmbody ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#chuangshiji .lmbody ul li{
+    list-style: none;
+    float: left;
+    width: 400px;
+    height:180px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px dashed darkgray;
+    border-radius: 1px;
+    overflow: hidden;
+}
+#chuangshiji .lmbody ul li:hover{
+}
+#chuangshiji .lmbody img{
+    position: absolute;
+    width: 120px;
+    height:160px;
+    border-radius: 1px;
+    margin-left: 20px;
+}
+#chuangshiji .lmbody h1{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:5px;
+    font-family: 'microsoft yahei';
+    font-size: 20px;
+    color:gray;
+    overflow: hidden;
+    line-height: 18px;
+    font-weight: 600;
+    white-space:nowrap;
+}
+#chuangshiji .lmbody h2{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:30px;
+    font-family: 'kaiti';
+    font-size: 14px;
+    font-weight: 300;
+    color:black;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+#chuangshiji .lmbody h3{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:50px;
+    font-family: 'kaiti';
+    font-size: 14px;
+    font-weight: 300;
+    color:grey;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+#chuangshiji .lmbody .describ{
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    margin-left: 160px;
+    margin-top: 70px;
+    font-family: 'microsoft yahei';
+    font-size: 14px;
+    color:black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#chuangshiji .click{
+    font-size: 18px;
+    color:red;
+    width: 220px;
+    font-family: 'kaiti';
+    position: absolute;
+    margin-top:150px;
+    margin-left: 160px;
+    text-align: right;
+    font-weight: 300;
+}
+#chuangshiji .click:hover{
+    cursor: pointer;
+}
+/*hao123*/
+#hao123{
+    height:500px!important;
+}
+#hao123:hover{
+
+}
+#hao123 .lmhead{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 0px solid #e43747!important;
+}
+#hao123 .lmhead .lmfont{
+    position: relative;
+    width: 120px;
+    height:100%;
+    top:0px;
+    font-family: 'comic sans ms';
+    font-size: 34px;
+    color:darkseagreen;
+    line-height: 65px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    font-weight: 600;
+    z-index: 2;
+}
+#hao123 .lmhead ul{
+    position: relative;
+    width: 400px;
+    height: 100%;
+    top:-50px;
+    left: 150px;
+    z-index: 3;
+    border-bottom: 1px dashed gray;
+}
+#hao123 .lmhead ul li{
+    position: relative;
+    left: 0px;
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:grey;
+    line-height: 40px;
+    font-weight: 300;
+    border-radius: 0px!important;
+}
+#hao123 .lmhead ul li:hover{
+    cursor: pointer;
+    color:black;
+}
+#hao123 .lsyhov{
+    color:black!important;
+    background-color:white!important;
+    text-shadow: 0px 0px 10px black!important;
+}
+#hao123 .lmhead .lmmore{
+    position: absolute;
+    top:0px;
+    left: 780px;
+    width: 100px;
+    height: 60%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'kaiti';
+    font-size: 20px;
+    color:black;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+#hao123 .lmbody{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top:-30px;
+    overflow: hidden;
+}
+#hao123 .lmbody ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#hao123 .lmbody ul li{
+    list-style: none;
+    float: left;
+    width: 400px;
+    height:180px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px dashed darkgray;
+    border-radius: 1px;
+    overflow: hidden;
+}
+#hao123 .lmbody ul li:hover{
+}
+#hao123 .lmbody img{
+    position: absolute;
+    width: 120px;
+    height:160px;
+    border-radius: 1px;
+    margin-left: 20px;
+}
+#hao123 .lmbody h1{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:5px;
+    font-family: 'microsoft yahei';
+    font-size: 20px;
+    color:gray;
+    overflow: hidden;
+    line-height: 18px;
+    font-weight: 600;
+    white-space:nowrap;
+}
+#hao123 .lmbody h2{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:30px;
+    font-family: 'kaiti';
+    font-size: 14px;
+    font-weight: 300;
+    color:black;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+#hao123 .lmbody h3{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    margin-left: 160px;
+    margin-top:50px;
+    font-family: 'kaiti';
+    font-size: 14px;
+    font-weight: 300;
+    color:grey;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+#hao123 .lmbody .describ{
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    margin-left: 160px;
+    margin-top: 70px;
+    font-family: 'microsoft yahei';
+    font-size: 14px;
+    color:black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#hao123 .click{
+    font-size: 18px;
+    color:red;
+    width: 220px;
+    font-family: 'kaiti';
+    position: absolute;
+    margin-top:150px;
+    margin-left: 160px;
+    text-align: right;
+    font-weight: 300;
+}
+#hao123 .click:hover{
+    cursor: pointer;
+}
 /*footer*/
 #footer{
     position: absolute;
