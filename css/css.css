@@ -2921,6 +2921,9 @@ img{
     font-weight: 600;
     z-index: 2;
 }
+#hao123 .lmhead span{
+    color:coral;
+}
 #hao123 .lmhead ul{
     position: relative;
     width: 400px;
