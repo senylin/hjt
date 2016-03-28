@@ -122,6 +122,12 @@ img{
 
    display: block;
  }
+ .lsynav-h{
+
+ }
+.lsynav-h2{
+
+}
 /*navig*/
 .lsynav{
     position: absolute;
@@ -1052,7 +1058,7 @@ img{
     color:gray;
     margin-left: 10px;
 }
-.lnum{
+#meishi .lnum{
     font-size: 10px;
     color:gray;
     width: 100px;
@@ -1227,8 +1233,19 @@ img{
     color:#e43747;
     font-weight: 600;
 }
+#kge .lnum{
+    font-size: 10px;
+    color:gray;
+    width: 100px;
+    font-family: 'microsoft yahei';
+    position: absolute;
+    top:280px;
+    margin-left: 95px;
+    text-align: right;
+
+}
 /*pingfen*/
-.lscore{
+#kge .lscore{
     position: absolute;
     width:100px;
     height: 15px;
@@ -1261,7 +1278,7 @@ img{
     height:98%;
     margin-right: 20px;
     margin-bottom: 25px;
-    border:2px solid white;
+    border:2px solid #f9a1b7;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -1347,6 +1364,30 @@ img{
     margin-left: 120px;
     width: 80px;
     text-align: right;
+}
+#zhusu .lnum{
+    font-size: 10px;
+    color:gray;
+    width: 100px;
+    font-family: 'microsoft yahei';
+    position: absolute;
+    top:280px;
+    margin-left: 95px;
+    text-align: right;
+
+}
+#zhusu .lscore{
+    position: absolute;
+    width:100px;
+    height: 15px;
+    margin-left: 15px;
+    top:15px;
+    font-family: 'microsoft yahei';
+    font-size: 10px;
+    font-size: 18px;
+    color: blueviolet;
+    margin-top: 260px;
+    line-height:16px;
 }
 /*waimai*/
 #waimai .lmbody{
@@ -1451,6 +1492,30 @@ img{
     margin-left: 120px;
     width: 80px;
     text-align: right;
+}
+#waimai .lnum{
+    font-size: 10px;
+    color:gray;
+    width: 100px;
+    font-family: 'microsoft yahei';
+    position: absolute;
+    top:280px;
+    margin-left: 95px;
+    text-align: right;
+
+}
+#waimai .lscore{
+    position: absolute;
+    width:100px;
+    height: 15px;
+    margin-left: 15px;
+    top:15px;
+    font-family: 'microsoft yahei';
+    font-size: 10px;
+    font-size: 18px;
+    color: blueviolet;
+    margin-top: 260px;
+    line-height:16px;
 }
 /*taobao*/
 #taobao .lmhead{
@@ -1591,7 +1656,7 @@ img{
     width: 90%;
     height: 28px;
     margin-left: 5%;
-    top:15px;
+    margin-top:15px;
     font-family: 'simhei';
     font-size: 10px;
     color:gray;
@@ -1602,7 +1667,7 @@ img{
     width: 90%;
     height:30px;
     margin-left: 10px;
-    top:235px;
+    margin-top:10px;
     font-family: 'KaiTi_GB2312';
     font-size:30px;
     color:orangered;
@@ -1620,10 +1685,10 @@ img{
 #taobao .lnum{
     font-size: 10px;
     color:gray;
-    width: 180px;
+    width: 190px;
     font-family: 'KaiTi_GB2312';
     position: absolute;
-    top:270px;
+    margin-top:55px;
     margin-left: 0px;
     text-align: right;
 
@@ -1636,7 +1701,7 @@ img{
     text-align: center;
     font-family: 'kaiti';
     margin-left: 0px;
-    top:275px;
+    margin-top:45px;
     color: white;
     border-radius: 1px;
 }
@@ -1921,10 +1986,10 @@ img{
 }
 #yihaodian .lmbody .lprice{
     position: absolute;
-    width: 90%;
+    width: 200px;
     height:30px;
     margin-left: 15px;
-    top:255px;
+    margin-top:5px;
     font-family: 'Microsoft YaHei';
     font-size:30px;
     color:red;
@@ -1945,7 +2010,7 @@ img{
     width: 180px;
     font-family: 'Microsoft YaHei';
     position: absolute;
-    top:270px;
+    margin-top:20px;
     margin-left: 200px;
     text-align: right;
 
@@ -1958,7 +2023,7 @@ img{
     text-align: center;
     font-family: 'kaiti';
     margin-left: 0px;
-    top:275px;
+    margin-top:55px;
     color: white;
     border-radius: 1px;
 }
@@ -2108,7 +2173,7 @@ img{
     width: 210px;
     height: 30px;
     margin-left: 185px;
-    top:20px;
+    margin-top:-180px;
     font-family: 'Microsoft YaHei';
     font-size: 18px;
     color:black;
@@ -2143,7 +2208,7 @@ img{
     width: 90%;
     height:30px;
     margin-left: 185px;
-    top:80px;
+    margin-top:-120px;
     font-family: 'Microsoft YaHei';
     font-size:24px;
     color:#ff6b87;
@@ -2167,7 +2232,7 @@ img{
     width: 180px;
     font-family: 'KaiTi_GB2312';
     position: absolute;
-    top:150px;
+    margin-top:-55px;
     margin-left: 200px;
     text-align: right;
 
@@ -2175,7 +2240,7 @@ img{
 #mogujie .lbuy{
     position: absolute;
     margin-left: 200px;
-    top:140px;
+    margin-top:-65px;
     width: 90px;
     height: 35px;
     background: #ff6b87;
@@ -2330,7 +2395,7 @@ img{
     width: 90%;
     height:30px;
     margin-left: 10px;
-    top:225px;
+    margin-top:10px;
     font-family: 'KaiTi_GB2312';
     font-size:30px;
     color:darkred;
@@ -2352,7 +2417,7 @@ img{
     width: 180px;
     font-family: 'kaiti';
     position: absolute;
-    top:260px;
+    margin-top:50px;
     margin-left: 15px;
     text-align: right;
     font-weight: 300;

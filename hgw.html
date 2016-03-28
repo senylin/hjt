@@ -7,7 +7,7 @@
     <script src="js/angular-animate.min.js"></script>
     <script src="js/ng.js"></script>
     <link rel="stylesheet" href="css/css.css" type="text/css"/>
-    <title>汇聚唐</title>
+    <title>汇购物</title>
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <div ng-app="lsyApp" class="lsyapp">
@@ -24,6 +24,7 @@
     <div class="lsylogo">
         <img src=""/>
     </div>
+    <div id="llist"></div>
     <!--nav-->
     <div id="nav" class="lsynav" ng-controller="lnav1" ng-mouseleave="count=1" >
         <ul>
@@ -52,10 +53,10 @@
                 <li ng-click="goto(0)">外卖</li>
             </ul>
             <ul ng-hide="!choose(count,3)">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                <li ng-click="goto(0)">起点</li>
+                <li ng-click="goto(0)">纵横</li>
+                <li ng-click="goto(0)">创世纪</li>
+                <li ng-click="goto(0)">hao123</li>
             </ul>
             <div class="lsymsg" ng-click="msgtoggle()">消息栏</div>
             <div class="lsymsglist" ng-class="{msghide:msglist}"></div>

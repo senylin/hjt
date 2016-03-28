@@ -7,7 +7,8 @@
     <script src="js/angular-animate.min.js"></script>
     <script src="js/ng.js"></script>
     <link rel="stylesheet" href="css/css.css" type="text/css"/>
-    <title>汇聚唐</title>
+    <link rel="stylesheet" href="css/second.css" type="text/css"/>
+    <title>第二层</title>
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <div ng-app="lsyApp" class="lsyapp">
@@ -61,7 +62,36 @@
         <div class="lsymsglist" ng-class="{msghide:msglist}"></div>
     </div>
 </div>
-
+<div class="lsybody2" ng-controller="lalldate">
+    <div id="llist" class="lsynav-h">
+        <ul class="nav-hgw">
+            <li class="nav-head" ng-click="gw=!gw">汇购物</li>
+            <li ng-class="{lihide:!gw}">淘宝</li>
+            <li ng-class="{lihide:!gw}">聚美优品</li>
+            <li ng-class="{lihide:!gw}">一号店</li>
+            <li ng-class="{lihide:!gw}">蘑菇街</li>
+            <li ng-class="{lihide:!gw}">亚马逊</li>
+        </ul>
+        <ul class="nav-hfj">
+            <li class="nav-head" ng-click="fj=!fj">汇附近</li>
+            <li ng-class="{lihide:!fj}">美食</li>
+            <li ng-class="{lihide:!fj}">电影</li>
+            <li ng-class="{lihide:!fj}">KTV</li>
+            <li ng-class="{lihide:!fj}">旅店</li>
+            <li ng-class="{lihide:!fj}">外卖</li>
+        </ul>
+        <ul class="nav-hxs">
+            <li class="nav-head" ng-click="xs=!xs">汇小说</li>
+            <li ng-class="{lihide:!xs}">起点</li>
+            <li ng-class="{lihide:!xs}">纵横</li>
+            <li ng-class="{lihide:!xs}">创世纪</li>
+            <li ng-class="{lihide:!xs}">hao123</li>
+        </ul>
+    </div>
+    <div class="lsylist-all">
+        <div ng-include="'pages/yamaxun.html'"></div>
+    </div>
+</div>
 <div id="footer">
     <div class="lfpic"></div>
 </div>
