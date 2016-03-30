@@ -123,6 +123,7 @@
     margin-right: 10px!important;
     height: 298px!important;
     margin-bottom: 10px!important;
+    overflow: hidden!important;
 }
 #jumei .lmbody li{
     margin-left: 0px!important;
@@ -222,6 +223,27 @@
 }
 .lipage{
     background: #ff6b87!important;
+}
+.lsyover{
+    position: relative;
+    margin-top:-210px;
+    margin-left: 100px;
+    width: 130px;
+    height: 30px;
+    background: #ff6b87;
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    text-align: center;
+    color: white;
+    font-family: 'microsoft yahei';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    border: 1px solid #ff6b87;
+    z-index: 100;
+    box-shadow: 0px 0px 5px #ff6b87;
 }
 #footer{
     top:2000px!important;
