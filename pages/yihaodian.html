@@ -1,6 +1,16 @@
+<div class="lsynav-p">
+    <ul>
+        <li ng-class="{listp:!change(ydhcount,1)}" ng-click="ydhcount = 1;npage=1">团购</li>
+        <li ng-class="{listp:!change(ydhcount,2)}" ng-click="ydhcount = 2;npage=1">海购新品</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
 <div id="yihaodian">
     <div class="lmbody">
-        <ul ng-hide="change(ydhcount,1)">
+        <ul ng-hide="charge(ydhcount,1,npage,1)">
             <li>
                 <img src="image/hgw/yihaodian/tg/603221.webp"/>
                 <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
@@ -44,7 +54,7 @@
                 <div class="lnum">346件已售</div>
             </li>
         </ul>
-        <ul ng-hide="change(ydhcount,2)">
+        <ul ng-hide="charge(ydhcount,2,npage,1)">
             <li>
                 <img class="img2" src="image/hgw/yihaodian/hg/603221.jpg"/>
                 <h1 class="h2" title="成人高钙全脂奶粉 a2 1kg 新西兰进口">成人高钙全脂奶粉 a2 1kg 新西兰进口</h1>
@@ -69,6 +79,30 @@
                 <div class="lprice">¥148<small>参考价¥399</small></div>
                 <div class="lnum">境外直邮</div>
             </li>
+        </ul>
+    </div>
+    <div class="pagelist" ng-hide="charge(ydhcount,1,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
+        </ul>
+    </div>
+    <div class="pagelist" ng-hide="charge(ydhcount,2,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
         </ul>
     </div>
 </div>

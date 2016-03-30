@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/angular.min.js"></script>
     <script src="js/angular-animate.min.js"></script>
-    <script src="js/ng.js"></script>
+    <script src="js/nglist.js"></script>
     <link rel="stylesheet" href="css/css.css" type="text/css"/>
     <link rel="stylesheet" href="css/second.css" type="text/css"/>
     <title>第二层</title>
@@ -26,7 +26,7 @@
     <img src=""/>
 </div>
 <!--nav-->
-<div id="nav" class="lsynav" ng-controller="lnav1" ng-mouseleave="count=1" >
+<div id="nav" class="lsynav" ng-controller="lnav1" ng-mouseleave="count=0" >
     <ul>
         <li ng-class="{lsyhover:choose(count,1)}" ng-mouseover="count=1">惠购物</li>
         <li ng-class="{lsyhover:choose(count,2)}" ng-mouseover="count=2">汇周边</li>
@@ -66,30 +66,30 @@
     <div id="llist" class="lsynav-h">
         <ul class="nav-hgw">
             <li class="nav-head" ng-click="gw=!gw">汇购物</li>
-            <li ng-class="{lihide:!gw}">淘宝</li>
-            <li ng-class="{lihide:!gw}">聚美优品</li>
-            <li ng-class="{lihide:!gw}">一号店</li>
-            <li ng-class="{lihide:!gw}">蘑菇街</li>
-            <li ng-class="{lihide:!gw}">亚马逊</li>
+            <li ng-class="{lihide:!gw,lifocus:!change(foc,1)}" ng-click="url='pages/taobao.html';foc=1;npage=1;totop()">淘宝</li>
+            <li ng-class="{lihide:!gw,lifocus:!change(foc,2)}" ng-click="url='pages/jumei.html';foc=2;npage=1;totop()">聚美优品</li>
+            <li ng-class="{lihide:!gw,lifocus:!change(foc,3)}" ng-click="url='pages/yihaodian.html';foc=3;npage=1;totop()">一号店</li>
+            <li ng-class="{lihide:!gw,lifocus:!change(foc,4)}" ng-click="url='pages/mogujie.html';foc=4;npage=1;totop()">蘑菇街</li>
+            <li ng-class="{lihide:!gw,lifocus:!change(foc,5)}" ng-click="url='pages/yamaxun.html';foc=5;npage=1;totop()">亚马逊</li>
         </ul>
         <ul class="nav-hfj">
             <li class="nav-head" ng-click="fj=!fj">汇附近</li>
-            <li ng-class="{lihide:!fj}">美食</li>
-            <li ng-class="{lihide:!fj}">电影</li>
-            <li ng-class="{lihide:!fj}">KTV</li>
-            <li ng-class="{lihide:!fj}">旅店</li>
-            <li ng-class="{lihide:!fj}">外卖</li>
+            <li ng-class="{lihide:!fj,lifocus:!change(foc,6)}" ng-click="url='pages/meishi.html';foc=6;npage=1;totop()">美食</li>
+            <li ng-class="{lihide:!fj,lifocus:!change(foc,7)}" ng-click="url='pages/dianying.html';foc=7;npage=1;totop()">电影</li>
+            <li ng-class="{lihide:!fj,lifocus:!change(foc,8)}" ng-click="url='pages/ktv.html';foc=8;npage=1;totop()">KTV</li>
+            <li ng-class="{lihide:!fj,lifocus:!change(foc,9)}" ng-click="url='pages/zhusu.html';foc=9;npage=1;totop()">旅店</li>
+            <li ng-class="{lihide:!fj,lifocus:!change(foc,10)}" ng-click="url='pages/waimai.html';foc=10;npage=1;totop()">外卖</li>
         </ul>
         <ul class="nav-hxs">
             <li class="nav-head" ng-click="xs=!xs">汇小说</li>
-            <li ng-class="{lihide:!xs}">起点</li>
-            <li ng-class="{lihide:!xs}">纵横</li>
-            <li ng-class="{lihide:!xs}">创世纪</li>
-            <li ng-class="{lihide:!xs}">hao123</li>
+            <li ng-class="{lihide:!xs,lifocus:!change(foc,11)}" ng-click="url='pages/qidian.html';foc=11;npage=1;totop()">起点</li>
+            <li ng-class="{lihide:!xs,lifocus:!change(foc,12)}" ng-click="url='pages/zongheng.html';foc=12;npage=1;totop()">纵横</li>
+            <li ng-class="{lihide:!xs,lifocus:!change(foc,13)}" ng-click="url='pages/chuangshiji.html';foc=13;npage=1;totop()">创世纪</li>
+            <li ng-class="{lihide:!xs,lifocus:!change(foc,14)}" ng-click="url='pages/hao123.html';foc=14;npage=1;totop()">hao123</li>
         </ul>
     </div>
-    <div class="lsylist-all">
-        <div ng-include="'pages/yamaxun.html'"></div>
+    <div class="lsylist-all" ng-init="url=''">
+        <div ng-include="url"></div>
     </div>
 </div>
 <div id="footer">

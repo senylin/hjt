@@ -273,10 +273,10 @@ img{
 }
 /*message*/
 .lsymsg{
-    position: relative;
+    position: absolute;
     width: 80px;
     height: 100%;
-    top:-25px;
+    top:5px;
     left: 90%;
     margin-left: -150px;
     font-size:18px;
@@ -957,7 +957,7 @@ img{
 #meishi .lmbody ul{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 300px;
 }
 #meishi .lmbody ul li{
     list-style: none;
@@ -1018,20 +1018,19 @@ img{
 #meishi .lmbody p:hover{
     color:lightblue;
     cursor: default;
-    text-decoration: underline;
     width: 90%;
-    height:42px;
+    height:30px;
 }
 .lspan{
     width:180px;
-    height: 30px;
+    height: 25px;
     position: absolute;
     margin-left: 10px;
-    top:230px;
+    margin-top:25px;
 
 }
 .lspan:hover{
-    height:50px;
+    height:25px;
 }
 .lspan span{
     text-align: center;
@@ -1047,7 +1046,7 @@ img{
     width: 90%;
     height:30px;
     margin-left: 10px;
-    top:250px;
+    margin-top:45px;
     font-family: 'microsoft yahei';
     font-size:20px;
     color:#e43747;
@@ -1064,7 +1063,7 @@ img{
     width: 100px;
     font-family: 'microsoft yahei';
     position: absolute;
-    top:280px;
+    margin-top:75px;
     margin-left: 95px;
     text-align: right;
 
@@ -1086,7 +1085,7 @@ img{
     list-style: none;
     float: left;
     width: 200px;
-    height:98%;
+    height:294px;
     margin-right: 20px;
     margin-bottom: 25px;
     border:2px solid #f9a1b7;
@@ -1129,8 +1128,8 @@ img{
     position: absolute;
     width: 90%;
     height: 35px;
-    margin-left: 140px;
-    top:260px;
+    margin-left: 150px;
+    margin-top:8px;
     font-family: 'comic sans ms';
     font-size: 25px;
     color:#f9a1b7;
@@ -1145,7 +1144,7 @@ img{
     background-color: #f3929b;
     border-radius: 2px;
     margin-left: 0px;
-    top:280px
+    margin-top:26px
 }
 /*ktv*/
 #kge .lmbody{
@@ -1164,7 +1163,7 @@ img{
     list-style: none;
     float: left;
     width: 200px;
-    height:98%;
+    height:294px;
     margin-right: 20px;
     margin-bottom: 25px;
     border:2px solid #f9a1b7;
@@ -1227,7 +1226,7 @@ img{
     width: 180px;
     height:30px;
     margin-left: 10px;
-    top:230px;
+    margin-top:35px;
     font-family: 'microsoft yahei';
     font-size:26px;
     color:#e43747;
@@ -1239,7 +1238,7 @@ img{
     width: 100px;
     font-family: 'microsoft yahei';
     position: absolute;
-    top:280px;
+    margin-top:90px;
     margin-left: 95px;
     text-align: right;
 
@@ -1250,12 +1249,11 @@ img{
     width:100px;
     height: 15px;
     margin-left: 15px;
-    top:15px;
     font-family: 'microsoft yahei';
     font-size: 10px;
     font-size: 18px;
     color: blueviolet;
-    margin-top: 260px;
+    margin-top: 85px;
     line-height:16px;
 }
 /*hotel*/
@@ -1275,7 +1273,7 @@ img{
     list-style: none;
     float: left;
     width: 200px;
-    height:98%;
+    height:245px;
     margin-right: 20px;
     margin-bottom: 25px;
     border:2px solid #f9a1b7;
@@ -1299,9 +1297,10 @@ img{
 }
 #zhusu .lmbody h1{
     position: relative;
-    width: 100%;
+    width: 96%;
     height: 20px;
     top:10px;
+    margin-left: 5px;
     font-family: 'microsoft yahei';
     font-size: 20px;
     color:lightslategray;
@@ -1317,22 +1316,24 @@ img{
 }
 #zhusu .lmbody p{
     position: relative;
-    width: 100%;
+    width: 96%;
     height:30px;
     top:15px;
+    margin-left: 5px;
     font-family: 'microsoft yahei';
     font-size: 10px;
     color:gray;
     overflow: hidden;
 }
 #zhusu .lmbody p:hover{
-    height: 45px;
+    height: 48px;
 }
 #zhusu .lmbody .lprice{
     position: absolute;
-    width: 200px;
-    height:18px;
-    top:200px;
+    width: 190px;
+    height:20px;
+    margin-top:30px;
+    margin-left: 5px;
     font-family: 'microsoft yahei';
     font-size:20px;
     line-height: 20px;
@@ -1352,12 +1353,6 @@ img{
     margin-top: -10px;
     margin-left: 0px;
 }
-
-#zhusu .lmbody .lscore{
-    margin-top: 210px;
-    margin-left: 0px;
-    font-size: 16px;
-}
 #zhusu .lmbody .lsale{
     font-size: 14px;
     margin-top: -20px;
@@ -1371,7 +1366,7 @@ img{
     width: 100px;
     font-family: 'microsoft yahei';
     position: absolute;
-    top:280px;
+    margin-top:80px;
     margin-left: 95px;
     text-align: right;
 
@@ -1380,13 +1375,11 @@ img{
     position: absolute;
     width:100px;
     height: 15px;
-    margin-left: 15px;
-    top:15px;
+    margin-left: 10px;
     font-family: 'microsoft yahei';
-    font-size: 10px;
-    font-size: 18px;
+    font-size: 16px;
     color: blueviolet;
-    margin-top: 260px;
+    margin-top: 52px;
     line-height:16px;
 }
 /*waimai*/
@@ -1406,7 +1399,7 @@ img{
     list-style: none;
     float: left;
     width: 200px;
-    height:98%;
+    height:255px;
     margin-right: 20px;
     margin-bottom: 25px;
     border:2px solid #f9a1b7;
@@ -1460,7 +1453,7 @@ img{
     width: 200px;
     height:18px;
 
-    top:210px;
+    margin-top:40px;
     font-family: 'microsoft yahei';
     font-size:12px;
     line-height: 20px;
@@ -1469,23 +1462,29 @@ img{
 }
 #waimai .lmbody .lprice div{
     float: left;
-    width: 60px;
+    width: 66px;
     height: 100%;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 #waimai .lmbody .lprice .ltime{
     text-align: right;
 }
 #waimai .lmbody .lspan{
-    margin-top: 0px;
+    margin-top: 65px;
     margin-left: 5px;
 }
 
-#waimai .lmbody .lscore{
-    margin-top: 10px;
-    margin-left: 5px;
-    font-size: 16px;
-}
+/*#waimai .lmbody .lscore{*/
+    /*position: absolute;*/
+    /*width:100px;*/
+    /*height: 15px;*/
+    /*font-family: 'microsoft yahei';*/
+    /*color: blueviolet;*/
+    /*line-height:16px;*/
+    /*margin-top: 10px;*/
+    /*margin-left: 5px;*/
+    /*font-size: 16px;*/
+/*}*/
 #waimai .lmbody .lsale{
     font-size: 14px;
     margin-top: -20px;
@@ -1499,7 +1498,7 @@ img{
     width: 100px;
     font-family: 'microsoft yahei';
     position: absolute;
-    top:280px;
+    margin-top:80px;
     margin-left: 95px;
     text-align: right;
 
@@ -1509,12 +1508,11 @@ img{
     width:100px;
     height: 15px;
     margin-left: 15px;
-    top:15px;
+    margin-top:0px;
     font-family: 'microsoft yahei';
     font-size: 10px;
     font-size: 18px;
     color: blueviolet;
-    margin-top: 260px;
     line-height:16px;
 }
 /*taobao*/
@@ -1608,7 +1606,7 @@ img{
     list-style: none;
     float: left;
     width: 200px;
-    height:98%;
+    height:298px;
     margin-right: 20px;
     margin-bottom: 25px;
     border:1px solid orange;
@@ -1664,7 +1662,7 @@ img{
 }
 #taobao .lmbody .lprice{
     position: absolute;
-    width: 90%;
+    width: 180px;
     height:30px;
     margin-left: 10px;
     margin-top:10px;
@@ -3148,7 +3146,7 @@ img{
     width: 100%;
     height: 180px;
     background-color: darkred;
-
+    z-index:30;
 }
 #footer .lfpic{
     margin: 0 auto;

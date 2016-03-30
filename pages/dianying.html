@@ -1,0 +1,124 @@
+<div class="lsynav-p">
+    <ul>
+        <li ng-class="{listp:!change(filmcount,1)}" ng-click="filmcount = 1;npage=1">美团</li>
+        <li ng-class="{listp:!change(filmcount,2)}" ng-click="filmcount = 2;npage=1">大众点评</li>
+        <li ng-class="{listp:!change(filmcount,3)}" ng-click="filmcount = 3;npage=1">百度糯米</li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div id="dianying">
+    <div class="lmbody">
+        <ul ng-hide="charge(filmcount,1,npage,1)">
+            <li>
+                <img src="image/mtdy603171.jpg"/>
+                <h1 title="荒野猎人">荒野猎人</h1>
+                <span>预售</span>
+                <p>0.0</p>
+            </li>
+            <li>
+                <img src="image/mtdy603172.jpg"/>
+                <h1 title="疯狂动物园">疯狂动物园</h1>
+                <span>购票</span>
+                <p>9.5</p>
+            </li>
+            <li>
+                <img src="image/mtdy603173.jpg"/>
+                <h1 title="蝙蝠侠大战超人">蝙蝠侠大战超人</h1>
+                <span>预售</span>
+                <p>0.0</p>
+            </li>
+            <li>
+                <img src="image/mtdy603174.jpg"/>
+                <h1 title="女汉子真爱公式">女汉子真爱公式</h1>
+                <span>预售</span>
+                <p>0.0</p>
+            </li>
+            <li>
+                <img src="image/mtdy603174.jpg"/>
+                <h1 title="女汉子真爱公式">女汉子真爱公式</h1>
+                <span>预售</span>
+                <p>0.0</p>
+            </li>
+            <li>
+                <img src="image/mtdy603174.jpg"/>
+                <h1 title="女汉子真爱公式">女汉子真爱公式</h1>
+                <span>预售</span>
+                <p>0.0</p>
+            </li>
+        </ul>
+        <ul ng-hide="charge(filmcount,2,npage,1)">
+            <li>
+                <img src="image/dianping/dy603191.jpg"/>
+                <h1 title="荒野猎人">荒野猎人</h1>
+                <span>正在热映</span>
+                <p>8.5</p>
+            </li>
+            <li>
+                <img src="image/dianping/dy603192.jpg"/>
+                <h1 title="疯狂动物城">疯狂动物城</h1>
+                <span>正在热映</span>
+                <p>9.2</p>
+            </li>
+            <li>
+                <img src="image/dianping/dy603193.jpg"/>
+                <h1 title="飞鹰艾迪">飞鹰艾迪</h1>
+                <span>正在热映</span>
+                <p>7.8</p>
+            </li>
+            <li>
+                <img src="image/dianping/dy603194.jpg"/>
+                <h1 title="神战：权力之眼">神战：权力之眼</h1>
+                <span>正在热映</span>
+                <p>8.7</p>
+            </li>
+        </ul>
+        <ul ng-hide="charge(filmcount,3,npage,1)">
+            <li>
+                <img src="image/3.jpg"/>
+                <h1>叶问3</h1>
+                <p>8.9</p>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="pagelist" ng-hide="charge(filmcount,1,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
+        </ul>
+    </div>
+    <div class="pagelist" ng-hide="charge(filmcount,2,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
+        </ul>
+    </div>
+    <div class="pagelist" ng-hide="charge(filmcount,3,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
+        </ul>
+    </div>
+</div>

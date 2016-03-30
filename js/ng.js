@@ -11,6 +11,7 @@ document.onscroll =function(){
         navi.className ='lsynav';
         list.className ='lsynav-h';
     }
+
 }
 var app = angular.module('lsyApp',['ngAnimate']);
 app.controller('lmodel1',function($scope){
@@ -21,7 +22,7 @@ app.controller('lmodel1',function($scope){
     $scope.mgjcount = 1;
     $scope.mgjdisplay = true;
     $scope.ymxcount = 1;
-    $scope.delurl = 'www.meituan.com';
+    $scope.delurl = '';
     $scope.change = function(value,judge){
         if(value==judge)return false;
         else{return true;}
@@ -37,6 +38,17 @@ app.controller('lmodel2',function($scope){
         if(value==1){ $scope.delurl = 'www.meituan.com';}
         if(value==2){ $scope.delurl = 'https://www.dianping.com/';}
         if(value==3){ $scope.delurl = '百度糯米';}
+        if(value==judge)return false;
+        else{return true;}
+    };
+});
+app.controller('lmodel3',function($scope){
+    $scope.qdcount = 1;
+    $scope.zhcount = 1;
+    $scope.csjcount = 1;
+    $scope.haocount = 1;
+    $scope.delurl = '';
+    $scope.change = function(value,judge){
         if(value==judge)return false;
         else{return true;}
     };
@@ -85,13 +97,7 @@ app.controller('lnav1',function($scope){
     }
     $scope.goto=function(count){
         if(count==0)return;
-        //  alert( document.body.scrollTop);
         var body= document.body;
-        //   var top=  angular.element(body).animate({ scrollTop: 550 }, 100);
-//            $animate.enter(document.body).then(function() {
-//                $scope.scrollTop = 550;
-//            });
-        // alert(top);
         var top = 550+(count-1)*430;
         body.scrollTop=550+(count-1)*430;
     }
@@ -144,28 +150,5 @@ app.controller('lnav3',function($scope){
         // alert(top);
         var top = 550+(count-1)*530;
         body.scrollTop=550+(count-1)*530;
-    }
-});
-app.controller('lalldate',function($scope){
-    $scope.no=1;
-    $scope.gw=true;
-    $scope.fj=false;
-    $scope.xs=false;
-    $scope.tbcount=1;
-    $scope.jmcount = 1;
-    $scope.ydhcount = 1;
-    $scope.ydhdisplay = true;
-    $scope.mgjcount = 1;
-    $scope.mgjdisplay = true;
-    $scope.ymxcount = 1;
-    $scope.change = function(value,judge){
-        if(value==judge)return false;
-        else{return true;}
-    };
-    $scope.choose=function(count,value){
-        if(count==value)
-        {
-            return true;
-        }else return false;
     }
 });

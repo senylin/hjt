@@ -1,0 +1,126 @@
+<div class="lsynav-p">
+    <ul>
+        <li ng-class="{listp:!change(salecount,1)}" ng-click="salecount = 1;npage=1">美团</li>
+        <li ng-class="{listp:!change(salecount,2)}" ng-click="salecount = 2;npage=1">大众点评</li>
+        <li ng-class="{listp:!change(salecount,3)}" ng-click="salecount = 3;npage=1">百度糯米</li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div id="waimai">
+    <div class="lmbody">
+        <ul ng-hide="charge(salecount,1,npage,1)">
+            <li>
+                <img src="image/mtwm603171.jpg"/>
+                <h1 title="巴西烤肉拌饭">巴西烤肉拌饭</h1>
+                <p class="lscore">4.6分</p><p class="lsale">月售2792单</p>
+                <div class="lprice">
+                    <div>起送￥0</div> <div>免配送费</div> <div class="ltime">36分钟</div>
+                </div>
+                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+            </li>
+            <li>
+                <img src="image/mtwm603172.jpg"/>
+                <h1>冤大头（抓饭）</h1>
+                <p class="lscore">4.9分</p><p class="lsale">月售622单</p>
+                <div class="lprice">
+                    <div>起送￥0</div> <div>免配送费</div> <div class="ltime">29分钟</div>
+                </div>
+                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+            </li>
+            <li>
+                <img src="image/mtwm603173.jpg"/>
+                <h1>爱星堡</h1>
+                <p class="lscore">4.8分</p><p class="lsale">月售2803单</p>
+                <div class="lprice">
+                    <div>起送￥10</div> <div>免配送费</div> <div class="ltime">33分钟</div>
+                </div>
+                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+            </li>
+            <li>
+                <img src="image/mtwm603174.jpg"/>
+                <h1>馋味小镇</h1>
+                <p class="lscore">4.7分</p><p class="lsale">月售926单</p>
+                <div class="lprice">
+                    <div>起送￥9</div> <div>免配送费</div> <div class="ltime">29分钟</div>
+                </div>
+                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+            </li>
+            <li>
+                <img src="image/mtwm603174.jpg"/>
+                <h1>馋味小镇</h1>
+                <p class="lscore">4.7分</p><p class="lsale">月售926单</p>
+                <div class="lprice">
+                    <div>起送￥9</div> <div>免配送费</div> <div class="ltime">29分钟</div>
+                </div>
+                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+            </li>
+            <li>
+                <img src="image/mtwm603174.jpg"/>
+                <h1>馋味小镇</h1>
+                <p class="lscore">4.7分</p><p class="lsale">月售926单</p>
+                <div class="lprice">
+                    <div>起送￥9</div> <div>免配送费</div> <div class="ltime">29分钟</div>
+                </div>
+                <div class="lspan"><span>付</span><span>首</span><span>减</span></div>
+            </li>
+        </ul>
+        <ul ng-hide="charge(salecount,2,npage,1)">
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul ng-hide="charge(salecount,3,npage,1)">
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="pagelist" ng-hide="charge(salecount,1,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
+        </ul>
+    </div>
+    <div class="pagelist" ng-hide="charge(salecount,2,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
+        </ul>
+    </div>
+    <div class="pagelist" ng-hide="charge(salecount,3,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
+        </ul>
+    </div>
+</div>

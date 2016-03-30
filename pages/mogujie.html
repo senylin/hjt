@@ -1,6 +1,16 @@
+<div class="lsynav-p">
+    <ul>
+        <li ng-class="{listp:!change(mgjcount,1)}" ng-click="mgjcount = 1;npage=1">快抢</li>
+        <li ng-class="{listp:!change(mgjcount,2)}" ng-click="mgjcount = 2;npage=1">团购</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
 <div id="mogujie">
     <div class="lmbody">
-        <ul ng-hide="change(mgjcount,1)">
+        <ul ng-hide="charge(mgjcount,1,npage,1)">
             <li>
                 <img src="image/hgw/mogujie/kq/603221.jpg_999x999.v1c0.webp"/>
                 <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
@@ -51,7 +61,7 @@
                 <div class="lnum">仅剩90件</div>
             </li>
         </ul>
-        <ul ng-hide="change(mgjcount,2)">
+        <ul ng-hide="charge(mgjcount,2,npage,1)">
             <li>
                 <img class="img2" src="image/hgw/mogujie/tg/603221.jpg_999x999.v1c0.webp"/>
                 <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
@@ -82,5 +92,28 @@
             </li>
         </ul>
     </div>
-
+    <div class="pagelist" ng-hide="charge(mgjcount,1,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
+        </ul>
+    </div>
+    <div class="pagelist" ng-hide="charge(mgjcount,2,npage,1)">
+        <ul>
+            <li ng-click="npage=1;totop()">1</li>
+            <li ng-click="npage=2;totop()">2</li>
+            <li ng-click="npage=3;totop()">3</li>
+            <li ng-click="npage=4;totop()">4</li>
+            <li ng-click="npage=5;totop()">5</li>
+            <li ng-click="npage=6;totop()">6</li>
+            <li ng-click="npage=7;totop()">7</li>
+            <li ng-click="npage=8;totop()">8</li>
+        </ul>
+    </div>
 </div>

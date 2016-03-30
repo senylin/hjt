@@ -319,21 +319,21 @@
     </div>
 </div>
 <!--model-->
-<div class="lsymodel" ng-controller="lmodel1" id="hgw">
+<div class="lsymodel" ng-controller="lmodel3" id="hgw">
 <!--qidian-->
 <div class="lsydel" id="qidian">
     <div class="lmhead">
         <div class="lmfont">起点</div>
         <ul>
-            <li ng-class="{lsyhov:!change(tbcount,1)}" ng-click="tbcount = 1">新风向</li>
-            <li ng-class="{lsyhov:!change(tbcount,2)}" ng-click="tbcount = 2">新锐作品</li>
-            <li ng-class="{lsyhov:!change(tbcount,3)}" ng-click="tbcount = 3">实体出版</li>
+            <li ng-class="{lsyhov:!change(qdcount,1)}" ng-click="qdcount = 1">新风向</li>
+            <li ng-class="{lsyhov:!change(qdcount,2)}" ng-click="qdcount = 2">新锐作品</li>
+            <li ng-class="{lsyhov:!change(qdcount,3)}" ng-click="qdcount = 3">实体出版</li>
         </ul>
         <div class="lmmore">更多小说</div>
     </div>
     <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
     <div class="lmbody">
-        <ul ng-hide="change(tbcount,1)">
+        <ul ng-hide="change(qdcount,1)">
             <li>
                 <img src="image/hxs/1.jpg"/>
                 <h1 title="纯阳武神">纯阳武神</h1>
@@ -367,7 +367,7 @@
                 <div class="click" onclick="window.open('https://www.taobao.com');">[点击阅读]</div>
             </li>
         </ul>
-        <ul ng-hide="change(tbcount,2)">
+        <ul ng-hide="change(qdcount,2)">
             <li>
                 <img src="image/hxs/2.jpg"/>
                 <h1 title="弑天刃">弑天刃</h1>
@@ -403,7 +403,7 @@
                 <div class="click" onclick="window.open('https://www.taobao.com');">[点击阅读]</div>
             </li>
         </ul>
-        <ul ng-hide="change(tbcount,3)">
+        <ul ng-hide="change(qdcount,3)">
             <li>
                 <img src="image/hxs/3.jpg"/>
                 <h1 title="魔天记">魔天记</h1>
@@ -451,14 +451,14 @@
     <div class="lmhead">
         <div class="lmfont">纵横</div>
         <ul>
-            <li ng-class="{lsyhov:!change(jmcount,1)}" ng-click="jmcount = 1">免费精品</li>
-            <li ng-class="{lsyhov:!change(jmcount,2)}" ng-click="jmcount = 2">经典全本</li>
-            <li ng-class="{lsyhov:!change(jmcount,3)}" ng-click="jmcount = 3">品书试读</li>
+            <li ng-class="{lsyhov:!change(zhcount,1)}" ng-click="zhcount = 1">免费精品</li>
+            <li ng-class="{lsyhov:!change(zhcount,2)}" ng-click="zhcount = 2">经典全本</li>
+            <li ng-class="{lsyhov:!change(zhcount,3)}" ng-click="zhcount = 3">品书试读</li>
         </ul>
         <div class="lmmore">更多小说</div>
     </div>
     <div class="lmbody">
-        <ul ng-hide="change(jmcount,1)">
+        <ul ng-hide="change(zhcount,1)">
             <li>
                 <img src="image/hxs/4.jpg"/>
                 <h1 title="寰宇雷君">寰宇雷君</h1>
@@ -492,7 +492,7 @@
                 <div class="click" onclick="window.open('https://www.taobao.com');">[点击阅读]</div>
             </li>
         </ul>
-        <ul ng-hide="change(jmcount,2)">
+        <ul ng-hide="change(zhcount,2)">
             <li>
                 <img src="image/hxs/4.jpg"/>
                 <h1 title="回到古代玩机械">回到古代玩机械</h1>
@@ -526,7 +526,7 @@
                 <div class="click" onclick="window.open('https://www.taobao.com');">[点击阅读]</div>
             </li>
         </ul>
-        <ul ng-hide="change(jmcount,3)">
+        <ul ng-hide="change(zhcount,3)">
             <li>
                 <img src="image/hxs/4.jpg"/>
                 <h1 title="寰宇雷君">寰宇雷君</h1>
@@ -567,14 +567,14 @@
     <div class="lmhead">
         <div class="lmfont">创世纪</div>
         <ul>
-            <li ng-class="{lsyhov:!change(ydhcount,1)}" ng-click="ydhcount = 1">精品力荐</li>
-            <li ng-class="{lsyhov:!change(ydhcount,2)}" ng-click="ydhcount = 2">版权推荐</li>
+            <li ng-class="{lsyhov:!change(csjcount,1)}" ng-click="csjcount = 1">精品力荐</li>
+            <li ng-class="{lsyhov:!change(csjcount,2)}" ng-click="csjcount = 2">版权推荐</li>
         </ul>
         <div class="lmmore">更多小说</div>
     </div>
     <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
     <div class="lmbody">
-        <ul ng-hide="change(ydhcount,1)">
+        <ul ng-hide="change(csjcount,1)">
             <li>
                 <img src="image/hxs/5.jpg"/>
                 <h1 title="九阳帝尊">九阳帝尊</h1>
@@ -608,7 +608,7 @@
                 <div class="click" onclick="window.open('https://www.taobao.com');">[点击阅读]</div>
             </li>
         </ul>
-        <ul ng-hide="change(ydhcount,2)">
+        <ul ng-hide="change(csjcount,2)">
             <li>
                 <img src="image/hxs/6.jpg"/>
                 <h1 title="从前有座灵剑山">从前有座灵剑山</h1>
@@ -651,15 +651,15 @@
     <div class="lmhead">
         <div class="lmfont">hao<span>123</span></div>
         <ul>
-            <li ng-class="{lsyhov:!change(mgjcount,1)}" ng-click="mgjcount = 1">完本精品</li>
-            <li ng-class="{lsyhov:!change(mgjcount,2)}" ng-click="mgjcount = 2">男生频道</li>
-            <li ng-class="{lsyhov:!change(mgjcount,3)}" ng-click="mgjcount = 3">女生频道</li>
+            <li ng-class="{lsyhov:!change(haocount,1)}" ng-click="haocount = 1">完本精品</li>
+            <li ng-class="{lsyhov:!change(haocount,2)}" ng-click="haocount = 2">男生频道</li>
+            <li ng-class="{lsyhov:!change(haocount,3)}" ng-click="haocount = 3">女生频道</li>
         </ul>
         <div class="lmmore">更多小说</div>
     </div>
     <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
     <div class="lmbody">
-        <ul ng-hide="change(mgjcount,1)">
+        <ul ng-hide="change(haocount,1)">
             <li>
                 <img src="image/hxs/7.jpg"/>
                 <h1 title="桃花满庭院">桃花满庭院</h1>
@@ -693,7 +693,7 @@
                 <div class="click" onclick="window.open('https://www.taobao.com');">[点击阅读]</div>
             </li>
         </ul>
-        <ul ng-hide="change(mgjcount,2)">
+        <ul ng-hide="change(haocount,2)">
             <li>
                 <img src="image/hxs/8.jpg"/>
                 <h1 title="超品战兵">超品战兵</h1>
@@ -727,7 +727,7 @@
                 <div class="click" onclick="window.open('https://www.taobao.com');">[点击阅读]</div>
             </li>
         </ul>
-        <ul ng-hide="change(mgjcount,3)">
+        <ul ng-hide="change(haocount,3)">
             <li>
                 <img src="image/hxs/9.jpg"/>
                 <h1 title="陆少的蚀心宠妻">陆少的蚀心宠妻</h1>
