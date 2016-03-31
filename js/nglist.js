@@ -16,9 +16,35 @@ document.onscroll =function(){
         navi.className ='lsynav';
         list.className ='lsynav-h';
     }
-
+//    var scrollTop=document.body.scrollTop;
+//    var clientHeight = document.body.clientHeight;
+//    var scrollHeight = document.body.scrollHeight-400;
+//    alert(scrollTop+" "+clientHeight+" "+scrollHeight);
+//    if(scrollTop + clientHeight > scrollHeight){
+//        alert("hello");
+//        var lmbody = document.getElementsByClassName("lmbody");
+//        lmbody.style.height +=400;
+//    }
+}
+function ending(){
+    var scrollTop=document.body.scrollTop;
+    var clientHeight = document.body.clientHeight;
+    var scrollHeight = document.body.scrollHeight
+    if(scrollTop + clientHeight == scrollHeight){
+        alert("hello");
+        var lmbody = document.getElementsByClassName("lmbody");
+        lmbody.style.height +=400;
+    }
 }
 var app = angular.module('lsyApp',['ngAnimate']);
+app.controller('lnavm',function($scope){
+    $scope.choose=function(count,value){
+        if(count==value)
+        {
+            return true;
+        }else return false;
+    }
+});
 app.controller('ltop',function($scope){
     $scope.wx=true;
 })
@@ -52,6 +78,7 @@ app.controller('lalldate',function($scope){
     $scope.gw=true;
     $scope.fj=true;
     $scope.xs=true;
+
     $scope.tbcount=1;
     $scope.jmcount = 1;
     $scope.ydhcount = 1;
@@ -71,6 +98,8 @@ app.controller('lalldate',function($scope){
     $scope.csjcount = 1;
     $scope.haocount = 1;
 
+    $scope.count2=1;
+    $scope.counts=1;
     $scope.pages=[1,2];
     $scope.npage=1;
     $scope.foc=0;
@@ -110,6 +139,6 @@ app.controller('lalldate',function($scope){
     }
     $scope.totop=function(count){
         var body= document.body;
-        body.scrollTop=100;
+        body.scrollTop=count;
     }
 });

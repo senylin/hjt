@@ -22,9 +22,9 @@
         <div class="lsywx" ng-class="{wx2:wx}"><img src="image/erweima.png" width="100%" height="100%"/></div>
     </div>
     <div class="lsylogo">
-        <img src=""/>
+
     </div>
-    <div id="llist"></div>
+
     <!--nav-->
     <div id="nav" class="lsynav" ng-controller="lnav1" ng-mouseleave="count=1" >
         <ul>
@@ -96,355 +96,355 @@
         </div>
     </div>
     <!--model-->
-    <div class="lsymodel" ng-controller="lmodel1" id="hgw">
-    <!--taobao-->
-    <div class="lsydel" id="taobao">
-        <div class="lmhead">
-            <div class="lmfont">淘宝</div>
-            <ul>
-                <li ng-class="{lsyhov:!change(tbcount,1)}" ng-click="tbcount = 1">天天特价</li>
-                <li ng-class="{lsyhov:!change(tbcount,2)}" ng-click="tbcount = 2">清仓</li>
-                <li ng-class="{lsyhov:!change(tbcount,3)}" ng-click="tbcount = 3">抢新</li>
-            </ul>
-            <div class="lmmore">更多。。。</div>
+        <div class="lsymodel" ng-controller="lmodel1" id="hgw">
+        <!--taobao-->
+        <div class="lsydel" id="taobao">
+            <div class="lmhead">
+                <div class="lmfont">淘宝</div>
+                <ul>
+                    <li ng-class="{lsyhov:!change(tbcount,1)}" ng-click="tbcount = 1">天天特价</li>
+                    <li ng-class="{lsyhov:!change(tbcount,2)}" ng-click="tbcount = 2">清仓</li>
+                    <li ng-class="{lsyhov:!change(tbcount,3)}" ng-click="tbcount = 3">抢新</li>
+                </ul>
+                <div class="lmmore">更多。。。</div>
+            </div>
+            <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+            <div class="lmbody">
+                <ul ng-hide="change(tbcount,1)">
+                    <li onclick="window.open('https://www.taobao.com');">
+                        <img src="image/hgw/taobao/tttj/603211.jpg"/>
+                        <h1 title="大码显瘦短袖休闲运动套装">大码显瘦短袖休闲运动套装</h1>
+                        <div class="lprice">¥11<span>.11</span><small>¥129.80</small></div>
+                        <div class="lnum">已售13296件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/tttj/603212.jpg"/>
+                        <h1 title="南极人外穿打底裤黑铅笔裤">南极人外穿打底裤黑铅笔裤</h1>
+                        <div class="lprice">¥18<span>.50</span><small>¥188.00</small></div>
+                        <div class="lnum">已售10344件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/tttj/603213.jpg"/>
+                        <h1 title="[限500件]高档牛仔小脚裤">[限500件]高档牛仔小脚裤</h1>
+                        <div class="lprice">¥18<span>.50</span><small>¥129.00</small></div>
+                        <div class="lnum">已售16470件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/tttj/603214.jpg"/>
+                        <h1 title="4条装男士内裤平角印花">4条装男士内裤平角印花</h1>
+                        <div class="lprice">¥29<span>.80</span><small>¥238.00</small></div>
+                        <div class="lnum">已售3193件</div>
+                    </li>
+                </ul>
+                <ul ng-hide="change(tbcount,2)">
+                    <li>
+                        <img src="image/hgw/taobao/qc/603211.jpg_.webp"/>
+                        <h1 title="【清仓】新款风衣！最后76件！">【清仓】新款风衣！最后76件！</h1>
+                        <div class="lprice">¥128<span>.00</span><small>¥699.00</small></div>
+                        <div class="lnum">已抢100件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/qc/603212.jpg_.webp"/>
+                        <h1 title="【亏本清仓 一件不剩】春秋男士棉夹克">【亏本清仓 一件不剩】春秋男士棉夹克</h1>
+                        <div class="lprice">¥29<span>.00</span><small>¥198.00</small></div>
+                        <div class="lnum">已抢6944件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/qc/603213.jpg_.webp"/>
+                        <h1 title="【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克">【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克</h1>
+                        <div class="lprice">¥49<span>.00</span><small>¥299.00</small></div>
+                        <div class="lnum">已抢3780件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/qc/603214.jpg_.webp"/>
+                        <h1 title="【品牌血亏】【日销20000条】 南极人百搭打底裤~">【品牌血亏】【日销20000条】 南极人百搭打底裤~</h1>
+                        <div class="lprice">¥18<span>.80</span><small>¥138.00</small></div>
+                        <div class="lnum">已抢11455件</div>
+                    </li>
+                </ul>
+                <ul ng-hide="change(tbcount,3)">
+                    <li>
+                        <img src="image/hgw/taobao/qx/603211.jpg"/>
+                        <h1 class="qx" title="抢新小蚊子2016春装英伦风腰部抽绳百搭中长款风衣~">抢新小蚊子2016春装英伦风腰部抽绳百搭中长款风衣</h1>
+                        <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥98.70</span></div>
+                        <div class="lnotice">预售中 3月28前发货</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/qx/603212.jpg"/>
+                        <h1 class="qx" title="抢新 逆天性价比！时尚有型九分针织牛仔裤~">抢新 逆天性价比！时尚有型九分针织牛仔裤</h1>
+                        <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥188.00</span></div>
+                        <div class="lnotice bred">疯抢中 38仅剩</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/qx/603213.jpg"/>
+                        <h1 class="qx" title="欧美时尚气质名媛蕾丝套装~">欧美时尚气质名媛蕾丝套装</h1>
+                        <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥149.00</span></div>
+                        <div class="lnotice">预售中3月28前发货</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/qx/603214.jpg"/>
+                        <h1 class="qx" title="衬衫背心裙两件套连衣裙~">衬衫背心裙两件套连衣裙</h1>
+                        <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥99.00</span></div>
+                        <div class="lnotice">预售中3月27前发货</div>
+                    </li>
+                </ul>
+            </div>
+            <!--<div class="lmfoot">加载更多</div>-->
         </div>
-        <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
-        <div class="lmbody">
-            <ul ng-hide="change(tbcount,1)">
-                <li onclick="window.open('https://www.taobao.com');">
-                    <img src="image/hgw/taobao/tttj/603211.jpg"/>
-                    <h1 title="大码显瘦短袖休闲运动套装">大码显瘦短袖休闲运动套装</h1>
-                    <div class="lprice">¥11<span>.11</span><small>¥129.80</small></div>
-                    <div class="lnum">已售13296件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/tttj/603212.jpg"/>
-                    <h1 title="南极人外穿打底裤黑铅笔裤">南极人外穿打底裤黑铅笔裤</h1>
-                    <div class="lprice">¥18<span>.50</span><small>¥188.00</small></div>
-                    <div class="lnum">已售10344件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/tttj/603213.jpg"/>
-                    <h1 title="[限500件]高档牛仔小脚裤">[限500件]高档牛仔小脚裤</h1>
-                    <div class="lprice">¥18<span>.50</span><small>¥129.00</small></div>
-                    <div class="lnum">已售16470件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/tttj/603214.jpg"/>
-                    <h1 title="4条装男士内裤平角印花">4条装男士内裤平角印花</h1>
-                    <div class="lprice">¥29<span>.80</span><small>¥238.00</small></div>
-                    <div class="lnum">已售3193件</div>
-                </li>
-            </ul>
-            <ul ng-hide="change(tbcount,2)">
-                <li>
-                    <img src="image/hgw/taobao/qc/603211.jpg_.webp"/>
-                    <h1 title="【清仓】新款风衣！最后76件！">【清仓】新款风衣！最后76件！</h1>
-                    <div class="lprice">¥128<span>.00</span><small>¥699.00</small></div>
-                    <div class="lnum">已抢100件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/qc/603212.jpg_.webp"/>
-                    <h1 title="【亏本清仓 一件不剩】春秋男士棉夹克">【亏本清仓 一件不剩】春秋男士棉夹克</h1>
-                    <div class="lprice">¥29<span>.00</span><small>¥198.00</small></div>
-                    <div class="lnum">已抢6944件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/qc/603213.jpg_.webp"/>
-                    <h1 title="【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克">【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克</h1>
-                    <div class="lprice">¥49<span>.00</span><small>¥299.00</small></div>
-                    <div class="lnum">已抢3780件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/qc/603214.jpg_.webp"/>
-                    <h1 title="【品牌血亏】【日销20000条】 南极人百搭打底裤~">【品牌血亏】【日销20000条】 南极人百搭打底裤~</h1>
-                    <div class="lprice">¥18<span>.80</span><small>¥138.00</small></div>
-                    <div class="lnum">已抢11455件</div>
-                </li>
-            </ul>
-            <ul ng-hide="change(tbcount,3)">
-                <li>
-                    <img src="image/hgw/taobao/qx/603211.jpg"/>
-                    <h1 class="qx" title="抢新小蚊子2016春装英伦风腰部抽绳百搭中长款风衣~">抢新小蚊子2016春装英伦风腰部抽绳百搭中长款风衣</h1>
-                    <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥98.70</span></div>
-                    <div class="lnotice">预售中 3月28前发货</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/qx/603212.jpg"/>
-                    <h1 class="qx" title="抢新 逆天性价比！时尚有型九分针织牛仔裤~">抢新 逆天性价比！时尚有型九分针织牛仔裤</h1>
-                    <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥188.00</span></div>
-                    <div class="lnotice bred">疯抢中 38仅剩</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/qx/603213.jpg"/>
-                    <h1 class="qx" title="欧美时尚气质名媛蕾丝套装~">欧美时尚气质名媛蕾丝套装</h1>
-                    <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥149.00</span></div>
-                    <div class="lnotice">预售中3月28前发货</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/qx/603214.jpg"/>
-                    <h1 class="qx" title="衬衫背心裙两件套连衣裙~">衬衫背心裙两件套连衣裙</h1>
-                    <div class="lprice"><small style="text-decoration:none;">抢新价</small><span>&nbsp;¥99.00</span></div>
-                    <div class="lnotice">预售中3月27前发货</div>
-                </li>
-            </ul>
+        <!--jumei-->
+        <div class="lsydel" id="jumei">
+            <div class="lmhead">
+                <div class="lmfont">聚美优品</div>
+                <ul>
+                    <li ng-class="{lsyhov:!change(jmcount,1)}" ng-click="jmcount = 1">限时特卖</li>
+                    <li ng-class="{lsyhov:!change(jmcount,2)}" ng-click="jmcount = 2">极速免税</li>
+                </ul>
+                <div class="lmmore">更多。。。</div>
+            </div>
+            <div class="lmbody">
+                <ul ng-hide="change(jmcount,1)">
+                    <li>
+                        <img src="image/hgw/jumei/xstm/603221.jpg"/>
+                    </li>
+                    <li>
+                        <img src="image/hgw/jumei/xstm/603222.jpg"/>
+                    </li>
+                    <li>
+                        <img src="image/hgw/jumei/xstm/603223.jpg"/>
+                    </li>
+                    <li>
+                        <img src="image/hgw/jumei/xstm/603224.jpg"/>
+                    </li>
+                </ul>
+                <ul ng-hide="change(jmcount,2)">
+                    <li>
+                        <img src="image/hgw/jumei/jsms/603221.jpg"/>
+                    </li>
+                    <li>
+                        <img src="image/hgw/jumei/jsms/603222.jpg"/>
+                    </li>
+                    <li>
+                        <img src="image/hgw/jumei/jsms/603223.jpg"/>
+                    </li>
+                    <li>
+                        <img src="image/hgw/jumei/jsms/603224.jpg"/>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!--<div class="lmfoot">加载更多</div>-->
-    </div>
-    <!--jumei-->
-    <div class="lsydel" id="jumei">
-        <div class="lmhead">
-            <div class="lmfont">聚美优品</div>
-            <ul>
-                <li ng-class="{lsyhov:!change(jmcount,1)}" ng-click="jmcount = 1">限时特卖</li>
-                <li ng-class="{lsyhov:!change(jmcount,2)}" ng-click="jmcount = 2">极速免税</li>
-            </ul>
-            <div class="lmmore">更多。。。</div>
+        <!--1号店-->
+        <div class="lsydel" id="yihaodian">
+            <div class="lmhead">
+                <div class="lmfont"></div>
+                <ul>
+                    <li ng-class="{lsyhov:!change(ydhcount,1)}" ng-click="ydhcount = 1">团购</li>
+                    <li ng-class="{lsyhov:!change(ydhcount,2)}" ng-click="ydhcount = 2">海购新品</li>
+                </ul>
+                <div class="lmmore">更多。。。</div>
+                <div class="change" ng-click="ydhdisplay=!ydhdisplay">换一些</div>
+            </div>
+            <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+            <div class="lmbody">
+                <ul ng-hide="change(ydhcount,1)">
+                    <li ng-class="{list2:!ydhdisplay}">
+                        <img src="image/hgw/yihaodian/tg/603221.webp"/>
+                        <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                        <p>【买4免1】一般家庭需要4双！！！！超柔软巨防水 防滑不伤地板 漏水不积水 重点 值！！！！</p>
+                        <div class="lprice">¥9.9<small>参考价¥33</small></div>
+                        <div class="lnum">1271件已售</div>
+                    </li>
+                    <li ng-class="{list2:!ydhdisplay}">
+                        <img src="image/hgw/yihaodian/tg/603222.webp"/>
+                        <h1 title="【满200减50】美肌解密 韩式洁面神器礼盒装">【满200减50】美肌解密 韩式洁面神器礼盒装</h1>
+                        <p>【全场满200减50】源韩国洁面神器，风靡亚洲，柔细刷毛，温和洁面，不伤皮肤。</p>
+                        <div class="lprice">¥49<small>参考价¥99</small></div>
+                        <div class="lnum">1445件已售</div>
+                    </li>
+                    <li ng-class="{list2:ydhdisplay}">
+                        <img src="image/hgw/yihaodian/tg/603223.webp"/>
+                        <h1 title="【买2送1】佳莱福综合果蔬酵素益生菌粉 30袋">【买2送1】佳莱福综合果蔬酵素益生菌粉 30袋</h1>
+                        <p>【买2送1同款】台湾进口酵素粉 特别添加多种益生菌 水果味香滑口感 塑造魔鬼诱人身材 日常售价98元</p>
+                        <div class="lprice">¥78<small>参考价¥138</small></div>
+                        <div class="lnum">468件已售</div>
+                    </li>
+                    <li ng-class="{list2:ydhdisplay}">
+                        <img src="image/hgw/yihaodian/tg/603224.webp"/>
+                        <h1 title="AAYTO新款韩版女式棉麻两件套套装连衣裙多色多码">AAYTO新款韩版女式棉麻两件套套装连衣裙多色多码</h1>
+                        <p>2016春夏季韩版女式棉麻套装连衣裙女长袖小清新印花长裙</p>
+                        <div class="lprice">¥69.9<small>参考价¥79.9</small></div>
+                        <div class="lnum">346件已售</div>
+                    </li>
+                </ul>
+                <ul ng-hide="change(ydhcount,2)">
+                    <li ng-class="{list2:!ydhdisplay}">
+                        <img class="img2" src="image/hgw/yihaodian/hg/603221.jpg"/>
+                        <h1 class="h2" title="成人高钙全脂奶粉 a2 1kg 新西兰进口">成人高钙全脂奶粉 a2 1kg 新西兰进口</h1>
+                        <div class="lprice">¥106<small>参考价¥138</small></div>
+                        <div class="lnum">保税仓发货</div>
+                    </li>
+                    <li ng-class="{list2:!ydhdisplay}">
+                        <img class="img2" src="image/hgw/yihaodian/hg/603222.jpg"/>
+                        <h1 title="J estina 太阳的后裔 宋慧乔韩剧 项链 JNSWD142-M544TR">J estina 太阳的后裔 宋慧乔韩剧 项链 JNSWD142-M544TR</h1>
+                        <div class="lprice">¥1200<small>参考价¥1800</small></div>
+                        <div class="lnum">境外直邮</div>
+                    </li>
+                    <li ng-class="{list2:ydhdisplay}">
+                        <img class="img2" src="image/hgw/yihaodian/hg/603223.jpg"/>
+                        <h1 title="花王KAO 香氛洗衣液820g + 补充装 730g 日本进口">花王KAO 香氛洗衣液820g + 补充装 730g 日本进口</h1>
+                        <div class="lprice">¥44.5<small>参考价¥156</small></div>
+                        <div class="lnum">保税仓发货</div>
+                    </li>
+                    <li ng-class="{list2:ydhdisplay}">
+                        <img class="img2" src="image/hgw/yihaodian/hg/603224.jpg"/>
+                        <h1 title="eaoron 澳洲直邮Eaoron水光针涂抹式精华液收缩毛孔保湿补水白皙紧致10ML">eaoron 澳洲直邮Eaoron水光针涂抹式精华液收缩毛孔保湿补水白皙紧致10ML</h1>
+                        <div class="lprice">¥148<small>参考价¥399</small></div>
+                        <div class="lnum">境外直邮</div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="lmbody">
-            <ul ng-hide="change(jmcount,1)">
-                <li>
-                    <img src="image/hgw/jumei/xstm/603221.jpg"/>
-                </li>
-                <li>
-                    <img src="image/hgw/jumei/xstm/603222.jpg"/>
-                </li>
-                <li>
-                    <img src="image/hgw/jumei/xstm/603223.jpg"/>
-                </li>
-                <li>
-                    <img src="image/hgw/jumei/xstm/603224.jpg"/>
-                </li>
-            </ul>
-            <ul ng-hide="change(jmcount,2)">
-                <li>
-                    <img src="image/hgw/jumei/jsms/603221.jpg"/>
-                </li>
-                <li>
-                    <img src="image/hgw/jumei/jsms/603222.jpg"/>
-                </li>
-                <li>
-                    <img src="image/hgw/jumei/jsms/603223.jpg"/>
-                </li>
-                <li>
-                    <img src="image/hgw/jumei/jsms/603224.jpg"/>
-                </li>
-            </ul>
+        <!--mogujie-->
+        <div class="lsydel" id="mogujie">
+            <div class="lmhead">
+                <div class="lmfont">蘑菇街</div>
+                <ul>
+                    <li ng-class="{lsyhov:!change(mgjcount,1)}" ng-click="mgjcount = 1">快抢</li>
+                    <li ng-class="{lsyhov:!change(mgjcount,2)}" ng-click="mgjcount = 2">团购</li>
+                </ul>
+                <div class="logo"></div>
+                <div class="lmmore">更多。。。</div>
+                <div class="change" ng-click="mgjdisplay=!mgjdisplay">换一些</div>
+            </div>
+            <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+            <div class="lmbody">
+                <ul ng-hide="change(mgjcount,1)">
+                    <li ng-class="{list2:!mgjdisplay}">
+                        <img src="image/hgw/mogujie/kq/603221.jpg_999x999.v1c0.webp"/>
+                        <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                        <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                        <div class="lbuy">立即抢购</div>
+                        <div class="lnum">仅剩90件</div>
+                    </li>
+                    <li ng-class="{list2:!mgjdisplay}">
+                        <img src="image/hgw/mogujie/kq/603222.jpg_999x999.v1c0.webp"/>
+                        <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                        <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                        <div class="lbuy">立即抢购</div>
+                        <div class="lnum">仅剩90件</div>
+                    </li>
+                    <li ng-class="{list2:mgjdisplay}">
+                        <img src="image/hgw/mogujie/kq/603223.jpg_999x999.v1c0.webp"/>
+                        <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                        <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                        <div class="lbuy">立即抢购</div>
+                        <div class="lnum">仅剩90件</div>
+                    </li>
+                    <li ng-class="{list2:mgjdisplay}">
+                        <img src="image/hgw/mogujie/kq/603224.jpg_999x999.v1c0.webp"/>
+                        <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
+                        <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
+                        <div class="lbuy">立即抢购</div>
+                        <div class="lnum">仅剩90件</div>
+                    </li>
+                </ul>
+                <ul ng-hide="change(mgjcount,2)">
+                    <li ng-class="{list2:!mgjdisplay}">
+                        <img class="img2" src="image/hgw/mogujie/tg/603221.jpg_999x999.v1c0.webp"/>
+                        <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
+                        <div class="lprice"><span>团购价</span>¥45.00</div>
+                        <div class="lbuy">立省¥30</div>
+                        <div class="lnum">643人参与</div>
+                    </li>
+                    <li ng-class="{list2:!mgjdisplay}">
+                        <img class="img2" src="image/hgw/mogujie/tg/603222.jpg_999x999.v1c0.webp"/>
+                        <h1 class="h2" title="【佰络雅】韩版大象纹锁扣斜挎小方包">【佰络雅】韩版大象纹锁扣斜挎小方包</h1>
+                        <div class="lprice"><span>团购价</span>¥58.80</div>
+                        <div class="lbuy">立省¥39</div>
+                        <div class="lnum">490人参与</div>
+                    </li>
+                    <li ng-class="{list2:mgjdisplay}">
+                        <img class="img2" src="image/hgw/mogujie/tg/603223.jpg_999x999.v1c0.webp"/>
+                        <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
+                        <div class="lprice"><span>团购价</span>¥45.00</div>
+                        <div class="lbuy">立省¥30</div>
+                        <div class="lnum">643人参与</div>
+                    </li>
+                    <li ng-class="{list2:mgjdisplay}">
+                        <img class="img2" src="image/hgw/mogujie/tg/603224.jpg_999x999.v1c0.webp"/>
+                        <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
+                        <div class="lprice"><span>团购价</span>¥45.00</div>
+                        <div class="lbuy">立省¥30</div>
+                        <div class="lnum">643人参与</div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <!--1号店-->
-    <div class="lsydel" id="yihaodian">
-        <div class="lmhead">
-            <div class="lmfont"></div>
-            <ul>
-                <li ng-class="{lsyhov:!change(ydhcount,1)}" ng-click="ydhcount = 1">团购</li>
-                <li ng-class="{lsyhov:!change(ydhcount,2)}" ng-click="ydhcount = 2">海购新品</li>
-            </ul>
-            <div class="lmmore">更多。。。</div>
-            <div class="change" ng-click="ydhdisplay=!ydhdisplay">换一些</div>
-        </div>
-        <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
-        <div class="lmbody">
-            <ul ng-hide="change(ydhcount,1)">
-                <li ng-class="{list2:!ydhdisplay}">
-                    <img src="image/hgw/yihaodian/tg/603221.webp"/>
-                    <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
-                    <p>【买4免1】一般家庭需要4双！！！！超柔软巨防水 防滑不伤地板 漏水不积水 重点 值！！！！</p>
-                    <div class="lprice">¥9.9<small>参考价¥33</small></div>
-                    <div class="lnum">1271件已售</div>
-                </li>
-                <li ng-class="{list2:!ydhdisplay}">
-                    <img src="image/hgw/yihaodian/tg/603222.webp"/>
-                    <h1 title="【满200减50】美肌解密 韩式洁面神器礼盒装">【满200减50】美肌解密 韩式洁面神器礼盒装</h1>
-                    <p>【全场满200减50】源韩国洁面神器，风靡亚洲，柔细刷毛，温和洁面，不伤皮肤。</p>
-                    <div class="lprice">¥49<small>参考价¥99</small></div>
-                    <div class="lnum">1445件已售</div>
-                </li>
-                <li ng-class="{list2:ydhdisplay}">
-                    <img src="image/hgw/yihaodian/tg/603223.webp"/>
-                    <h1 title="【买2送1】佳莱福综合果蔬酵素益生菌粉 30袋">【买2送1】佳莱福综合果蔬酵素益生菌粉 30袋</h1>
-                    <p>【买2送1同款】台湾进口酵素粉 特别添加多种益生菌 水果味香滑口感 塑造魔鬼诱人身材 日常售价98元</p>
-                    <div class="lprice">¥78<small>参考价¥138</small></div>
-                    <div class="lnum">468件已售</div>
-                </li>
-                <li ng-class="{list2:ydhdisplay}">
-                    <img src="image/hgw/yihaodian/tg/603224.webp"/>
-                    <h1 title="AAYTO新款韩版女式棉麻两件套套装连衣裙多色多码">AAYTO新款韩版女式棉麻两件套套装连衣裙多色多码</h1>
-                    <p>2016春夏季韩版女式棉麻套装连衣裙女长袖小清新印花长裙</p>
-                    <div class="lprice">¥69.9<small>参考价¥79.9</small></div>
-                    <div class="lnum">346件已售</div>
-                </li>
-            </ul>
-            <ul ng-hide="change(ydhcount,2)">
-                <li ng-class="{list2:!ydhdisplay}">
-                    <img class="img2" src="image/hgw/yihaodian/hg/603221.jpg"/>
-                    <h1 class="h2" title="成人高钙全脂奶粉 a2 1kg 新西兰进口">成人高钙全脂奶粉 a2 1kg 新西兰进口</h1>
-                    <div class="lprice">¥106<small>参考价¥138</small></div>
-                    <div class="lnum">保税仓发货</div>
-                </li>
-                <li ng-class="{list2:!ydhdisplay}">
-                    <img class="img2" src="image/hgw/yihaodian/hg/603222.jpg"/>
-                    <h1 title="J estina 太阳的后裔 宋慧乔韩剧 项链 JNSWD142-M544TR">J estina 太阳的后裔 宋慧乔韩剧 项链 JNSWD142-M544TR</h1>
-                    <div class="lprice">¥1200<small>参考价¥1800</small></div>
-                    <div class="lnum">境外直邮</div>
-                </li>
-                <li ng-class="{list2:ydhdisplay}">
-                    <img class="img2" src="image/hgw/yihaodian/hg/603223.jpg"/>
-                    <h1 title="花王KAO 香氛洗衣液820g + 补充装 730g 日本进口">花王KAO 香氛洗衣液820g + 补充装 730g 日本进口</h1>
-                    <div class="lprice">¥44.5<small>参考价¥156</small></div>
-                    <div class="lnum">保税仓发货</div>
-                </li>
-                <li ng-class="{list2:ydhdisplay}">
-                    <img class="img2" src="image/hgw/yihaodian/hg/603224.jpg"/>
-                    <h1 title="eaoron 澳洲直邮Eaoron水光针涂抹式精华液收缩毛孔保湿补水白皙紧致10ML">eaoron 澳洲直邮Eaoron水光针涂抹式精华液收缩毛孔保湿补水白皙紧致10ML</h1>
-                    <div class="lprice">¥148<small>参考价¥399</small></div>
-                    <div class="lnum">境外直邮</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!--mogujie-->
-    <div class="lsydel" id="mogujie">
-        <div class="lmhead">
-            <div class="lmfont">蘑菇街</div>
-            <ul>
-                <li ng-class="{lsyhov:!change(mgjcount,1)}" ng-click="mgjcount = 1">快抢</li>
-                <li ng-class="{lsyhov:!change(mgjcount,2)}" ng-click="mgjcount = 2">团购</li>
-            </ul>
-            <div class="logo"></div>
-            <div class="lmmore">更多。。。</div>
-            <div class="change" ng-click="mgjdisplay=!mgjdisplay">换一些</div>
-        </div>
-        <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
-        <div class="lmbody">
-            <ul ng-hide="change(mgjcount,1)">
-                <li ng-class="{list2:!mgjdisplay}">
-                    <img src="image/hgw/mogujie/kq/603221.jpg_999x999.v1c0.webp"/>
-                    <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
-                    <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
-                    <div class="lbuy">立即抢购</div>
-                    <div class="lnum">仅剩90件</div>
-                </li>
-                <li ng-class="{list2:!mgjdisplay}">
-                    <img src="image/hgw/mogujie/kq/603222.jpg_999x999.v1c0.webp"/>
-                    <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
-                    <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
-                    <div class="lbuy">立即抢购</div>
-                    <div class="lnum">仅剩90件</div>
-                </li>
-                <li ng-class="{list2:mgjdisplay}">
-                    <img src="image/hgw/mogujie/kq/603223.jpg_999x999.v1c0.webp"/>
-                    <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
-                    <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
-                    <div class="lbuy">立即抢购</div>
-                    <div class="lnum">仅剩90件</div>
-                </li>
-                <li ng-class="{list2:mgjdisplay}">
-                    <img src="image/hgw/mogujie/kq/603224.jpg_999x999.v1c0.webp"/>
-                    <h1 title="喜家家 居家浴室防滑凉拖鞋">喜家家 居家浴室防滑凉拖鞋</h1>
-                    <div class="lprice"><span>快抢价</span>¥13.80<small>¥31.00</small></div>
-                    <div class="lbuy">立即抢购</div>
-                    <div class="lnum">仅剩90件</div>
-                </li>
-            </ul>
-            <ul ng-hide="change(mgjcount,2)">
-                <li ng-class="{list2:!mgjdisplay}">
-                    <img class="img2" src="image/hgw/mogujie/tg/603221.jpg_999x999.v1c0.webp"/>
-                    <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
-                    <div class="lprice"><span>团购价</span>¥45.00</div>
-                    <div class="lbuy">立省¥30</div>
-                    <div class="lnum">643人参与</div>
-                </li>
-                <li ng-class="{list2:!mgjdisplay}">
-                    <img class="img2" src="image/hgw/mogujie/tg/603222.jpg_999x999.v1c0.webp"/>
-                    <h1 class="h2" title="【佰络雅】韩版大象纹锁扣斜挎小方包">【佰络雅】韩版大象纹锁扣斜挎小方包</h1>
-                    <div class="lprice"><span>团购价</span>¥58.80</div>
-                    <div class="lbuy">立省¥39</div>
-                    <div class="lnum">490人参与</div>
-                </li>
-                <li ng-class="{list2:mgjdisplay}">
-                    <img class="img2" src="image/hgw/mogujie/tg/603223.jpg_999x999.v1c0.webp"/>
-                    <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
-                    <div class="lprice"><span>团购价</span>¥45.00</div>
-                    <div class="lbuy">立省¥30</div>
-                    <div class="lnum">643人参与</div>
-                </li>
-                <li ng-class="{list2:mgjdisplay}">
-                    <img class="img2" src="image/hgw/mogujie/tg/603224.jpg_999x999.v1c0.webp"/>
-                    <h1 class="h2" title="搭配显瘦神器❤韩版条纹中长款衬衫">搭配显瘦神器❤韩版条纹中长款衬衫</h1>
-                    <div class="lprice"><span>团购价</span>¥45.00</div>
-                    <div class="lbuy">立省¥30</div>
-                    <div class="lnum">643人参与</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!--亚马逊-->
-    <div class="lsydel" id="yamaxun">
-        <div class="lmhead">
-            <div class="lmfont">亚马逊</div>
-            <ul>
-                <li ng-class="{lsyhov:!change(ymxcount,1)}" ng-click="ymxcount = 1">Z秒杀</li>
-                <li ng-class="{lsyhov:!change(ymxcount,2)}" ng-click="ymxcount = 2">海外购</li>
-            </ul>
-            <div class="lmmore">更多。。。</div>
-        </div>
-        <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
-        <div class="lmbody">
-            <ul ng-hide="change(ymxcount,1)">
-                <li>
-                    <img src="image/hgw/taobao/tttj/603211.jpg"/>
-                    <h1 title="LUNE DE MIEL蜜月原味蜂蜜便利装450g(法国进口)">LUNE DE MIEL蜜月原味蜂蜜便利装450g(法国进口)</h1>
-                    <div class="lprice">¥11<span>.11</span></div>
-                    <div class="lnum">3%已订购</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/tttj/603212.jpg"/>
-                    <h1 title="南极人外穿打底裤黑铅笔裤">南极人外穿打底裤黑铅笔裤</h1>
-                    <div class="lprice">¥11<span>.11</span></div>
-                    <div class="lnum">已售10344件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/tttj/603213.jpg"/>
-                    <h1 title="[限500件]高档牛仔小脚裤">[限500件]高档牛仔小脚裤</h1>
-                    <div class="lprice">¥11<span>.11</span></div>
-                    <div class="lnum">已售16470件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/tttj/603214.jpg"/>
-                    <h1 title="4条装男士内裤平角印花">4条装男士内裤平角印花</h1>
-                    <div class="lprice">¥1111<span>.11</span></div>
-                    <div class="lnum">100%已定购</div>
-                </li>
-            </ul>
-            <ul ng-hide="change(ymxcount,2)">
-                <li>
-                    <img src="image/hgw/taobao/qc/603211.jpg_.webp"/>
-                    <h1 title="【清仓】新款风衣！最后76件！">【清仓】新款风衣！最后76件！</h1>
-                    <div class="lprice">¥11<span>.11</span></div>
-                    <div class="lnum">已抢100件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/qc/603212.jpg_.webp"/>
-                    <h1 title="【亏本清仓 一件不剩】春秋男士棉夹克">【亏本清仓 一件不剩】春秋男士棉夹克</h1>
-                    <div class="lprice">¥11<span>.11</span></div>
-                    <div class="lnum">已抢6944件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/qc/603213.jpg_.webp"/>
-                    <h1 title="【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克">【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克</h1>
-                    <div class="lprice">¥11<span>.11</span></div>
-                    <div class="lnum">已抢3780件</div>
-                </li>
-                <li>
-                    <img src="image/hgw/taobao/qc/603214.jpg_.webp"/>
-                    <h1 title="【品牌血亏】【日销20000条】 南极人百搭打底裤~">【品牌血亏】【日销20000条】 南极人百搭打底裤~</h1>
-                    <div class="lprice">¥1111<span>.11</span></div>
-                    <div class="lnum">已抢11455件</div>
-                </li>
-            </ul>
-       </div>
-     </div>
+        <!--亚马逊-->
+        <div class="lsydel" id="yamaxun">
+            <div class="lmhead">
+                <div class="lmfont">亚马逊</div>
+                <ul>
+                    <li ng-class="{lsyhov:!change(ymxcount,1)}" ng-click="ymxcount = 1">Z秒杀</li>
+                    <li ng-class="{lsyhov:!change(ymxcount,2)}" ng-click="ymxcount = 2">海外购</li>
+                </ul>
+                <div class="lmmore">更多。。。</div>
+            </div>
+            <!--<div class="lmurl">以下链接来自于 <a href="/">{{delurl}}...</a></div>-->
+            <div class="lmbody">
+                <ul ng-hide="change(ymxcount,1)">
+                    <li>
+                        <img src="image/hgw/taobao/tttj/603211.jpg"/>
+                        <h1 title="LUNE DE MIEL蜜月原味蜂蜜便利装450g(法国进口)">LUNE DE MIEL蜜月原味蜂蜜便利装450g(法国进口)</h1>
+                        <div class="lprice">¥11<span>.11</span></div>
+                        <div class="lnum">3%已订购</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/tttj/603212.jpg"/>
+                        <h1 title="南极人外穿打底裤黑铅笔裤">南极人外穿打底裤黑铅笔裤</h1>
+                        <div class="lprice">¥11<span>.11</span></div>
+                        <div class="lnum">已售10344件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/tttj/603213.jpg"/>
+                        <h1 title="[限500件]高档牛仔小脚裤">[限500件]高档牛仔小脚裤</h1>
+                        <div class="lprice">¥11<span>.11</span></div>
+                        <div class="lnum">已售16470件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/tttj/603214.jpg"/>
+                        <h1 title="4条装男士内裤平角印花">4条装男士内裤平角印花</h1>
+                        <div class="lprice">¥1111<span>.11</span></div>
+                        <div class="lnum">100%已定购</div>
+                    </li>
+                </ul>
+                <ul ng-hide="change(ymxcount,2)">
+                    <li>
+                        <img src="image/hgw/taobao/qc/603211.jpg_.webp"/>
+                        <h1 title="【清仓】新款风衣！最后76件！">【清仓】新款风衣！最后76件！</h1>
+                        <div class="lprice">¥11<span>.11</span></div>
+                        <div class="lnum">已抢100件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/qc/603212.jpg_.webp"/>
+                        <h1 title="【亏本清仓 一件不剩】春秋男士棉夹克">【亏本清仓 一件不剩】春秋男士棉夹克</h1>
+                        <div class="lprice">¥11<span>.11</span></div>
+                        <div class="lnum">已抢6944件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/qc/603213.jpg_.webp"/>
+                        <h1 title="【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克">【质量太好了】买了都说好 不褪色不起球 精品超帅气夹克</h1>
+                        <div class="lprice">¥11<span>.11</span></div>
+                        <div class="lnum">已抢3780件</div>
+                    </li>
+                    <li>
+                        <img src="image/hgw/taobao/qc/603214.jpg_.webp"/>
+                        <h1 title="【品牌血亏】【日销20000条】 南极人百搭打底裤~">【品牌血亏】【日销20000条】 南极人百搭打底裤~</h1>
+                        <div class="lprice">¥1111<span>.11</span></div>
+                        <div class="lnum">已抢11455件</div>
+                    </li>
+                </ul>
+           </div>
+         </div>
      </div>
     </div>
     <div id="footer">

@@ -115,12 +115,11 @@ img{
      background: url('../image/3.png');
      background-size: 20% 100%;
      top:40px;
-     border: 0px solid white;
      overflow: hidden;
  }
  .lsylogo img{
-
    display: block;
+
  }
  .lsynav-h{
 
@@ -270,6 +269,9 @@ img{
     background: #f3929b;
     color: white;
     cursor: pointer;
+}
+.nav-mobile{
+    display: none;
 }
 /*message*/
 .lsymsg{
@@ -866,6 +868,9 @@ img{
     height: 400px;
     margin-top: 30px;
 
+}
+.lmhead2{
+    display: none;
 }
 .lmfont:hover{
     cursor: default;
@@ -1923,7 +1928,7 @@ img{
     list-style: none;
     float: left;
     width: 400px;
-    height:98%;
+    height:294px;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 25px;
@@ -2335,7 +2340,7 @@ img{
     list-style: none;
     float: left;
     width: 200px;
-    height:98%;
+    height:294px;
     margin-right: 20px;
     margin-bottom: 25px;
     border:1px solid darkgray;

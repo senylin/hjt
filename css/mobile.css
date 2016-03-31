@@ -1,0 +1,290 @@
+@media screen and (max-width: 420px){
+    .lsytop{
+        display: none;
+    }
+    .lsylogo{
+        position: fixed;
+        width: 100%;
+        height:40px;
+        top:0px;
+        background: #ff6b87;
+        z-index: 51;
+    }
+    .lsynav{
+        display: none;
+    }
+    #llist{
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
+        position: fixed;
+        top:100%;
+        margin-top: -40px;
+        width:100%;
+        height: 40px;
+        border-radius: 0px;
+        background: #ff6b87;
+        z-index: 99;
+    }
+    .nav-mobile ul{
+        width:100%;
+        height: 100%;
+        position: fixed;
+    }
+    .nav-mobile ul li{
+        position: relative;
+        list-style: none;
+        float: left;
+        width: 80px;
+        height: 40px;
+        font-size:16px;
+        color:white;
+        text-align: center;
+        font-family: 'Microsoft YaHei';
+        line-height:40px;
+        cursor: default;
+        border-radius: 5px;
+    }
+    .nav-mobile ul li:hover{
+        cursor: pointer;
+    }
+    .lsyhover{
+        background: white;
+        color: #ff6b87!important;
+        box-shadow: 0px 0px 0px #f3929b inset;
+    }
+    .lsypics{
+        display: none;
+    }
+    .lsybody{
+        top:0px;
+        margin-top: 0px;
+        height:100%;
+        width: 100%;
+    }
+    .lsymodel{
+        width: 100%;
+        top:0px;
+        left:0%;
+        margin-left:0px;
+    }
+    .lmhead2{
+        display: block;
+        position: fixed;
+        width:100%;
+        height:25px;
+        top:40px;
+        background: lightgray;
+        z-index:50;
+        transition: all linear 0.2s;
+    }
+    .lmhead2 .nav-s{
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        top:0px;
+        left: 0px;
+        z-index: 3;
+        overflow: hidden;
+    }
+    .lmhead2 .nav-s li{
+        position: relative;
+        left: 10px;
+        list-style: none;
+        float: left;
+        width: 80px;
+        height: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 2px;
+        text-align: center;
+        font-family: 'kaiti';
+        font-size: 16px;
+        color:#f3929b;
+        line-height: 25px;
+        font-weight: 300;
+        border-radius: 0px!important;
+        border-right: 2px dashed white;
+        transition: all linear 0.15s;
+    }
+    .lsyhov2{
+        width: 40px!important;
+        color:white!important;
+        background-color:lightgray!important;
+    }
+    .lmhead2 .nav-s li:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 0px white!important;
+    }
+    .lmhead2 .nav-m{
+        position: fixed;
+        top:40px;
+        right:0px;
+        width: 80px;
+        height: 200px;
+        transition: all linear 0.2s;
+        overflow: hidden;
+    }
+    .lmhead2 .navm{
+        height: 25px!important;
+        overflow: hidden;
+    }
+    .lmhead2 .nav-m li{
+        list-style: none;
+        float: left;
+        width: 78px;
+        height: 23px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        margin-right: 2px;
+        text-align: center;
+        font-family: 'kaiti';
+        font-size: 20px;
+        color:#ff6b87;
+        line-height: 25px;
+        font-weight: 300;
+        border-radius: 3px!important;
+        border: 1px dashed #ff6b87;
+        background: white;
+    }
+    .lmhead2 .nav-m li:hover{
+        cursor: pointer;
+        background: #f9a1b7;
+    }
+    .pagelist{
+        display: none;
+    }
+    .lsylist-all{
+        display: none;
+    }
+    .lsylist-m{
+        display: block;
+    }
+    .lmbody{
+        height: 2000px!important;
+        position: absolute!important;
+        top:80px!important;
+        left: 0px!important;
+        overflow: auto;
+    }
+    .lsydel{
+        position: absolute;
+        top:40px;
+        height: 450px;
+        margin-top: 0px;
+    }
+    .lmbody ul{
+        width: 100%;
+        height: auto;
+    }
+    .lsydel .lmbody{
+        height: 1000px!important;
+        margin-top: 80px;
+    }
+    .lsydel .lmbody ul li{
+        margin-left: 5px!important;
+        margin-right: 5px!important;
+    }
+    #taobao .lmbody li{
+        position: relative;
+        left:20%;
+        margin-right: 0px!important;
+        margin-left: 20px!important;
+        height: 298px!important;
+        margin-bottom: 30px!important;
+        overflow: hidden!important;
+    }
+    #jumei .lmbody li{
+        margin-left: 0px!important;
+        margin-right: 10px!important;
+        margin-bottom: 10px!important;
+    }
+    #yihaodian .lmbody li{
+        margin-left: 00px!important;
+        margin-right: 20px!important;
+        height: 300px!important;
+        margin-bottom: 20px!important;
+    }
+    #mogujie .lmbody li{
+        margin-left: 0px!important;
+        margin-right: 10px!important;
+        margin-bottom: 10px!important;
+    }
+    #yamaxun .lmbody li{
+        position: relative;
+        left:20%;
+        margin-right: 0px!important;
+        margin-left: 20px!important;
+        height: 300px!important;
+        margin-bottom: 10px!important;
+    }
+    #meishi .lmbody li{
+        position: relative;
+        left:20%;
+        margin-right: 0px!important;
+        margin-left: 20px!important;
+        /*height: 300px!important;*/
+        margin-bottom: 10px!important;
+    }
+    #dianying .lmbody li{
+        position: relative;
+        left:20%;
+        margin-right: 0px!important;
+        margin-left: 20px!important;
+        height: 294px!important;
+        margin-bottom: 10px!important;
+    }
+    #kge .lmbody li{
+        position: relative;
+        left:20%;
+        margin-right: 0px!important;
+        margin-left: 20px!important;
+        height: 294px!important;
+        margin-bottom: 10px!important;
+    }
+    #zhusu .lmbody li{
+        position: relative;
+        left:20%;
+        margin-right: 0px!important;
+        margin-left: 20px!important;
+        margin-bottom: 10px!important;
+    }
+    #waimai .lmbody li{
+        position: relative;
+        left:20%;
+        margin-right: 0px!important;
+        margin-left: 20px!important;
+        margin-bottom: 10px!important;
+    }
+    #qidian .lmbody li{
+        margin-left: 0px!important;
+        margin-right: 20px!important;
+        margin-top: 10px!important;
+    }
+    #zongheng .lmbody li{
+        margin-left: 0px!important;
+        margin-right: 20px!important;
+        margin-top: 10px!important;
+    }
+    #chuangshiji .lmbody li{
+        margin-left: 0px!important;
+        margin-right: 20px!important;
+        margin-top: 10px!important;
+    }
+    #hao123 .lmbody li{
+        margin-left: 0px!important;
+        margin-right: 20px!important;
+        margin-top: 10px!important;
+    }
+    .lmhead{
+        display: none;
+    }
+    .lsynav-p{
+        display: none;
+    }
+   #footer{
+       display: none;
+   }
+
+}

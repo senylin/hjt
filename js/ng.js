@@ -3,13 +3,10 @@
  */
 document.onscroll =function(){
     var navi=document.getElementById('nav');
-    var list=document.getElementById('llist');
     if(document.body.scrollTop>150){
         navi.className ='lsynav2 lsynav';
-        list.className ='lsynav-h lsynav-h2';
     }else{
         navi.className ='lsynav';
-        list.className ='lsynav-h';
     }
 
 }
@@ -23,6 +20,7 @@ app.controller('lmodel1',function($scope){
     $scope.mgjdisplay = true;
     $scope.ymxcount = 1;
     $scope.delurl = '';
+    $scope.counts=1;
     $scope.change = function(value,judge){
         if(value==judge)return false;
         else{return true;}

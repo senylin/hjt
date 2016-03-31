@@ -76,6 +76,9 @@
     border-radius: 5px;
     z-index: 9;
 }
+.lsylist-m{
+    display: none;
+}
 .lsynav-p{
     position: absolute;
     width: 90%;
