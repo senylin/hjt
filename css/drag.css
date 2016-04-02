@@ -8,7 +8,20 @@
     z-index: 105;
     opacity: 0.7;
 }
-.loginemail{
+.regmobile{
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    top:100px;
+    width: 400px;
+    height: 310px;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 2px;
+    z-index: 106;
+    background: #ffffff;
+    overflow: hidden;
+}
+.regs{
     position: fixed;
     left: 50%;
     margin-left: -200px;
@@ -20,12 +33,261 @@
     z-index: 106;
     background: #ffffff;
 }
+.ereg{
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    height: 50px;
+    top:40px;
+    background: #337ab7;
+    box-shadow: 0px 0px 5px #337ab7;
+    border-radius: 2px;
+    color:#ffffff;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 10px;
+    font-family: 'microsoft yahei';
+    line-height: 50px;
+}
+.mreg{
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    height: 50px;
+    top:80px;
+    background: #337ab7;
+    box-shadow: 0px 0px 5px #337ab7;
+    border-radius: 2px;
+    color:#ffffff;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 10px;
+    font-family: 'microsoft yahei';
+    line-height: 50px;
+}
+.mreg:hover{
+    cursor: pointer;
+    background: #ff6b87;
+    box-shadow: 0px 0px 5px #ff6b87;
+}
+.mreg:active{
+    color:grey;
+}
+.ereg:hover{
+    cursor: pointer;
+    background: #ff6b87;
+    box-shadow: 0px 0px 5px #ff6b87;
+}
+.ereg:active{
+    color:grey;
+}
+.page1{
+    position: relative;
+    top:0px;
+    width: 100%;
+    height: 300px;
+    z-index: 102;
+    display: none;
+}
+.page2{
+    position: relative;
+    top:0px;
+    width: 100%;
+    height: 300px;
+
+    z-index: 103;
+}
+.returnlogin{
+    position: relative;
+    top:120px;
+    width: 80%;
+    margin-left:10% ;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:grey;
+    font-family: 'microsoft yahei';
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.returnlogin a:hover{
+    color:#ff6b87;
+}
+.mobilenum{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height:40px;
+    margin-top: 10px;
+}
+.mobilenum select{
+    float: left;
+    width: 80px;
+    height: 80%;
+    margin-top: 4px;
+    font-family: 'microsoft yahei';
+    font-size: 16px;
+    color: grey;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    line-height: 36px;
+    text-indent: 6px;
+}
+.mobilenum .num{
+    float: left;
+    width: 220px;
+    height: 80%;
+    margin-top: 4px;
+    margin-left: 15px;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    text-indent: 8px;
+    font-family: 'microsoft yahei';
+    font-size: 14px;
+}
+.checkbox{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height:40px;
+    margin-top: 10px;
+    font-family: 'microsoft yahei';
+    font-size: 14px;
+}
+.checkbox .check{
+    float: left;
+    width: 200px;
+    height: 80%;
+    margin-top: 4px;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    text-indent: 6px;
+}
+.checkbox button{
+    float: left;
+    width: 110px;
+    height: 80%;
+    margin-top: 4px;
+    margin-left:5px ;
+    border-radius: 2px;
+    border: 1px solid grey;
+    text-align: center;
+    color: #ffffff;
+    background: grey;
+    font-size:17px;
+}
+.agreerule{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'microsoft yahei';
+}
+.agreerule input{
+    width: 15px;
+    height: 80%;
+    float: left;
+    margin-top:3px!important;
+    margin-left: 5px!important;
+    line-height: 60px;
+}
+.agreerule p{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100%;
+    float: left;
+    line-height: 25px;
+    margin-left: 12px;
+    line-height: 30px;
+}
+.next{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    top:10px;
+    background: #337ab7;
+    border-radius: 2px;
+    box-shadow: 0px -1px 5px  #337ab7;
+    color:#ffffff;
+    text-align: center;
+    font-family: 'microsoft yahei';
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 10px;
+}
+.next:hover{
+    cursor: pointer;
+}
+.next:active{
+    background: #ff6b87;
+}
+.prep{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    top:10px;
+    text-align: right;
+    z-index: 10;
+}
+.prep a{
+    margin-right: 10px;
+}
+.pic{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.loginemail{
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    top:100px;
+    width: 400px;
+    height: 350px;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 2px;
+    z-index: 106;
+    background: #ffffff;
+    overflow: hidden;
+}
+.message{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top:70px;
+    text-align: center;
+    color:#ff6b87;
+    line-height: 10px;
+    font-size: 16px;
+    font-family: 'microsoft yahei';
+    z-index: 9;
+}
+.message2{
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    height: 20px;
+    top:180px;
+    text-align: center;
+    color:#ff6b87;
+    line-height: 10px;
+    font-size: 16px;
+    font-family: 'microsoft yahei';
+    z-index: 9;
+}
 .top{
     position: relative;
     width:90%;
     height: 60px;
     margin-left: 5%;
     border-bottom: 2px solid lightgray;
+    text-align: center;
+    font-family: 'comic sans ms';
+    color: grey;
+    font-size: 30px;
+    line-height: 60px;
 }
 .top div{
     float: left;
@@ -100,7 +362,7 @@
     border-radius: 1px;
     text-indent: 10px;
 }
-.psd{
+.idl{
     position: relative;
     width: 80%;
     margin-left: 10%;
@@ -111,6 +373,38 @@
     font-family: 'microsoft yahei';
     font-size: 16px;
 }
+.idl div{
+    float: left;
+    height: 100%;
+    width: 40px;
+    background:lightgray;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+
+}
+.idl input{
+    float: left;
+    height: 100%;
+    width: 276px;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    text-indent: 10px;
+}
+.idl input:hover{
+    border: 1px solid lightgray;
+}
+.psd{
+     position: relative;
+     width: 80%;
+     margin-left: 10%;
+     margin-top: 20px;
+     height: 40px;
+     border: 2px solid lightgray;
+     border-radius: 2px;
+     font-family: 'microsoft yahei';
+     font-size: 16px;
+ }
 .psd div{
     float: left;
     height: 100%;
@@ -164,9 +458,9 @@
 
 .psddeal input{
     width: 15px;
-    height: 100%;
+    height: 80%;
     float: left;
-    margin-top:0px!important;
+    margin-top:3px!important;
     margin-left: 5px!important;
     line-height: 60px;
 }
