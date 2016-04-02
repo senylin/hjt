@@ -1,11 +1,24 @@
+.back{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: lightgray;
+    z-index: 105;
+    opacity: 0.7;
+}
 .loginemail{
     position: fixed;
     left: 50%;
     margin-left: -200px;
+    top:100px;
     width: 400px;
     height: 350px;
-    box-shadow: 0px 0px 5px gray;
-    z-index: 100;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 2px;
+    z-index: 106;
+    background: #ffffff;
 }
 .top{
     position: relative;

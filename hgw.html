@@ -7,13 +7,18 @@
     <script src="js/angular-animate.min.js"></script>
     <script src="js/ng.js"></script>
     <link rel="stylesheet" href="css/css.css" type="text/css"/>
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="js/drag.js" type="text/javascript"></script>
     <title>汇购物</title>
+
 </head>
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<div ng-app="lsyApp" class="lsyapp">
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="loadLogin('loginE.html');">
+<div ng-app="lsyApp" class="lsyapp" ng-init="url='loginE.html'">
 <!--top-->
+    <div id="login"></div>
+    <!--<div class="back"></div>-->
     <div class="lsytop" ng-controller="ltop">
-        <div class="lsylogin">请登录or 注册</div>
+        <div class="lsylogin" onclick="loadLogin('loginE.html')">请登录or 注册</div>
         <ul>
             <li>更多建议</li>
             <li>关注我们</li>
