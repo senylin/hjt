@@ -8,13 +8,16 @@
     z-index: 105;
     opacity: 0.7;
 }
+a:hover{
+    cursor: pointer;
+}
 .regmobile{
     position: fixed;
     left: 50%;
     margin-left: -200px;
     top:100px;
     width: 400px;
-    height: 310px;
+    height: 350px;
     box-shadow: 0px 0px 20px gray;
     border-radius: 2px;
     z-index: 106;
@@ -87,15 +90,22 @@
     width: 100%;
     height: 300px;
     z-index: 102;
-    display: none;
+    display: block;
 }
 .page2{
     position: relative;
     top:0px;
     width: 100%;
     height: 300px;
-
+    display: none;
     z-index: 103;
+}
+.return{
+    position: relative;
+    top:120px;
+    width: 80%;
+    margin-left:10% ;
+    height: 35px;
 }
 .returnlogin{
     position: relative;
@@ -163,7 +173,7 @@
     border: 1px solid lightgray;
     text-indent: 6px;
 }
-.checkbox button{
+.checkbox .sendmsg{
     float: left;
     width: 110px;
     height: 80%;
@@ -175,6 +185,24 @@
     color: #ffffff;
     background: grey;
     font-size:17px;
+    cursor: pointer;
+    line-height: 30px;
+}
+.checkbox .sendmsg2{
+    float: left;
+    width: 110px;
+    height: 80%;
+    margin-top: 4px;
+    margin-left:5px ;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    text-align: center;
+    color: #ffffff;
+    background: lightgray;
+    font-size:17px;
+    pointer-events: none;
+    cursor: default;
+    line-height: 30px;
 }
 .agreerule{
     position: relative;
@@ -232,12 +260,53 @@
     z-index: 10;
 }
 .prep a{
-    margin-right: 10px;
+     margin-right: 10px;
+ }
+.prep a:hover{
+    cursor: pointer;
+    color:#ff6b87;
 }
 .pic{
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 90px;
+    top:10px;
+}
+.pic img{
+   float: left;
+    margin-left: 160px;
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 5px #337ab7;
+}
+.pic .loadpic{
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin-top: 55px;
+    margin-left: 20px;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'microsoft yahei';
+    line-height: 30px;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.pic input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+
 }
 .loginemail{
     position: fixed;
@@ -269,7 +338,7 @@
     width: 80%;
     margin-left: 10%;
     height: 20px;
-    top:180px;
+    top:210px;
     text-align: center;
     color:#ff6b87;
     line-height: 10px;
@@ -288,6 +357,7 @@
     color: grey;
     font-size: 30px;
     line-height: 60px;
+    cursor: pointer;
 }
 .top div{
     float: left;

@@ -12,17 +12,15 @@
 <body>
 <div class="back" onclick="loadLogin('nothing.txt')"></div>
 <form class="regmobile">
-    <div class="top"onclick="loadLogin('register.html')">手机注册ing</div>
+    <div class="top" onclick="loadLogin('register.html')">邮箱注册ing</div>
     <div class="page1">
         <div class="mobilenum">
-            <select>
-                <option>中国</option>
-            </select>
-            <input class="num" type="text" name="mobilenumber" placeholder="请输入手机号码"/>
+
+            <input class="num" type="text" name="emailnumber" style="width: 100%;margin-left: 0px;" placeholder="请输入邮箱"/>
         </div>
         <div class="checkbox">
-            <input class="check" type="text" name="checknum" placeholder="请输入手机验证码"/>
-            <div class="sendmsg" onclick="msgsend()">发送短信</div>
+            <input class="check" type="text" name="checknum" placeholder="请输入验证码"/>
+            <div class="sendmsg" onclick="msgsend()">发送验证码</div>
         </div>
         <div id="drag"></div>
         <div class="agreerule"><input type="checkbox" name="getrule" value="" checked="" placeholder="" /><p>我已阅读并同意</p></div>
@@ -56,7 +54,7 @@
     function msgsend(){
         $(".sendmsg").addClass("sendmsg2");
         $(".sendmsg").removeClass("sendmsg");
-         timedet= setInterval("timedel()",1000);
+        timedet= setInterval("timedel()",1000);
 
 //        $(".sendmsg2").text("重新发送 ");
 
