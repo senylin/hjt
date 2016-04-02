@@ -1,11 +1,11 @@
-@media screen and (max-width: 420px){
+@media screen and (max-width: 500px){
     .lsytop{
         display: none;
     }
     .lsylogo{
         position: fixed;
         width: 100%;
-        height:40px;
+        height:50px;
         top:0px;
         background: #ff6b87;
         z-index: 51;
@@ -22,14 +22,15 @@
         top:100%;
         margin-top: -40px;
         width:100%;
-        height: 40px;
-        border-radius: 0px;
+        height: 100px;
+        border-radius: 5px;
         background: #ff6b87;
         z-index: 99;
     }
     .nav-mobile ul{
         width:100%;
         height: 100%;
+
         position: fixed;
     }
     .nav-mobile ul li{
@@ -73,20 +74,21 @@
         display: block;
         position: fixed;
         width:100%;
-        height:25px;
-        top:40px;
-        background: lightgray;
+        height:30px;
+        top:50px;
+        background: #ffffff;
         z-index:50;
         transition: all linear 0.2s;
     }
     .lmhead2 .nav-s{
         position: absolute;
-        width: 200px;
+        width: 100%;
         height: 100%;
         top:0px;
         left: 0px;
         z-index: 3;
         overflow: hidden;
+        border-bottom: 1px dashed #ff6b87;
     }
     .lmhead2 .nav-s li{
         position: relative;
@@ -102,16 +104,17 @@
         font-family: 'kaiti';
         font-size: 16px;
         color:#f3929b;
-        line-height: 25px;
+        line-height: 30px;
         font-weight: 300;
         border-radius: 0px!important;
-        border-right: 2px dashed white;
+        border-right: 1px dashed #ff6b87;
         transition: all linear 0.15s;
+        border-radius: 2px;
     }
     .lsyhov2{
-        width: 40px!important;
-        color:white!important;
-        background-color:lightgray!important;
+        width: 60px!important;
+        color:darkgray!important;
+        background-color:#ffffff!important;
     }
     .lmhead2 .nav-s li:hover{
         cursor: pointer;
@@ -119,22 +122,23 @@
     }
     .lmhead2 .nav-m{
         position: fixed;
-        top:40px;
+        top:50px;
         right:0px;
         width: 80px;
         height: 200px;
         transition: all linear 0.2s;
         overflow: hidden;
+        z-index: 5;
     }
     .lmhead2 .navm{
-        height: 25px!important;
+        height:30px!important;
         overflow: hidden;
     }
     .lmhead2 .nav-m li{
         list-style: none;
         float: left;
         width: 78px;
-        height: 23px;
+        height: 28px;
         margin-bottom: 5px;
         margin-left: 0px;
         margin-right: 2px;
@@ -142,7 +146,7 @@
         font-family: 'kaiti';
         font-size: 20px;
         color:#ff6b87;
-        line-height: 25px;
+        line-height: 30px;
         font-weight: 300;
         border-radius: 3px!important;
         border: 1px dashed #ff6b87;
@@ -164,7 +168,7 @@
     .lmbody{
         height: 2000px!important;
         position: absolute!important;
-        top:80px!important;
+        top:100px!important;
         left: 0px!important;
         overflow: auto;
     }
@@ -188,94 +192,362 @@
     }
     #taobao .lmbody li{
         position: relative;
-        left:20%;
         margin-right: 0px!important;
-        margin-left: 20px!important;
-        height: 298px!important;
+        margin-left: 10%!important;
+        width: 80%!important;
+        height: 400px!important;
         margin-bottom: 30px!important;
         overflow: hidden!important;
+    }
+    #taobao .lmbody h1{
+        font-size: 16px!important;
+        height: 30px!important;
+    }
+    #taobao .lmbody .lprice{
+        margin-left: 20%;
+        margin-top: 0px;
+    }
+    #taobao .lmbody img{
+        width: 90%!important;
+        margin-left: 5%!important;
+        margin-top: 8px!important;
+        height:300px;
+    }
+    #taobao .lnotice{
+        width: 100%!important;
+        height: 40px!important;
+        margin-top:32px!important;
+    }
+    #taobao .lnum{
+        width: 98%!important;
+        margin-top:40px!important;
     }
     #jumei .lmbody li{
         margin-left: 0px!important;
         margin-right: 10px!important;
         margin-bottom: 10px!important;
+        width: 100%!important;
     }
+
     #yihaodian .lmbody li{
         margin-left: 00px!important;
         margin-right: 20px!important;
         height: 300px!important;
-        margin-bottom: 20px!important;
+        width: 99%!important;
+        margin-bottom: 50px!important;
+        overflow: hidden!important;
+    }
+    #yihaodian .lmbody h1{
+        width: 94%!important;
+        margin-left: 3%!important;
+    }
+    #yihaodian .lmbody p{
+            width: 90%!important;
+        }
+    #yihaodian .lmbody .lprice{
+
+        margin-top: 10px!important;
     }
     #mogujie .lmbody li{
         margin-left: 0px!important;
         margin-right: 10px!important;
-        margin-bottom: 10px!important;
+        margin-bottom: 30px!important;
+        width: 99%!important;
+        overflow: hidden!important;
+    }
+    #mogujie .lmbody h1{
+        width:50%;
+    }
+    #mogujie .lmbody .h2{
+        width:60%;
     }
     #yamaxun .lmbody li{
         position: relative;
-        left:20%;
         margin-right: 0px!important;
-        margin-left: 20px!important;
-        height: 300px!important;
-        margin-bottom: 10px!important;
+        margin-left: 10%!important;
+        width: 80%!important;
+        height: 400px!important;
+        margin-bottom: 30px!important;
+        overflow: hidden!important;
+    }
+    #yamaxun .lmbody h1{
+        font-size: 16px!important;
+        height: 40px!important;
+    }
+    #yamaxun .lmbody .lprice{
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+    #yamaxun .lmbody img{
+        width: 90%!important;
+        margin-left: 5%!important;
+        margin-top: 8px!important;
+        height:240px;
+    }
+    #yamaxun .lnum{
+        width: 90%;
+        margin-top: 80px!important;
     }
     #meishi .lmbody li{
         position: relative;
-        left:20%;
         margin-right: 0px!important;
-        margin-left: 20px!important;
+        margin-left: 10%!important;
+        width: 80%!important;
+        height: 400px!important;
         /*height: 300px!important;*/
-        margin-bottom: 10px!important;
+        margin-bottom: 50px!important;
+    }
+    #meishi .lmbody img{
+        width: 100%!important;
+        height: 200px!important;
+        margin-left: 0%!important;
+        top: 0px!important;
+
+    }
+    #meishi .lmbody p{
+        height: 50px!important;
+        margin-top: 10px;
+    }
+    #meishi .lnum{
+        width: 90%;!important;
     }
     #dianying .lmbody li{
         position: relative;
-        left:20%;
         margin-right: 0px!important;
-        margin-left: 20px!important;
-        height: 294px!important;
-        margin-bottom: 10px!important;
+        margin-left: 10%!important;
+        width: 80%!important;
+        height: 400px!important;
+        margin-bottom: 50px!important;
+    }
+    #dianying .lmbody img{
+        height:320px;
+    }
+    #dianying .lmbody span{
+        font-size: 20px;
     }
     #kge .lmbody li{
         position: relative;
-        left:20%;
         margin-right: 0px!important;
-        margin-left: 20px!important;
-        height: 294px!important;
-        margin-bottom: 10px!important;
+        margin-left: 10%!important;
+        width: 80%!important;
+        height: 400px!important;
+        margin-bottom: 50px!important;
+    }
+    #kge .lmbody img{
+        width: 100%!important;
+        margin-left: 0px;
+        top:0px;
+        height: 220px;
+    }
+    #kge .lmbody p{
+        height: 30px!important;
+    }
+    #kge .lmbody .lprice{
+        margin-top: 15px;
+    }
+    #kge .lscore{
+        width: 90%;
+        margin-top: 55px!important;
+    }
+    #kge .lnum{
+        margin-top:70px!important;
+        width: 50%;
+        font-size: 14px;
     }
     #zhusu .lmbody li{
         position: relative;
-        left:20%;
         margin-right: 0px!important;
-        margin-left: 20px!important;
-        margin-bottom: 10px!important;
+        margin-left: 10%!important;
+        width: 80%!important;
+        height: 400px!important;
+        margin-bottom: 50px!important;
+    }
+    #zhusu .lmbody img{
+        width: 100%!important;
+        top:0px;
+        margin-left: 0px;
+        height: 200px!important;
+    }
+    #zhusu .lmbody p{
+        height: 50px!important;
+        font-size: 14px;
+    }
+    #zhusu .lmbody h1{
+        height: 40px;
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 0px!important;
+    }
+    #zhusu .lmbody .lprice{
+        width: 96%;
+        height: 30px;
+        margin-left: 2%;
+        font-size:24px;
+    }
+    #zhusu .lmbody .lscore{
+        margin-top: 70px;
+        font-size: 20px;
+        text-align: right;
+
+        height: 30px;
+        width: 90%;
+    }
+    #zhusu .lnum{
+        margin-left: 2%;
+        text-align: left;
+        margin-top: 70px;
     }
     #waimai .lmbody li{
         position: relative;
-        left:20%;
         margin-right: 0px!important;
-        margin-left: 20px!important;
-        margin-bottom: 10px!important;
+        margin-left: 10%!important;
+        width: 80%!important;
+        height: 380px!important;
+        margin-bottom: 50px!important;
+    }
+    #waimai .lmbody p{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    #waimai .lmbody .lsale{
+        margin-left: 180px;
+    }
+    #waimai .lmbody .lspan{
+        margin-top: 80px;
+    }
+    #waimai .lmbody .lspan span{
+        font-size: 20px!important;
+
+    }
+    #waimai .lmbody img{
+        width: 100%;
+        height: 200px;
+    }
+    #waimai .lmbody .lprice{
+        width: 100%;
+        font-size: 16px;
     }
     #qidian .lmbody li{
+        width: 100%!important;
         margin-left: 0px!important;
         margin-right: 20px!important;
         margin-top: 10px!important;
     }
+    #qidian .lmbody img{
+        margin-left: 2%!important;
+        width: 40%!important;
+    }
+    #qidian .lmbody h1{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #qidian .lmbody h2{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #qidian .lmbody h3{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #qidian .lmbody .describ{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #qidian .lmbody .click{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+
     #zongheng .lmbody li{
+        width: 100%!important;
         margin-left: 0px!important;
         margin-right: 20px!important;
         margin-top: 10px!important;
     }
+    #zongheng .lmbody img{
+        margin-left: 2%!important;
+        width: 40%!important;
+    }
+    #zongheng .lmbody h1{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #zongheng .lmbody h2{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #zongheng .lmbody h3{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #zongheng .lmbody .describ{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #zongheng .lmbody .click{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+
     #chuangshiji .lmbody li{
+        width: 100%!important;
         margin-left: 0px!important;
         margin-right: 20px!important;
         margin-top: 10px!important;
+    }
+    #chuangshiji .lmbody img{
+        margin-left: 2%!important;
+        width: 40%!important;
+    }
+    #chuangshiji .lmbody h1{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #chuangshiji .lmbody h2{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #chuangshiji .lmbody h3{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #chuangshiji .lmbody .describ{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #chuangshiji .lmbody .click{
+        width: 50%!important;
+        margin-left: 48%!important;
     }
     #hao123 .lmbody li{
+        width: 100%!important;
         margin-left: 0px!important;
         margin-right: 20px!important;
         margin-top: 10px!important;
+    }
+    #hao123 .lmbody img{
+        margin-left: 2%!important;
+        width: 40%!important;
+    }
+    #hao123 .lmbody h1{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #hao123 .lmbody h2{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #hao123 .lmbody h3{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #hao123 .lmbody .describ{
+        width: 50%!important;
+        margin-left: 48%!important;
+    }
+    #hao123 .lmbody .click{
+        width: 50%!important;
+        margin-left: 48%!important;
     }
     .lmhead{
         display: none;

@@ -127,16 +127,7 @@ img{
 .lsynav-h2{
 
 }
-.back{
-    position: fixed;
-    top:0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: lightgray;
-    z-index: 105;
-    opacity: 0.7;
-}
+
 /*navig*/
 .lsynav{
     position: absolute;
@@ -1016,8 +1007,7 @@ img{
 }
 #meishi .lmbody h1:hover{
     color: red;
-    cursor: pointer;
-    font-size: 16px;
+
 }
 #meishi .lmbody p{
     position: relative;
@@ -1040,7 +1030,7 @@ img{
     width:180px;
     height: 25px;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top:25px;
 
 }
@@ -1075,11 +1065,11 @@ img{
 #meishi .lnum{
     font-size: 10px;
     color:gray;
-    width: 100px;
+    width: 90%;
     font-family: 'microsoft yahei';
     position: absolute;
     margin-top:75px;
-    margin-left: 95px;
+    margin-left: 5px;
     text-align: right;
 
 }
@@ -1214,11 +1204,6 @@ img{
     line-height: 18px;
     white-space:nowrap;
 }
-#kge .lmbody h1:hover{
-    color: red;
-    cursor: pointer;
-    font-size: 16px;
-}
 #kge .lmbody p{
     position: relative;
     width: 90%;
@@ -1240,7 +1225,7 @@ img{
     position: absolute;
     width: 180px;
     height:30px;
-    margin-left: 10px;
+    margin-left: 5%;
     margin-top:35px;
     font-family: 'microsoft yahei';
     font-size:26px;
@@ -1325,9 +1310,7 @@ img{
     white-space:nowrap;
 }
 #zhusu .lmbody h1:hover{
-    color: red;
-    cursor: pointer;
-    font-size: 16px;
+
 }
 #zhusu .lmbody p{
     position: relative;
@@ -1442,6 +1425,7 @@ img{
     margin-left: 1%;
     top:10px;
     font-family: 'microsoft yahei';
+    text-align: center;
     font-size: 20px;
     color:lightslategray;
     font-weight: 600;
@@ -1477,7 +1461,7 @@ img{
 }
 #waimai .lmbody .lprice div{
     float: left;
-    width: 66px;
+    width: 33%;
     height: 100%;
     margin-left: 0px;
 }
@@ -1654,6 +1638,7 @@ img{
     line-height: 18px;
     overflow: hidden;
     white-space:nowrap;
+    text-indent: 6px;
 }
 .qx{
     height: 30px!important;
