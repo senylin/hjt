@@ -10,6 +10,30 @@
         background: #ff6b87;
         z-index: 51;
     }
+    .lsylogo ul{
+        width:320px;
+        height: 50px;
+
+        position: fixed;
+    }
+    .lsylogo ul li{
+        position: relative;
+
+        list-style: none;
+        float: left;
+        width: 80px;
+        height: 50px;
+        font-size:18px;
+        color:white;
+        text-align: center;
+        font-family: 'Microsoft YaHei';
+        line-height:50px;
+        cursor: default;
+        border-radius: 5px;
+    }
+    .lsylogo ul li:hover{
+        cursor: pointer;
+    }
     .lsynav{
         display: none;
     }
