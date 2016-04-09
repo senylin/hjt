@@ -34,6 +34,9 @@
     .lsylogo ul li:hover{
         cursor: pointer;
     }
+    .mhead{
+        display: block;
+    }
     .lsynav{
         display: none;
     }

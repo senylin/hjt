@@ -3,7 +3,7 @@
 }
 .lsynav-h{
     position: absolute;
-    left:100px;
+    left:150px;
     top:250px;
     width: 100px;
     height:auto;
@@ -48,6 +48,9 @@
 }
 .lifocus{
     background: lightpink!important;
+}
+.mhead{
+    display: none;
 }
 .nav-head{
     width: 100%;
