@@ -26,6 +26,11 @@ document.onscroll =function(){
 //        lmbody.style.height +=400;
 //    }
 }
+function loadLogin(page){
+    var mexbox=$.ajax({url:page,async:false});
+    $("#login").html(mexbox.responseText);
+
+}
 function ending(){
     var scrollTop=document.body.scrollTop;
     var clientHeight = document.body.clientHeight;

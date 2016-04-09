@@ -3,9 +3,6 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/angular.min.js"></script>
-    <script src="js/angular-animate.min.js"></script>
-    <script src="js/nglist.js"></script>
     <link rel="stylesheet" href="css/css.css" type="text/css"/>
     <link rel="stylesheet" href="css/second.css" type="text/css"/>
     <link rel="stylesheet" href="css/mobile.css" type="text/css"/>
@@ -13,9 +10,11 @@
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <div ng-app="lsyApp" class="lsyapp" ng-controller="lalldate">
+<div id="login"></div>
 <!--top-->
+
 <div class="lsytop" ng-controller="ltop">
-    <div class="lsylogin">请登录or 注册</div>
+    <div class="lsylogin" onclick="loadLogin('loginE.html')">请登录or 注册</div>
     <ul>
         <li>我们的app</li>
         <li>更多建议</li>
@@ -29,7 +28,7 @@
         <li ng-class="{lsyhover:choose(count2,1)}" ng-click="url='pages/taobao.html';totop();count=1;count2=1">惠购物</li>
         <li ng-class="{lsyhover:choose(count2,2)}" ng-click="url='pages/meishi.html';totop();count=1;count2=2" >汇周边</li>
         <li ng-class="{lsyhover:choose(count2,3)}" ng-click="url='pages/qidian.html';totop();count=1;count2=3" >慧小说</li>
-        <li>我的</li>
+        <li  onclick="loadLogin('loginE.html')">我的</li>
     </ul>
 </div>
     <!--<div class="nav-mobile" >-->
@@ -283,4 +282,10 @@
 </div>
 <script type="text/javascript">
 </script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/nglist.js"></script>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="js/drag.js" type="text/javascript"></script>
 </body>
+</html>

@@ -24,22 +24,6 @@ function loadLogin(page){
     var mexbox=$.ajax({url:page,async:false});
     $("#login").html(mexbox.responseText);
 
-//    var xmlhttp;
-//    if (window.XMLHttpRequest){
-//        xmlhttp=new XMLHttpRequest();
-//    }else{
-//        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-//    }
-//    xmlhttp.onreadystatechange=function(){
-//        if (xmlhttp.readyState==4 && xmlhttp.status==200)
-//        {
-//            document.getElementById("login").innerHTML=xmlhttp.responseText;
-//        }
-//    }
-//
-//    xmlhttp.open("GET",page,true);
-//    xmlhttp.send();
-//    $('#drag').drag();
 }
 var app = angular.module('lsyApp',['ngAnimate']);
 app.controller('lbody',function($scope){
