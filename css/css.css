@@ -71,17 +71,17 @@ img{
     color:#f9a1b7;
 }
 .lsytop ul{
-    width:300px;
+    width:400px;
     height: 100%;
     position: relative;
     top:-40px;
     left:100%;
-    margin-left:-300px;
+    margin-left:-400px;
 }
 .lsytop ul li{
     list-style: none;
     float: left;
-    width: 60px;
+    width: 80px;
     height: 100%;
     margin-left: 15px;
     font-size: 15px;

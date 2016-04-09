@@ -23,31 +23,60 @@
             <div class="sendmsg" onclick="msgsend()">发送验证码</div>
         </div>
         <div id="drag"></div>
-        <div class="agreerule"><input type="checkbox" name="getrule" value="" checked="" placeholder="" /><p>我已阅读并同意</p></div>
+        <div class="agreerule"><input   class="rul" type="checkbox" name="getrule" value="" checked="" placeholder="" /><p>我已阅读并同意</p></div>
         <div class="rules"></div>
         <div class="return"></div>
+        <div class="message2"></div>
         <div class="next">下一步</div>
     </div>
     <div class="page2">
         <div class="pic"><img id="touxiang" src=""/><div class="loadpic"><input type="file" id="file" name="upic" placeholder="选择头像"/>请选择你的头像</div></div>
-        <div class="idl"><div><a><span class="glyphicon glyphicon-user"></span></a> </div><input type="text" name="uid" placeholder="请选择你的用户名"/></div>
-        <div class="psd"><div><a><span class="glyphicon glyphicon-lock"></span></a> </div><input type="password" name="upsd" placeholder="请选择你的密码"/></div>
+        <div class="idl"><div><a><span class="glyphicon glyphicon-user"></span></a> </div><input class="userid" type="text" name="uid" placeholder="请选择你的id"/></div>
+        <div class="psd"><div><a><span class="glyphicon glyphicon-lock"></span></a> </div><input class="userpsd" type="password" name="upsd" placeholder="请选择你的密码"/></div>
         <div class="prep"><a>返回上页</a></div>
         <div class="message2"></div>
-        <div class="next">注册</div>
+        <div class="rg">注册</div>
     </div>
 </form>
 <script type="text/javascript">
     $('#drag').drag();
     $(function(){
+        var rule=$(".rul");
+
+        var dragslip=$(".drag_text");
         $(".next").click(function(){
-            $(".page1").fadeOut(300);
-            $(".page2").fadeIn(500);
-        })
-        $(".prep a").click(function(){
+            if($.trim($(".num").val())==""){//判断邮箱
+                $(".message2").text("您的邮箱不能为空");
+
+            }else if($.trim($(".check").val())==""){//判断验证码
+                $(".message2").text("您的验证码不能为空");
+            }
+            else if(dragslip.text()=="拖动滑块验证"){//判断验证条
+                $(".message2").text("您未拉动验证条");
+            }else if(rule.is(':checked')==false){//判断是否勾选
+                $(".message2").text("请您同意我们的文件。。。");
+            }
+            else//切换页面
+             {
+                 $(".message2").text("");
+                $(".page1").fadeOut(300);
+                $(".page2").fadeIn(500);
+            }
+        });
+        $(".prep a").click(function(){//返回上一页
             $(".page2").fadeOut(300);
             $(".page1").fadeIn(500);
-        })
+        });
+        $(".rg").click(function(){
+           if($.trim($(".userid").val())==""){//判断id
+               $(".message2").text("您的id不能为空");
+           }else if($.trim($(".userpsd").val())==""){//判断密码
+                $(".message2").text("您的密码不能为空");
+            }  else{//提交
+               $(".regmobile").submit();
+               $(".message2").text("");
+           }
+        });
     });
     var time =60;
     var timedet;

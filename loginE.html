@@ -14,15 +14,35 @@
             <form class="loginemail">
                 <div class="message"></div>
                 <div class="top"><div style="color:royalblue;">Email</div><div onclick="loadLogin('loginM.html')">Mobile</div></div>
-                <div class="email"><div><a><span class="glyphicon glyphicon-user"></span></a> </div><input type="text" name="uemail" placeholder="请输入你的邮箱Please Email"/></div>
-                <div class="psd"><div><a><span class="glyphicon glyphicon-lock"></span></a> </div><input type="password" name="upsd" placeholder="请输入你的密码Please password"/></div>
-                <div class="psddeal"><input type="checkbox" name="getpsd" value="记住密码" checked="" placeholder="记住密码" /><p>记住密码</p><a href="/">忘记密码？</a> </div>
+                <div class="email"><div><a><span class="glyphicon glyphicon-user"></span></a> </div><input class="userid" type="text" name="uemail" placeholder="请输入你的邮箱Please Email"/></div>
+                <div class="psd"><div><a><span class="glyphicon glyphicon-lock"></span></a> </div><input class="userpsd" type="password" name="upsd" placeholder="请输入你的密码Please password"/></div>
+                <div class="psddeal"><input class="rempsd" type="checkbox" name="getpsd" value="记住密码" checked="" placeholder="记住密码" /><p>记住密码</p><a href="/">忘记密码？</a> </div>
                 <div id="drag"></div>
                 <div class="otherway"><p>快速登录：</p><a  class="qq" href="/" title="QQ"></a><a class="xinlang" href="/" title="新浪"></a><a class="reg" onclick="loadLogin('register.html')">免费注册</a></div>
                 <div class="loginin">登录</div>
             </form>
 <script type="text/javascript">
     $('#drag').drag();
+    $(function(){
+
+        $(".loginin").click(function(){
+            var dragslip=$(".drag_text");
+            var rpsd=$(".rempsd");
+            if(rpsd.is(':checked')==false){//判断是否勾选
+
+            }
+            if($.trim($(".userid").val())==""){//判断email
+                $(".message").text("您的邮箱不能为空");
+            }else if($.trim($(".userpsd").val())==""){//判断密码
+                $(".message").text("您的密码不能为空");
+            }else if(dragslip.text()=="拖动滑块验证"){
+                $(".message").text("您未拉动验证条");
+            }else{//提交
+                $(".loginemail").submit();
+                $(".message").text("");
+            }
+        })
+    })
 </script>
 
 </body>
